@@ -1,0 +1,46 @@
+<%= render 'shared/navBar' %> 
+
+<div class="container mt-5">
+    <% if @errors%>
+        <% @errors.each do |error| %>
+        <p class = 'danger'><%= error %></p>
+        <% end %>
+    <% end%>
+
+    <div class="row mt-4">
+        <div class="col-sm-6">
+            <h1>Edit <%= @specificEvent.name %></h1>
+            <form action='/events/<%= @specificEvent.id %>' method="post">
+                <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+                <input type="hidden" name="_method" value="patch">
+                <div class="form-group row">
+                    <div class="col-sm-8 pb-4 mt-1">
+                        <input type="text"  name='event[name]' value="<%=@specificEvent.name%>" placeholder="Event Name" class="form-control" id="" aria-describedby="nameHelp">
+                    </div>
+                    <div class="col-sm-8 pb-4">
+                        <input type="text"  name='event[date]' value="<%=@specificEvent.date%>" placeholder="Date of Event" class="form-control" id="" aria-describedby="dateHelp">
+                    </div>
+                    <div class="form-group col-sm-6  mt-3">
+                        <input type="text" class="form-control" id="" aria-describedby="cityHelp" name= "event[city]" value="<%=@specificEvent.city%>" placeholder="City">
+                    </div>
+                    <div class="form-group col-sm-6  mt-3">
+                        <select class="form-control" id="" name = 'event[state]'>
+                            <option name=''value ="<%=@specificEvent.state%>"><%=@specificEvent.state%></option>
+                                <option value="AZ">AZ</option> <%# since this is hard coded, the option value would match the text in the option field %>
+                                <option value="CA">CA</option>
+                                <option value="IL">IL</option>
+                                <option value="NY">NY</option>
+                                <option value="OH">OH</option>
+                                <option value="WA">WA</option>
+                        </select>
+                    </div>
+                </div>
+            <button type="submit" class="btn btn-primary ml-1">Update Event</button>
+            </form>
+        </div> 
+        <div class="col-sm">
+    <%# One of two columns %>
+        </div> 
+    </div> 
+</div>
+

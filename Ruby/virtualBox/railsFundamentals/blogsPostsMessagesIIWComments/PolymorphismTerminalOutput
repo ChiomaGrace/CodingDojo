@@ -1,0 +1,2118 @@
+Last login: Sun Jun  7 23:50:18 on ttys000
+ChiomaUgagusMBP:virtualBox Chi$  cd ..
+ChiomaUgagusMBP:Ruby Chi$ ks
+-bash: ks: command not found
+ChiomaUgagusMBP:Ruby Chi$ ls
+Algorithms		Installation Steps	virtualBox
+ChiomaUgagusMBP:Ruby Chi$ cd virtualBox
+ChiomaUgagusMBP:virtualBox Chi$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/trusty64' version '20190514.0.0' is up to date...
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+ChiomaUgagusMBP:virtualBox Chi$ vagrant ssh
+Welcome to Ubuntu 14.04.6 LTS (GNU/Linux 3.13.0-170-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Mon Jun  8 04:53:58 UTC 2020
+
+  System load:  1.16              Processes:           110
+  Usage of /:   5.1% of 39.34GB   Users logged in:     0
+  Memory usage: 27%               IP address for eth0: 10.0.2.15
+  Swap usage:   0%
+
+  => There are 6 zombie processes.
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+UA Infrastructure Extended Security Maintenance (ESM) is not enabled.
+
+0 updates can be installed immediately.
+0 of these updates are security updates.
+
+Enable UA Infrastructure ESM to receive 116 additional security updates.
+See https://ubuntu.com/advantage or run: sudo ua status
+
+New release '16.04.6 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Mon Jun  8 04:53:58 2020 from 10.0.2.2
+vagrant@vagrant-ubuntu-trusty-64:~$ cd /vagrant
+vagrant@vagrant-ubuntu-trusty-64:/vagrant$ ls
+bootstrap.sh  fundamentals  oop  railsFundamentals  Vagrantfile
+vagrant@vagrant-ubuntu-trusty-64:/vagrant$ cd railsFundamentals
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals$ rails new integrat
+ingModels
+Deprecation warning: Expected string default value for '--rc'; got false (boolean).
+This will be rejected in the future unless you explicitly pass the options `check_default_type: false` or call `allow_incompatible_default_type!` in your code
+You can silence deprecations warning by setting the environment variable THOR_SILENCE_DEPRECATION.
+      create  
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/.............
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies......
+Using rake 13.0.1
+Using concurrent-ruby 1.1.6
+Using i18n 0.9.5
+Using json 1.8.6
+Using minitest 5.14.1
+Using thread_safe 0.3.6
+Using tzinfo 1.2.7
+Using activesupport 4.2.7
+Using builder 3.2.4
+Using erubis 2.7.0
+Using mini_portile2 2.4.0
+Using nokogiri 1.10.9
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.9
+Using crass 1.0.6
+Using loofah 2.5.0
+Using rails-html-sanitizer 1.3.0
+Using actionview 4.2.7
+Using rack 1.6.13
+Using rack-test 0.6.3
+Using actionpack 4.2.7
+Using globalid 0.4.2
+Using activejob 4.2.7
+Using mini_mime 1.0.2
+Using mail 2.7.1
+Using actionmailer 4.2.7
+Using activemodel 4.2.7
+Using arel 6.0.4
+Using activerecord 4.2.7
+Using debug_inspector 0.0.3
+Using binding_of_caller 0.8.0
+Using bundler 1.17.3
+Using byebug 11.0.1
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using thor 1.0.1
+Using railties 4.2.7
+Using coffee-rails 4.1.1
+Using ffi 1.13.0
+Using jbuilder 2.9.1
+Using jquery-rails 4.4.0
+Using sprockets 3.7.2
+Using sprockets-rails 3.2.1
+Using rails 4.2.7
+Using rb-fsevent 0.10.4
+Using rb-inotify 0.10.1
+Using rdoc 4.3.0
+Using sass-listen 4.0.0
+Using sass 3.7.4
+Using tilt 2.0.10
+Using sass-rails 5.0.7
+Using sdoc 0.4.2
+Using spring 2.0.2
+Using sqlite3 1.4.2
+Using turbolinks-source 5.2.0
+Using turbolinks 5.2.1
+Using uglifier 4.2.0
+Using web-console 2.3.0
+Bundle complete! 12 Gemfile dependencies, 59 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals$ ls
+blogsPostsMessagesI                routesAndControllers
+blogsPostsMessagesII               selfJoin
+blogsPostsMessagesIIWComments      selfJoin.zip
+blogsPostsMessagesIIWComments.zip  theDojoAndNinjasAssignment
+blogsPostsMessagesII.zip           theDojoAndNinjasAssignment.zip
+blogsPostsMessagesI.zip            user
+firstProject                       user.zip
+integratingModels
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals$ cd integratingMode
+ls
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+bundle install
+Fetching gem metadata from https://rubygems.org/.............
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies...
+Using rake 13.0.1
+Using concurrent-ruby 1.1.6
+Using i18n 0.9.5
+Using json 1.8.6
+Using minitest 5.14.1
+Using thread_safe 0.3.6
+Using tzinfo 1.2.7
+Using activesupport 4.2.7
+Using builder 3.2.4
+Using erubis 2.7.0
+Using mini_portile2 2.4.0
+Using nokogiri 1.10.9
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.9
+Using crass 1.0.6
+Using loofah 2.5.0
+Using rails-html-sanitizer 1.3.0
+Using actionview 4.2.7
+Using rack 1.6.13
+Using rack-test 0.6.3
+Using actionpack 4.2.7
+Using globalid 0.4.2
+Using activejob 4.2.7
+Using mini_mime 1.0.2
+Using mail 2.7.1
+Using actionmailer 4.2.7
+Using activemodel 4.2.7
+Using arel 6.0.4
+Using activerecord 4.2.7
+Using debug_inspector 0.0.3
+Using binding_of_caller 0.8.0
+Using bundler 1.17.3
+Using byebug 11.0.1
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using thor 1.0.1
+Using railties 4.2.7
+Using coffee-rails 4.1.1
+Using ffi 1.13.0
+Using hirb 0.7.3
+Using jbuilder 2.9.1
+Using jquery-rails 4.4.0
+Using sprockets 3.7.2
+Using sprockets-rails 3.2.1
+Using rails 4.2.7
+Using rails-footnotes 4.1.8
+Using rb-fsevent 0.10.4
+Using rb-inotify 0.10.1
+Using rdoc 4.3.0
+Using sass-listen 4.0.0
+Using sass 3.7.4
+Using tilt 2.0.10
+Using sass-rails 5.0.7
+Using sdoc 0.4.2
+Using spring 2.0.2
+Using sqlite3 1.3.13 (was 1.4.2)
+Using turbolinks-source 5.2.0
+Using turbolinks 5.2.1
+Using uglifier 4.2.0
+Using web-console 2.3.0
+Bundle complete! 14 Gemfile dependencies, 61 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+rails g model
+Running via Spring preloader in process 23817
+Usage:
+  rails generate model NAME [field[:type][:index] field[:type][:index]] [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+      [--force-plural], [--no-force-plural]      # Forces the use of the given model name
+  -o, --orm=NAME                                 # Orm to be invoked
+                                                 # Default: active_record
+
+ActiveRecord options:
+      [--migration], [--no-migration]    # Indicates when to generate migration
+                                         # Default: true
+      [--timestamps], [--no-timestamps]  # Indicates when to generate timestamps
+                                         # Default: true
+      [--parent=PARENT]                  # The parent class for the generated model
+      [--indexes], [--no-indexes]        # Add indexes for references and belongs_to columns
+                                         # Default: true
+  -t, [--test-framework=NAME]            # Test framework to be invoked
+                                         # Default: test_unit
+
+TestUnit options:
+      [--fixture], [--no-fixture]   # Indicates when to generate fixture
+                                    # Default: true
+  -r, [--fixture-replacement=NAME]  # Fixture replacement to be invoked
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Stubs out a new model. Pass the model name, either CamelCased or
+    under_scored, and an optional list of attribute pairs as arguments.
+
+    Attribute pairs are field:type arguments specifying the
+    model's attributes. Timestamps are added by default, so you don't have to
+    specify them by hand as 'created_at:datetime updated_at:datetime'.
+
+    As a special case, specifying 'password:digest' will generate a
+    password_digest field of string type, and configure your generated model and
+    tests for use with ActiveModel has_secure_password (assuming the default ORM
+    and test framework are being used).
+
+    You don't have to think up every attribute up front, but it helps to
+    sketch out a few so you can start working with the model immediately.
+
+    This generator invokes your configured ORM and test framework, which
+    defaults to ActiveRecord and TestUnit.
+
+    Finally, if --parent option is given, it's used as superclass of the
+    created model. This allows you create Single Table Inheritance models.
+
+    If you pass a namespaced model name (e.g. admin/account or Admin::Account)
+    then the generator will create a module with a table_name_prefix method
+    to prefix the model's table name with the module name (e.g. admin_accounts)
+
+Available field types:
+
+    Just after the field name you can specify a type like text or boolean.
+    It will generate the column with the associated SQL type. For instance:
+
+        `rails generate model post title:string body:text`
+
+    will generate a title column with a varchar type and a body column with a text
+    type. If no type is specified the string type will be used by default.
+    You can use the following types:
+
+        integer
+        primary_key
+        decimal
+        float
+        boolean
+        binary
+        string
+        text
+        date
+        time
+        datetime
+
+    You can also consider `references` as a kind of type. For instance, if you run:
+
+        `rails generate model photo title:string album:references`
+
+    It will generate an `album_id` column. You should generate these kinds of fields when
+    you will use a `belongs_to` association, for instance. `references` also supports
+    polymorphism, you can enable polymorphism like this:
+
+        `rails generate model product supplier:references{polymorphic}`
+
+    For integer, string, text and binary fields, an integer in curly braces will
+    be set as the limit:
+
+        `rails generate model user pseudo:string{30}`
+
+    For decimal, two integers separated by a comma in curly braces will be used
+    for precision and scale:
+
+        `rails generate model product 'price:decimal{10,2}'`
+
+    You can add a `:uniq` or `:index` suffix for unique or standard indexes
+    respectively:
+
+        `rails generate model user pseudo:string:uniq`
+        `rails generate model user pseudo:string:index`
+
+    You can combine any single curly brace option with the index options:
+
+        `rails generate model user username:string{30}:uniq`
+        `rails generate model product supplier:references{polymorphic}:index`
+
+    If you require a `password_digest` string column for use with
+    has_secure_password, you should specify `password:digest`:
+
+        `rails generate model user password:digest`
+
+Examples:
+    `rails generate model account`
+
+        For ActiveRecord and TestUnit it creates:
+
+            Model:      app/models/account.rb
+            Test:       test/models/account_test.rb
+            Fixtures:   test/fixtures/accounts.yml
+            Migration:  db/migrate/XXX_create_accounts.rb
+
+    `rails generate model post title:string body:text published:boolean`
+
+        Creates a Post model with a string title, text body, and published flag.
+
+    `rails generate model admin/account`
+
+        For ActiveRecord and TestUnit it creates:
+
+            Module:     app/models/admin.rb
+            Model:      app/models/admin/account.rb
+            Test:       test/models/admin/account_test.rb
+            Fixtures:   test/fixtures/admin/accounts.yml
+            Migration:  db/migrate/XXX_create_admin_accounts.rb
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+rails g model User firstName:string lastName:string
+Running via Spring preloader in process 23826
+      invoke  active_record
+      create    db/migrate/20200608181140_create_users.rb
+      create    app/models/user.rb
+      invoke    test_unit
+      create      test/models/user_test.rb
+      create      test/fixtures/users.yml
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+rake db:migrate
+== 20200608181140 CreateUsers: migrating ======================================
+-- create_table(:users)
+   -> 0.0062s
+== 20200608181140 CreateUsers: migrated (0.0064s) =============================
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+rails c
+Running via Spring preloader in process 23837
+Loading development environment (Rails 4.2.7)
+2.3.1 :001 > Hirb.enable
+ => true 
+2.3.1 :002 > User.all
+  User Load (7.4ms)  SELECT "users".* FROM "users"
+ => #<ActiveRecord::Relation []> 
+2.3.1 :003 > User.create(firstName: "Chioma", lastName: "Ubogagu)
+2.3.1 :004"> User.all
+2.3.1 :005"> ")
+   (0.3ms)  begin transaction
+  SQL (5.0ms)  INSERT INTO "users" ("firstName", "lastName", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["firstName", "Chioma"], ["lastName", "Ubogagu)\nUser.all\n"], ["created_at", "2020-06-08 18:12:38.465221"], ["updated_at", "2020-06-08 18:12:38.465221"]]
+   (3.1ms)  commit transaction
++----+-----------+--------------------+-------------------+--------------------+
+| id | firstName | lastName           | created_at        | updated_at         |
++----+-----------+--------------------+-------------------+--------------------+
+| 1  | Chioma    | Ubogagu)\nUser.... | 2020-06-08 18:... | 2020-06-08 18:1... |
++----+-----------+--------------------+-------------------+--------------------+
+1 row in set
+2.3.1 :006 > delete = User.find(1)
+  User Load (1.7ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
++----+-----------+--------------------+-------------------+--------------------+
+| id | firstName | lastName           | created_at        | updated_at         |
++----+-----------+--------------------+-------------------+--------------------+
+| 1  | Chioma    | Ubogagu)\nUser.... | 2020-06-08 18:... | 2020-06-08 18:1... |
++----+-----------+--------------------+-------------------+--------------------+
+1 row in set
+2.3.1 :007 > delete.destroy
+   (0.1ms)  begin transaction
+  SQL (4.1ms)  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+   (2.2ms)  commit transaction
++----+-----------+--------------------+-------------------+--------------------+
+| id | firstName | lastName           | created_at        | updated_at         |
++----+-----------+--------------------+-------------------+--------------------+
+| 1  | Chioma    | Ubogagu)\nUser.... | 2020-06-08 18:... | 2020-06-08 18:1... |
++----+-----------+--------------------+-------------------+--------------------+
+1 row in set
+2.3.1 :008 > User.all
+  User Load (3.9ms)  SELECT "users".* FROM "users"
+ => #<ActiveRecord::Relation []> 
+2.3.1 :009 > delete = User.first.delete
+  User Load (2.6ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+NoMethodError: undefined method `delete' for nil:NilClass
+	from (irb):9
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `block in require'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+	from /vagrant/railsFundamentals/integratingModels/bin/rails:9:in `<top (required)>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/commands/rails.rb:6:in `call'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:201:in `block in serve'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `fork'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `serve'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:141:in `block in run'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `loop'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `run'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'
+2.3.1 :010 > User.all
+  User Load (2.8ms)  SELECT "users".* FROM "users"
+ => #<ActiveRecord::Relation []> 
+2.3.1 :011 > User.create(firstName: "Chioma", lastName: "Ubogagu")
+   (0.2ms)  begin transaction
+  SQL (48.4ms)  INSERT INTO "users" ("firstName", "lastName", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["firstName", "Chioma"], ["lastName", "Ubogagu"], ["created_at", "2020-06-08 18:13:47.692448"], ["updated_at", "2020-06-08 18:13:47.692448"]]
+   (3.2ms)  commit transaction
++----+-----------+----------+------------------------+-------------------------+
+| id | firstName | lastName | created_at             | updated_at              |
++----+-----------+----------+------------------------+-------------------------+
+| 2  | Chioma    | Ubogagu  | 2020-06-08 18:13:47... | 2020-06-08 18:13:47 UTC |
++----+-----------+----------+------------------------+-------------------------+
+1 row in set
+2.3.1 :012 > User.create(firstName: "Tina", lastName: "Ubogagu")
+   (0.2ms)  begin transaction
+  SQL (3.0ms)  INSERT INTO "users" ("firstName", "lastName", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["firstName", "Tina"], ["lastName", "Ubogagu"], ["created_at", "2020-06-08 18:13:55.097842"], ["updated_at", "2020-06-08 18:13:55.097842"]]
+   (2.4ms)  commit transaction
++----+-----------+----------+------------------------+-------------------------+
+| id | firstName | lastName | created_at             | updated_at              |
++----+-----------+----------+------------------------+-------------------------+
+| 3  | Tina      | Ubogagu  | 2020-06-08 18:13:55... | 2020-06-08 18:13:55 UTC |
++----+-----------+----------+------------------------+-------------------------+
+1 row in set
+2.3.1 :013 > User.create(firstName: "Oggy", lastName: "Ubogagu")
+   (0.6ms)  begin transaction
+  SQL (5.2ms)  INSERT INTO "users" ("firstName", "lastName", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["firstName", "Oggy"], ["lastName", "Ubogagu"], ["created_at", "2020-06-08 18:14:06.772597"], ["updated_at", "2020-06-08 18:14:06.772597"]]
+   (2.6ms)  commit transaction
++----+-----------+----------+------------------------+-------------------------+
+| id | firstName | lastName | created_at             | updated_at              |
++----+-----------+----------+------------------------+-------------------------+
+| 4  | Oggy      | Ubogagu  | 2020-06-08 18:14:06... | 2020-06-08 18:14:06 UTC |
++----+-----------+----------+------------------------+-------------------------+
+1 row in set
+2.3.1 :014 > User.create(firstName: "Okwus", lastName: "Ubogagu")
+   (0.2ms)  begin transaction
+  SQL (3.8ms)  INSERT INTO "users" ("firstName", "lastName", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["firstName", "Okwus"], ["lastName", "Ubogagu"], ["created_at", "2020-06-08 18:14:14.384716"], ["updated_at", "2020-06-08 18:14:14.384716"]]
+   (2.4ms)  commit transaction
++----+-----------+----------+------------------------+-------------------------+
+| id | firstName | lastName | created_at             | updated_at              |
++----+-----------+----------+------------------------+-------------------------+
+| 5  | Okwus     | Ubogagu  | 2020-06-08 18:14:14... | 2020-06-08 18:14:14 UTC |
++----+-----------+----------+------------------------+-------------------------+
+1 row in set
+2.3.1 :015 > User.all
+  User Load (3.3ms)  SELECT "users".* FROM "users"
++----+-----------+----------+------------------------+-------------------------+
+| id | firstName | lastName | created_at             | updated_at              |
++----+-----------+----------+------------------------+-------------------------+
+| 2  | Chioma    | Ubogagu  | 2020-06-08 18:13:47... | 2020-06-08 18:13:47 UTC |
+| 3  | Tina      | Ubogagu  | 2020-06-08 18:13:55... | 2020-06-08 18:13:55 UTC |
+| 4  | Oggy      | Ubogagu  | 2020-06-08 18:14:06... | 2020-06-08 18:14:06 UTC |
+| 5  | Okwus     | Ubogagu  | 2020-06-08 18:14:14... | 2020-06-08 18:14:14 UTC |
++----+-----------+----------+------------------------+-------------------------+
+4 rows in set
+2.3.1 :016 > exit
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+clear
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+rails generate controller Users index new edit
+Running via Spring preloader in process 23852
+Deprecation warning: Expected string default value for '--helper'; got true (boolean).
+This will be rejected in the future unless you explicitly pass the options `check_default_type: false` or call `allow_incompatible_default_type!` in your code
+You can silence deprecations warning by setting the environment variable THOR_SILENCE_DEPRECATION.
+Deprecation warning: Expected string default value for '--assets'; got true (boolean).
+This will be rejected in the future unless you explicitly pass the options `check_default_type: false` or call `allow_incompatible_default_type!` in your code
+You can silence deprecations warning by setting the environment variable THOR_SILENCE_DEPRECATION.
+      create  app/controllers/users_controller.rb
+       route  get 'users/edit'
+       route  get 'users/new'
+       route  get 'users/index'
+      invoke  erb
+      create    app/views/users
+      create    app/views/users/index.html.erb
+      create    app/views/users/new.html.erb
+      create    app/views/users/edit.html.erb
+      invoke  test_unit
+      create    test/controllers/users_controller_test.rb
+      invoke  helper
+      create    app/helpers/users_helper.rb
+      invoke    test_unit
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/users.coffee
+      invoke    scss
+      create      app/assets/stylesheets/users.scss
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+rails s -b 0.0.0.0
+=> Booting WEBrick
+=> Rails 4.2.7 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2020-06-08 18:19:11] INFO  WEBrick 1.3.1
+[2020-06-08 18:19:11] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux]
+Exiting
+/home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/socket.rb:205:in `bind': Address already in use - bind(2) for 0.0.0.0:3000 (Errno::EADDRINUSE)
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/socket.rb:205:in `listen'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/socket.rb:759:in `block in tcp_server_sockets'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/socket.rb:231:in `each'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/socket.rb:231:in `foreach'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/socket.rb:757:in `tcp_server_sockets'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/utils.rb:65:in `create_listeners'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:134:in `listen'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:115:in `initialize'
+	from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:47:in `initialize'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.13/lib/rack/handler/webrick.rb:31:in `new'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.13/lib/rack/handler/webrick.rb:31:in `run'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.13/lib/rack/server.rb:287:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/server.rb:80:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:75:in `tap'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:75:in `server'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from /vagrant/railsFundamentals/integratingModels/bin/rails:9:in `require'
+	from /vagrant/railsFundamentals/integratingModels/bin/rails:9:in `<top (required)>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `load'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `call'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client/command.rb:7:in `call'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client.rb:30:in `run'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/bin/spring:49:in `<top (required)>'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `load'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `<top (required)>'
+	from /vagrant/railsFundamentals/integratingModels/bin/spring:15:in `require'
+	from /vagrant/railsFundamentals/integratingModels/bin/spring:15:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+rails s -b 0.0.0.0
+=> Booting WEBrick
+=> Rails 4.2.7 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2020-06-08 18:20:21] INFO  WEBrick 1.3.1
+[2020-06-08 18:20:21] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux]
+[2020-06-08 18:20:21] INFO  WEBrick::HTTPServer#start: pid=23989 port=3000
+
+
+Started GET "/" for 10.0.2.2 at 2020-06-08 18:20:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  ActiveRecord::SchemaMigration Load (2.8ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/templates/rails/welcome/index.html.erb (8.8ms)
+Completed 200 OK in 81ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-06-08 18:20:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant UsersController::Product):
+  app/controllers/users_controller.rb:3:in `index'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-06-08 18:20:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  User Load (2.4ms)  SELECT "users".* FROM "users"
+Completed 200 OK in 146ms (Views: 7.9ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 18:23:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4788ms (Views: 4787.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2020-06-08 18:23:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2020-06-08 18:23:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2020-06-08 18:23:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2020-06-08 18:23:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2020-06-08 18:23:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 10.0.2.2 at 2020-06-08 18:23:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2020-06-08 18:23:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 18:38:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Rendered users/create.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 458ms (Views: 455.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 18:51:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/vagrant/railsFundamentals/integratingModels/app/controllers/users_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.6ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 18:51:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/vagrant/railsFundamentals/integratingModels/app/views"
+):
+  actionview (4.2.7) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.7) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.7) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.7) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.7) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.7) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.7) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.7) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (33.2ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 19:00:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+   (0.1ms)  begin transaction
+  SQL (29.0ms)  INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2020-06-08 19:00:09.317039"], ["updated_at", "2020-06-08 19:00:09.317039"]]
+   (38.2ms)  commit transaction
+Redirected to http://localhost:3000/users/#
+Completed 302 Found in 161ms (ActiveRecord: 74.3ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-06-08 19:00:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  User Load (2.9ms)  SELECT "users".* FROM "users"
+Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 19:00:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+   (0.1ms)  begin transaction
+  SQL (6.0ms)  INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2020-06-08 19:00:15.570939"], ["updated_at", "2020-06-08 19:00:15.570939"]]
+   (24.4ms)  commit transaction
+Redirected to http://localhost:3000/users/#
+Completed 302 Found in 48ms (ActiveRecord: 30.6ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-06-08 19:00:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  User Load (2.3ms)  SELECT "users".* FROM "users"
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 19:05:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+   (0.3ms)  begin transaction
+  SQL (55.2ms)  INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2020-06-08 19:05:08.451600"], ["updated_at", "2020-06-08 19:05:08.451600"]]
+   (37.1ms)  commit transaction
+Redirected to http://localhost:3000/users/#
+Completed 302 Found in 100ms (ActiveRecord: 92.5ms)
+
+
+Started GET "/users/" for 10.0.2.2 at 2020-06-08 19:05:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  User Load (7.3ms)  SELECT "users".* FROM "users"
+Completed 200 OK in 14ms (Views: 5.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 19:06:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 668ms (Views: 665.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-06-08 19:08:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 19:08:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 447ms (Views: 446.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for 10.0.2.2 at 2020-06-08 20:09:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/users/show"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (46.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (198.4ms)
+
+
+Started GET "/users/show" for 10.0.2.2 at 2020-06-08 20:10:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/users/show"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.8ms)
+
+
+Started GET "/users/show" for 10.0.2.2 at 2020-06-08 20:10:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/users/show"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.4ms)
+
+
+Started GET "/users/show" for 10.0.2.2 at 2020-06-08 20:21:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/vagrant/railsFundamentals/integratingModels/app/controllers/users_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.7ms)
+
+
+Started GET "/users/show" for 10.0.2.2 at 2020-06-08 20:22:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/vagrant/railsFundamentals/integratingModels/app/controllers/users_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.2ms)
+
+
+Started GET "/users/show" for 10.0.2.2 at 2020-06-08 20:24:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 347ms (Views: 346.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for 10.0.2.2 at 2020-06-08 20:24:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  User Load (1.5ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 74ms (ActiveRecord: 6.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=show):
+  app/controllers/users_controller.rb:20:in `show'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.2ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 20:30:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1479ms (Views: 1473.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2020-06-08 20:53:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/users"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.4ms)
+^C[2020-06-08 20:54:01] INFO  going to shutdown ...
+[2020-06-08 20:54:02] INFO  WEBrick::HTTPServer#start done.
+Exiting
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+rails s -b 0.0.0.0
+=> Booting WEBrick
+=> Rails 4.2.7 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2020-06-08 20:54:11] INFO  WEBrick 1.3.1
+[2020-06-08 20:54:11] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux]
+[2020-06-08 20:54:11] INFO  WEBrick::HTTPServer#start: pid=24881 port=3000
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 20:54:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  ActiveRecord::SchemaMigration Load (19.6ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 4084ms (Views: 3699.4ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 20:54:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 560ms (Views: 557.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2020-06-08 20:54:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/users"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.0ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (104.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (304.4ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 20:55:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 849ms (Views: 848.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for 10.0.2.2 at 2020-06-08 20:55:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"firstName"=>"Daisy", "lastName"=>"Qi"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 8ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.7) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.7) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.7) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (37.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (156.9ms)
+
+
+Started POST "/users/create" for 10.0.2.2 at 2020-06-08 20:57:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"firstName"=>"Daisy", "lastName"=>"Qi"}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.0ms)
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.2.7) lib/action_controller/metal/request_forgery_protection.rb:181:in `handle_unverified_request'
+  actionpack (4.2.7) lib/action_controller/metal/request_forgery_protection.rb:209:in `handle_unverified_request'
+  actionpack (4.2.7) lib/action_controller/metal/request_forgery_protection.rb:204:in `verify_authenticity_token'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.3ms)
+
+
+Started GET "/users/create" for 10.0.2.2 at 2020-06-08 20:57:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"create"}
+  User Load (1.9ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 96ms (ActiveRecord: 1.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=create):
+  app/controllers/users_controller.rb:20:in `show'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.6ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.5ms)
+^C[2020-06-08 20:57:48] INFO  going to shutdown ...
+[2020-06-08 20:57:48] INFO  WEBrick::HTTPServer#start done.
+Exiting
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+rails s -b 0.0.0.0
+=> Booting WEBrick
+=> Rails 4.2.7 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2020-06-08 20:57:56] INFO  WEBrick 1.3.1
+[2020-06-08 20:57:56] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux]
+[2020-06-08 20:57:56] INFO  WEBrick::HTTPServer#start: pid=24904 port=3000
+
+
+Started GET "/users/create" for 10.0.2.2 at 2020-06-08 20:57:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  ActiveRecord::SchemaMigration Load (1.6ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"create"}
+  User Load (5.0ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 334ms (ActiveRecord: 12.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=create):
+  app/controllers/users_controller.rb:20:in `show'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.5ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 20:58:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3190ms (Views: 3176.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for 10.0.2.2 at 2020-06-08 20:58:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"kuX6tzXDcEKeY46cpmVPqudpYnyu8D/JCzQcCZyWUliX3pMInBKb9DbrkvYzyxotYKEOZVeA2KNDy5+W7rsUdg==", "user"=>{"firstName"=>"Daisy", "lastName"=>"Qi"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/users_controller.rb:14:in `create'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (25.9ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.7ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2020-06-08 21:05:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 987ms (Views: 841.2ms | ActiveRecord: 39.9ms)
+
+
+Started POST "/users/create" for 10.0.2.2 at 2020-06-08 21:05:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"8qBeumPmTrtUK6CTjM0ERzTx2sBK5qdMioNkwZLBntD3mzcFyjelDfyjvPkZY1HAszm22bOWQCbCfOde4OzY/g==", "firstName"=>"Daisy", "lastName"=>"Qi"}
+   (0.8ms)  begin transaction
+  SQL (33.1ms)  INSERT INTO "users" ("firstName", "lastName", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["firstName", "Daisy"], ["lastName", "Qi"], ["created_at", "2020-06-08 21:05:54.252374"], ["updated_at", "2020-06-08 21:05:54.252374"]]
+   (149.7ms)  commit transaction
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 248ms (ActiveRecord: 183.5ms)
+
+
+Started GET "/users/9" for 10.0.2.2 at 2020-06-08 21:05:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  User Load (1.6ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.6ms)
+^C[2020-06-08 21:09:14] INFO  going to shutdown ...
+[2020-06-08 21:09:14] INFO  WEBrick::HTTPServer#start done.
+Exiting
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+cd .
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/integratingModels$ 
+cd ..
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals$ ls
+blogsPostsMessagesI                routesAndControllers
+blogsPostsMessagesII               selfJoin
+blogsPostsMessagesIIWComments      selfJoin.zip
+blogsPostsMessagesIIWComments.zip  theDojoAndNinjasAssignment
+blogsPostsMessagesII.zip           theDojoAndNinjasAssignment.zip
+blogsPostsMessagesI.zip            user
+firstProject                       user.zip
+integratingModels
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals$ cd routesAndContro
+llers
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/routesAndController
+s$ rails s -b 0.0.0.0
+=> Booting WEBrick
+=> Rails 4.2.7 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2020-06-08 21:09:40] INFO  WEBrick 1.3.1
+[2020-06-08 21:09:40] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux]
+[2020-06-08 21:09:40] INFO  WEBrick::HTTPServer#start: pid=24955 port=3000
+
+
+Started GET "/times" for 10.0.2.2 at 2020-06-08 21:10:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HelloController#create as HTML
+  Rendered text template (0.1ms)
+Completed 200 OK in 191ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/times" for 10.0.2.2 at 2020-06-08 21:14:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HelloController#create as HTML
+  Rendered text template (0.1ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/times" for 10.0.2.2 at 2020-06-08 21:14:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HelloController#create as HTML
+  Rendered text template (0.1ms)
+Completed 200 OK in 9ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+^C[2020-06-08 21:15:19] INFO  going to shutdown ...
+[2020-06-08 21:15:19] INFO  WEBrick::HTTPServer#start done.
+Exiting
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/routesAndController
+s$ cd ..
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals$ ls
+blogsPostsMessagesI                routesAndControllers
+blogsPostsMessagesII               selfJoin
+blogsPostsMessagesIIWComments      selfJoin.zip
+blogsPostsMessagesIIWComments.zip  theDojoAndNinjasAssignment
+blogsPostsMessagesII.zip           theDojoAndNinjasAssignment.zip
+blogsPostsMessagesI.zip            user
+firstProject                       user.zip
+integratingModels
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals$ cd selfJoin
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/selfJoin$ rails c
+Loading development environment (Rails 4.2.7)
+2.3.1 :001 > Hirb.enable
+ => true 
+2.3.1 :002 > User.all
+  User Load (13.9ms)  SELECT "users".* FROM "users"
++----+-----------+----------+------------------------+-------------------------+
+| id | firstName | lastName | created_at             | updated_at              |
++----+-----------+----------+------------------------+-------------------------+
+| 1  | Chioma    | Ubogagu  | 2020-06-07 23:22:37... | 2020-06-07 23:22:37 UTC |
+| 2  | Tina      | Ubogagu  | 2020-06-07 23:25:03... | 2020-06-07 23:25:03 UTC |
+| 3  | Oggy      | Ubogagu  | 2020-06-07 23:27:59... | 2020-06-07 23:27:59 UTC |
+| 4  | Okwus     | Ubogagu  | 2020-06-07 23:28:06... | 2020-06-07 23:28:06 UTC |
+| 5  | Steph     | Curry    | 2020-06-07 23:28:19... | 2020-06-07 23:28:19 UTC |
+| 6  | Lebron    | James    | 2020-06-07 23:28:33... | 2020-06-07 23:28:33 UTC |
++----+-----------+----------+------------------------+-------------------------+
+6 rows in set
+2.3.1 :003 > Friendship.all
+  Friendship Load (27.0ms)  SELECT "friendships".* FROM "friendships"
+ => #<ActiveRecord::Relation []> 
+2.3.1 :004 > Friendship.new
++----+--------+----------+------------+------------+
+| id | userId | friendId | created_at | updated_at |
++----+--------+----------+------------+------------+
+|    |        |          |            |            |
++----+--------+----------+------------+------------+
+1 row in set
+2.3.1 :005 > user = User.find_by(1)
+  User Load (2.4ms)  SELECT  "users".* FROM "users" WHERE (1) LIMIT 1
++----+-----------+----------+------------------------+-------------------------+
+| id | firstName | lastName | created_at             | updated_at              |
++----+-----------+----------+------------------------+-------------------------+
+| 1  | Chioma    | Ubogagu  | 2020-06-07 23:22:37... | 2020-06-07 23:22:37 UTC |
++----+-----------+----------+------------------------+-------------------------+
+1 row in set
+2.3.1 :006 > User.first.friendships.create(friend:User.second)
+  User Load (3.2ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  User Load (2.3ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1 OFFSET 1
+   (0.1ms)  begin transaction
+   (0.2ms)  rollback transaction
+ActiveModel::MissingAttributeError: can't write unknown attribute `friend_id`
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute.rb:138:in `with_value_from_database'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_set.rb:39:in `write_from_user'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_methods/write.rb:74:in `write_attribute_with_type_cast'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_methods/write.rb:56:in `write_attribute'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_methods/dirty.rb:97:in `write_attribute'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_methods.rb:369:in `[]='
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/belongs_to_association.rb:83:in `replace_keys'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/belongs_to_association.rb:14:in `replace'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/singular_association.rb:17:in `writer'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/builder/association.rb:123:in `friend='
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:54:in `public_send'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:35:in `each'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/core.rb:566:in `init_attributes'
+... 8 levels...
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/transactions.rb:220:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:182:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:492:in `_create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/has_many_association.rb:187:in `_create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:153:in `create'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_proxy.rb:290:in `create'
+	from (irb):6
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from bin/rails:9:in `require'
+	from bin/rails:9:in `<main>'
+2.3.1 :007 > User.first.friendships.create(friend_id: User.second.id)
+  User Load (5.0ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  User Load (5.9ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1 OFFSET 1
+   (0.3ms)  begin transaction
+   (0.6ms)  rollback transaction
+ActiveRecord::UnknownAttributeError: unknown attribute 'friend_id' for Friendship.
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:35:in `each'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/core.rb:566:in `init_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/core.rb:281:in `initialize'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/inheritance.rb:61:in `new'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/inheritance.rb:61:in `new'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/reflection.rb:141:in `build_association'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/association.rb:250:in `build_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:493:in `block in _create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:183:in `block in transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/transactions.rb:220:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:182:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:492:in `_create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/has_many_association.rb:187:in `_create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:153:in `create'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_proxy.rb:290:in `create'
+	from (irb):7
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from bin/rails:9:in `require'
+	from bin/rails:9:in `<main>'
+2.3.1 :008 > friendship.new
+NameError: undefined local variable or method `friendship' for main:Object
+	from (irb):8
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from bin/rails:9:in `require'
+	from bin/rails:9:in `<main>'
+2.3.1 :009 > Friendship.new
++----+--------+----------+------------+------------+
+| id | userId | friendId | created_at | updated_at |
++----+--------+----------+------------+------------+
+|    |        |          |            |            |
++----+--------+----------+------------+------------+
+1 row in set
+2.3.1 :010 > User.first.friendships.create(friendId: User.second.id)
+  User Load (5.4ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  User Load (6.6ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1 OFFSET 1
+   (0.8ms)  begin transaction
+   (0.4ms)  rollback transaction
+ActiveRecord::UnknownAttributeError: unknown attribute 'user_id' for Friendship.
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:35:in `each'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/association.rb:169:in `initialize_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/association.rb:251:in `block in build_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/core.rb:283:in `initialize'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/inheritance.rb:61:in `new'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/inheritance.rb:61:in `new'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/reflection.rb:141:in `build_association'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/association.rb:250:in `build_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:493:in `block in _create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:183:in `block in transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/transactions.rb:220:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:182:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:492:in `_create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/has_many_association.rb:187:in `_create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:153:in `create'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_proxy.rb:290:in `create'
+	from (irb):10
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from bin/rails:9:in `require'
+	from bin/rails:9:in `<main>'
+2.3.1 :011 > ^C
+2.3.1 :011 > 2.3.1 :011 > ^C
+2.3.1 :011 > exit
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/selfJoin$ rake db:migrate:statu
+s
+
+database: /vagrant/railsFundamentals/selfJoin/db/development.sqlite3
+
+ Status   Migration ID    Migration Name
+--------------------------------------------------
+   up     20200607230659  Create users
+   up     20200607230823  Create friendships
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/selfJoin$ rake db:rollback
+== 20200607230823 CreateFriendships: reverting ================================
+-- drop_table(:friendships)
+   -> 0.0072s
+== 20200607230823 CreateFriendships: reverted (0.0250s) =======================
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/selfJoin$ rails g model Friends
+hip user:references
+      invoke  active_record
+      create    db/migrate/20200608212958_create_friendships.rb
+    conflict    app/models/friendship.rb
+  Overwrite /vagrant/railsFundamentals/selfJoin/app/models/friendship.rb? (enter "h" for he
+lp) [Ynaqdhm] Y
+       force    app/models/friendship.rb
+      invoke    test_unit
+   identical      test/models/friendship_test.rb
+    conflict      test/fixtures/friendships.yml
+    Overwrite /vagrant/railsFundamentals/selfJoin/test/fixtures/friendships.yml? (enter "h"
+ for help) [Ynaqdhm] Y
+       force      test/fixtures/friendships.yml
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/selfJoin$ rake db:migrate
+== 20200608212958 CreateFriendships: migrating ================================
+-- create_table(:friendships)
+   -> 0.0095s
+== 20200608212958 CreateFriendships: migrated (0.0097s) =======================
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/selfJoin$ rails c
+Loading development environment (Rails 4.2.7)
+2.3.1 :001 > Hirb.enable
+ => true 
+2.3.1 :002 > User.first.friendships.create(friendId: User.second.id)
+  User Load (6.2ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  User Load (2.1ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1 OFFSET 1
+   (0.4ms)  begin transaction
+   (0.3ms)  rollback transaction
+ActiveRecord::UnknownAttributeError: unknown attribute 'friendId' for Friendship.
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:59:in `rescue in _assign_attribute'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:54:in `_assign_attribute'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:41:in `block in assign_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:35:in `each'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/attribute_assignment.rb:35:in `assign_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/core.rb:566:in `init_attributes'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/core.rb:281:in `initialize'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/inheritance.rb:61:in `new'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/inheritance.rb:61:in `new'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/reflection.rb:141:in `build_association'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/association.rb:250:in `build_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:493:in `block in _create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:183:in `block in transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `block in transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/transaction.rb:184:in `within_new_transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/transactions.rb:220:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:182:in `transaction'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:492:in `_create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/has_many_association.rb:187:in `_create_record'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_association.rb:153:in `create'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/associations/collection_proxy.rb:290:in `create'
+	from (irb):2
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from bin/rails:9:in `require'
+	from bin/rails:9:in `<main>'
+2.3.1 :003 > Friendship.new
++----+---------+-----------+------------+------------+
+| id | user_id | friend_id | created_at | updated_at |
++----+---------+-----------+------------+------------+
+|    |         |           |            |            |
++----+---------+-----------+------------+------------+
+1 row in set
+2.3.1 :004 > User.first.friendships.create(friend: User.second)
+  User Load (4.3ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  User Load (13.2ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1 OFFSET 1
+   (0.6ms)  begin transaction
+  SQL (129.5ms)  INSERT INTO "friendships" ("friend_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["friend_id", 2], ["user_id", 1], ["created_at", "2020-06-08 21:35:48.058150"], ["updated_at", "2020-06-08 21:35:48.058150"]]
+   (18.9ms)  commit transaction
++----+---------+-----------+-------------------------+-------------------------+
+| id | user_id | friend_id | created_at              | updated_at              |
++----+---------+-----------+-------------------------+-------------------------+
+| 1  | 1       | 2         | 2020-06-08 21:35:48 UTC | 2020-06-08 21:35:48 UTC |
++----+---------+-----------+-------------------------+-------------------------+
+1 row in set
+2.3.1 :005 > User.all
+  User Load (3.3ms)  SELECT "users".* FROM "users"
++----+-----------+----------+-------------------------+-------------------------+
+| id | firstName | lastName | created_at              | updated_at              |
++----+-----------+----------+-------------------------+-------------------------+
+| 1  | Chioma    | Ubogagu  | 2020-06-07 23:22:37 UTC | 2020-06-07 23:22:37 UTC |
+| 2  | Tina      | Ubogagu  | 2020-06-07 23:25:03 UTC | 2020-06-07 23:25:03 UTC |
+| 3  | Oggy      | Ubogagu  | 2020-06-07 23:27:59 UTC | 2020-06-07 23:27:59 UTC |
+| 4  | Okwus     | Ubogagu  | 2020-06-07 23:28:06 UTC | 2020-06-07 23:28:06 UTC |
+| 5  | Steph     | Curry    | 2020-06-07 23:28:19 UTC | 2020-06-07 23:28:19 UTC |
+| 6  | Lebron    | James    | 2020-06-07 23:28:33 UTC | 2020-06-07 23:28:33 UTC |
++----+-----------+----------+-------------------------+-------------------------+
+6 rows in set
+2.3.1 :006 > exit
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/selfJoin$ cd ..
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals$ ls
+blogsPostsMessagesI                blogsPostsMessagesI.zip  selfJoin.zip
+blogsPostsMessagesII               firstProject             theDojoAndNinjasAssignment
+blogsPostsMessagesIIWComments      integratingModels        theDojoAndNinjasAssignment.zip
+blogsPostsMessagesIIWComments.zip  routesAndControllers     user
+blogsPostsMessagesII.zip           selfJoin                 user.zip
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals$ cd blogsPostsMessagesIIWCommen
+ts
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/railsFundamentals/blogsPostsMessagesIIWComments$ 
+rails c
+Loading development environment (Rails 4.2.7)
+2.3.1 :001 > Hirb.enable
+ => true 
+2.3.1 :002 > Comment.new
++----+---------+----------------+------------------+------------+------------+
+| id | comment | commentable_id | commentable_type | created_at | updated_at |
++----+---------+----------------+------------------+------------+------------+
+|    |         |                |                  |            |            |
++----+---------+----------------+------------------+------------+------------+
+1 row in set
+2.3.1 :003 > Blog.all
+  Blog Load (12.6ms)  SELECT "blogs".* FROM "blogs"
++----+----------+-------------------+-------------------------+-------------------------+
+| id | name     | description       | created_at              | updated_at              |
++----+----------+-------------------+-------------------------+-------------------------+
+| 1  | Blog I   | This is Blog I.   | 2020-06-07 15:38:54 UTC | 2020-06-07 15:38:54 UTC |
+| 2  | Blog II  | This is Blog II.  | 2020-06-07 15:39:15 UTC | 2020-06-07 15:39:15 UTC |
+| 3  | Blog III | This is Blog III. | 2020-06-07 15:39:29 UTC | 2020-06-07 15:39:29 UTC |
+| 4  | Blog IV  | This is Blog IV.  | 2020-06-07 15:39:48 UTC | 2020-06-07 15:39:48 UTC |
+| 5  | Blog V   | This is Blog V.   | 2020-06-07 15:40:03 UTC | 2020-06-07 15:40:03 UTC |
++----+----------+-------------------+-------------------------+-------------------------+
+5 rows in set
+2.3.1 :004 > Comment.all
+  Comment Load (33.7ms)  SELECT "comments".* FROM "comments"
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+1 row in set
+2.3.1 :005 > Comment.create(comment: "Another comment")
+   (0.5ms)  begin transaction
+  SQL (55.0ms)  INSERT INTO "comments" ("comment", "created_at", "updated_at") VALUES (?, ?, ?)  [["comment", "Another comment"], ["created_at", "2020-06-08 21:41:20.724182"], ["updated_at", "2020-06-08 21:41:20.724182"]]
+   (95.6ms)  commit transaction
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 4  | Another com... |                |                | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+1 row in set
+2.3.1 :006 > comment = Comment.find(2)
+  Comment Load (1.5ms)  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 2]]
+ActiveRecord::RecordNotFound: Couldn't find Comment with 'id'=2
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/core.rb:155:in `find'
+	from (irb):6
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from bin/rails:9:in `require'
+	from bin/rails:9:in `<main>'
+2.3.1 :007 > comment = Comment.find(5)
+  Comment Load (4.2ms)  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 5]]
+ActiveRecord::RecordNotFound: Couldn't find Comment with 'id'=5
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/core.rb:155:in `find'
+	from (irb):7
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from bin/rails:9:in `require'
+	from bin/rails:9:in `<main>'
+2.3.1 :008 > comment = Comment.find_by(5)
+  Comment Load (2.3ms)  SELECT  "comments".* FROM "comments" WHERE (5) LIMIT 1
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+1 row in set
+2.3.1 :009 > Comment.all
+  Comment Load (4.1ms)  SELECT "comments".* FROM "comments"
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
+| 4  | Another com... |                |                | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+2 rows in set
+2.3.1 :010 > comment = Comment.find_by(4)
+  Comment Load (2.3ms)  SELECT  "comments".* FROM "comments" WHERE (4) LIMIT 1
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+1 row in set
+2.3.1 :011 > comment = Comment.second
+  Comment Load (2.6ms)  SELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" ASC LIMIT 1 OFFSET 1
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 4  | Another com... |                |                | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+1 row in set
+2.3.1 :012 > comment.commentable=Blog.second
+  Blog Load (3.9ms)  SELECT  "blogs".* FROM "blogs"  ORDER BY "blogs"."id" ASC LIMIT 1 OFFSET 1
++----+---------+------------------+-------------------------+-------------------------+
+| id | name    | description      | created_at              | updated_at              |
++----+---------+------------------+-------------------------+-------------------------+
+| 2  | Blog II | This is Blog II. | 2020-06-07 15:39:15 UTC | 2020-06-07 15:39:15 UTC |
++----+---------+------------------+-------------------------+-------------------------+
+1 row in set
+2.3.1 :013 > Comment.all
+  Comment Load (2.6ms)  SELECT "comments".* FROM "comments"
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
+| 4  | Another com... |                |                | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+2 rows in set
+2.3.1 :014 > Blog.all
+  Blog Load (7.9ms)  SELECT "blogs".* FROM "blogs"
++----+----------+-------------------+-------------------------+-------------------------+
+| id | name     | description       | created_at              | updated_at              |
++----+----------+-------------------+-------------------------+-------------------------+
+| 1  | Blog I   | This is Blog I.   | 2020-06-07 15:38:54 UTC | 2020-06-07 15:38:54 UTC |
+| 2  | Blog II  | This is Blog II.  | 2020-06-07 15:39:15 UTC | 2020-06-07 15:39:15 UTC |
+| 3  | Blog III | This is Blog III. | 2020-06-07 15:39:29 UTC | 2020-06-07 15:39:29 UTC |
+| 4  | Blog IV  | This is Blog IV.  | 2020-06-07 15:39:48 UTC | 2020-06-07 15:39:48 UTC |
+| 5  | Blog V   | This is Blog V.   | 2020-06-07 15:40:03 UTC | 2020-06-07 15:40:03 UTC |
++----+----------+-------------------+-------------------------+-------------------------+
+5 rows in set
+2.3.1 :015 > comment.save
+   (0.2ms)  begin transaction
+  SQL (88.5ms)  UPDATE "comments" SET "commentable_id" = ?, "commentable_type" = ?, "updated_at" = ? WHERE "comments"."id" = ?  [["commentable_id", 2], ["commentable_type", "Blog"], ["updated_at", "2020-06-08 21:44:35.260910"], ["id", 4]]
+   (29.1ms)  commit transaction
+ => true 
+2.3.1 :016 > Comment.all
+  Comment Load (1.9ms)  SELECT "comments".* FROM "comments"
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
+| 4  | Another com... | 2              | Blog           | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+2 rows in set
+2.3.1 :017 > Comment.create(comment:"Hi")
+   (0.1ms)  begin transaction
+  SQL (46.1ms)  INSERT INTO "comments" ("comment", "created_at", "updated_at") VALUES (?, ?, ?)  [["comment", "Hi"], ["created_at", "2020-06-08 21:45:44.864796"], ["updated_at", "2020-06-08 21:45:44.864796"]]
+   (15.6ms)  commit transaction
++----+---------+----------------+------------------+-------------------+-------------------+
+| id | comment | commentable_id | commentable_type | created_at        | updated_at        |
++----+---------+----------------+------------------+-------------------+-------------------+
+| 5  | Hi      |                |                  | 2020-06-08 21:... | 2020-06-08 21:... |
++----+---------+----------------+------------------+-------------------+-------------------+
+1 row in set
+2.3.1 :018 > test = Comment.third
+  Comment Load (2.9ms)  SELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" ASC LIMIT 1 OFFSET 2
++----+---------+----------------+------------------+-------------------+-------------------+
+| id | comment | commentable_id | commentable_type | created_at        | updated_at        |
++----+---------+----------------+------------------+-------------------+-------------------+
+| 5  | Hi      |                |                  | 2020-06-08 21:... | 2020-06-08 21:... |
++----+---------+----------------+------------------+-------------------+-------------------+
+1 row in set
+2.3.1 :019 > test.commentable = Post.first
+  Post Load (102.4ms)  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" ASC LIMIT 1
++----+--------+----------------+---------+---------+-------------------+-------------------+
+| id | title  | content        | blog_id | user_id | created_at        | updated_at        |
++----+--------+----------------+---------+---------+-------------------+-------------------+
+| 1  | Post I | This is Post I | 2       | 1       | 2020-06-07 17:... | 2020-06-07 17:... |
++----+--------+----------------+---------+---------+-------------------+-------------------+
+1 row in set
+2.3.1 :020 > test.save
+   (0.4ms)  begin transaction
+  SQL (37.1ms)  UPDATE "comments" SET "commentable_id" = ?, "commentable_type" = ?, "updated_at" = ? WHERE "comments"."id" = ?  [["commentable_id", 1], ["commentable_type", "Post"], ["updated_at", "2020-06-08 21:46:57.022645"], ["id", 5]]
+   (76.7ms)  commit transaction
+ => true 
+2.3.1 :021 > Comment.all
+  Comment Load (2.2ms)  SELECT "comments".* FROM "comments"
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
+| 4  | Another com... | 2              | Blog           | 2020-06-08 ... | 2020-06-08 2... |
+| 5  | Hi             | 1              | Post           | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+3 rows in set
+2.3.1 :022 > Comment.create(comment:"Yet Another Comment")
+   (0.2ms)  begin transaction
+  SQL (48.3ms)  INSERT INTO "comments" ("comment", "created_at", "updated_at") VALUES (?, ?, ?)  [["comment", "Yet Another Comment"], ["created_at", "2020-06-08 21:49:16.485515"], ["updated_at", "2020-06-08 21:49:16.485515"]]
+   (13.9ms)  commit transaction
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 6  | Yet Another... |                |                | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+1 row in set
+2.3.1 :023 > messageComment = Comment.fourth
+  Comment Load (20.1ms)  SELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" ASC LIMIT 1 OFFSET 3
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 6  | Yet Another... |                |                | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+1 row in set
+2.3.1 :024 > messageComment.commentable = Message.first
+  Message Load (8.1ms)  SELECT  "messages".* FROM "messages"  ORDER BY "messages"."id" ASC LIMIT 1
++----+------------+-----------------+---------+---------+----------------+-----------------+
+| id | author     | message         | user_id | post_id | created_at     | updated_at      |
++----+------------+-----------------+---------+---------+----------------+-----------------+
+| 1  | JK Rowling | Harry Potter... | 3       | 1       | 2020-06-07 ... | 2020-06-07 1... |
++----+------------+-----------------+---------+---------+----------------+-----------------+
+1 row in set
+2.3.1 :025 > messageComment.save
+   (0.3ms)  begin transaction
+  SQL (26.6ms)  UPDATE "comments" SET "commentable_id" = ?, "commentable_type" = ?, "updated_at" = ? WHERE "comments"."id" = ?  [["commentable_id", 1], ["commentable_type", "Message"], ["updated_at", "2020-06-08 21:50:36.027543"], ["id", 6]]
+   (2.6ms)  commit transaction
+ => true 
+2.3.1 :026 > Comment.all
+  Comment Load (2.6ms)  SELECT "comments".* FROM "comments"
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
+| 4  | Another com... | 2              | Blog           | 2020-06-08 ... | 2020-06-08 2... |
+| 5  | Hi             | 1              | Post           | 2020-06-08 ... | 2020-06-08 2... |
+| 6  | Yet Another... | 1              | Message        | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+4 rows in set
+2.3.1 :027 > Comment.create(comment:"User Comment")
+   (0.0ms)  begin transaction
+  SQL (3.5ms)  INSERT INTO "comments" ("comment", "created_at", "updated_at") VALUES (?, ?, ?)  [["comment", "User Comment"], ["created_at", "2020-06-08 21:51:01.928954"], ["updated_at", "2020-06-08 21:51:01.928954"]]
+   (2.5ms)  commit transaction
++----+--------------+----------------+-----------------+-----------------+-----------------+
+| id | comment      | commentable_id | commentable_... | created_at      | updated_at      |
++----+--------------+----------------+-----------------+-----------------+-----------------+
+| 7  | User Comment |                |                 | 2020-06-08 2... | 2020-06-08 2... |
++----+--------------+----------------+-----------------+-----------------+-----------------+
+1 row in set
+2.3.1 :028 > userComment = Comment.seventh
+NoMethodError: undefined method `seventh' for #<Class:0x00000003ec2ae0>
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/dynamic_matchers.rb:26:in `method_missing'
+	from (irb):28
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+	from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+	from bin/rails:9:in `require'
+	from bin/rails:9:in `<main>'
+2.3.1 :029 > userComment = Comment.last
+  Comment Load (3.1ms)  SELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" DESC LIMIT 1
++----+--------------+----------------+-----------------+-----------------+-----------------+
+| id | comment      | commentable_id | commentable_... | created_at      | updated_at      |
++----+--------------+----------------+-----------------+-----------------+-----------------+
+| 7  | User Comment |                |                 | 2020-06-08 2... | 2020-06-08 2... |
++----+--------------+----------------+-----------------+-----------------+-----------------+
+1 row in set
+2.3.1 :030 > userComment.commentable = User.first
+  User Load (1.8ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
++----+-----------+----------+--------------------+--------------------+--------------------+
+| id | firstName | lastName | emailAddress       | created_at         | updated_at         |
++----+-----------+----------+--------------------+--------------------+--------------------+
+| 1  | Chioma    | Ubogagu  | cubogagu@gmail.com | 2020-06-07 15:2... | 2020-06-07 15:2... |
++----+-----------+----------+--------------------+--------------------+--------------------+
+1 row in set
+2.3.1 :031 > Comment.all
+  Comment Load (3.6ms)  SELECT "comments".* FROM "comments"
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
+| 4  | Another com... | 2              | Blog           | 2020-06-08 ... | 2020-06-08 2... |
+| 5  | Hi             | 1              | Post           | 2020-06-08 ... | 2020-06-08 2... |
+| 6  | Yet Another... | 1              | Message        | 2020-06-08 ... | 2020-06-08 2... |
+| 7  | User Comment   |                |                | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+5 rows in set
+2.3.1 :032 > userComment.save
+   (0.2ms)  begin transaction
+  SQL (35.8ms)  UPDATE "comments" SET "commentable_id" = ?, "commentable_type" = ?, "updated_at" = ? WHERE "comments"."id" = ?  [["commentable_id", 1], ["commentable_type", "User"], ["updated_at", "2020-06-08 21:51:59.836420"], ["id", 7]]
+   (16.4ms)  commit transaction
+ => true 
+2.3.1 :033 > Comment.all
+  Comment Load (4.4ms)  SELECT "comments".* FROM "comments"
++----+----------------+----------------+----------------+----------------+-----------------+
+| id | comment        | commentable_id | commentable... | created_at     | updated_at      |
++----+----------------+----------------+----------------+----------------+-----------------+
+| 1  | This is a c... | 1              | Blog           | 2020-06-07 ... | 2020-06-07 2... |
+| 4  | Another com... | 2              | Blog           | 2020-06-08 ... | 2020-06-08 2... |
+| 5  | Hi             | 1              | Post           | 2020-06-08 ... | 2020-06-08 2... |
+| 6  | Yet Another... | 1              | Message        | 2020-06-08 ... | 2020-06-08 2... |
+| 7  | User Comment   | 1              | User           | 2020-06-08 ... | 2020-06-08 2... |
++----+----------------+----------------+----------------+----------------+-----------------+
+5 rows in set
+2.3.1 :034 > 

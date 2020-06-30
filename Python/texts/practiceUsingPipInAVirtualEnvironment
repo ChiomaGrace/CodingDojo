@@ -1,0 +1,193 @@
+Last login: Mon May  4 15:05:57 on ttys000
+ChiomaUgagusMBP:~ Chi$ pip list
+Package    Version
+---------- -------
+pip        20.1
+setuptools 41.2.0
+ChiomaUgagusMBP:~ Chi$ python3 -m venv python3Environment
+source python3EnvironmentChiomaUgagusMBP:~ Chi$ source python3Environment/bin/activate
+(python3Environment) ChiomaUgagusMBP:~ Chi$ deactivate
+ChiomaUgagusMBP:~ Chi$ pip3 list
+Package    Version
+---------- -------
+pip        19.2.3 
+setuptools 41.2.0 
+WARNING: You are using pip version 19.2.3, however version 20.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+ChiomaUgagusMBP:~ Chi$ source myEnvironments/py3Env/bin/activate
+-bash: myEnvironments/py3Env/bin/activate: No such file or directory
+ChiomaUgagusMBP:~ Chi$ source Documents/Coding/CodingDojo/Python/myEnvironments
+/python3Environment/bin/activate
+(python3Environment) ChiomaUgagusMBP:~ Chi$ pip install Django==2.2.4
+Collecting Django==2.2.4
+  Downloading Django-2.2.4-py3-none-any.whl (7.5 MB)
+     |████████████████████████████████| 7.5 MB 1.9 MB/s 
+Collecting pytz
+  Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 17.1 MB/s 
+Collecting sqlparse
+  Downloading sqlparse-0.3.1-py2.py3-none-any.whl (40 kB)
+     |████████████████████████████████| 40 kB 12.5 MB/s 
+Installing collected packages: pytz, sqlparse, Django
+pipSuccessfully installed Django-2.2.4 pytz-2020.1 sqlparse-0.3.1
+ (python3Environment) ChiomaUgagusMBP:~ Chi$ pip freeze
+Django==2.2.4
+pytz==2020.1
+sqlparse==0.3.1
+(python3Environment) ChiomaUgagusMBP:~ Chi$ cd ~/Desktop
+(python3Environment) ChiomaUgagusMBP:Desktop Chi$ pip freeze > requirements.txt
+(python3Environment) ChiomaUgagusMBP:Desktop Chi$ ls
+Screen Shot 2020-05-03 at 11.29.22 PM.png
+Screen Shot 2020-05-04 at 10.15.01 AM.png
+Screen Shot 2020-05-04 at 3.08.49 PM.png
+Screen Shot 2020-05-04 at 3.14.30 PM.png
+Screen Shot 2020-05-04 at 3.21.31 PM.png
+Screen Shot 2020-05-04 at 6.52.36 AM.png
+Shows & Movies
+requirements.txt
+(python3Environment) ChiomaUgagusMBP:Desktop Chi$ pip uninstall Django
+Found existing installation: Django 2.2.4
+Uninstalling Django-2.2.4:
+  Would remove:
+    /Library/Frameworks/Python.framework/Versions/3.8/bin/django-admin
+    /Library/Frameworks/Python.framework/Versions/3.8/bin/django-admin.py
+    /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Django-2.2.4.dist-info/*
+    /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/django/*
+Proceed (y/n)? n
+(python3Environment) ChiomaUgagusMBP:Desktop Chi$ show Django
+-bash: show: command not found
+(python3Environment) ChiomaUgagusMBP:Desktop Chi$ pip show Django
+Name: Django
+Version: 2.2.4
+Summary: A high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+Home-page: https://www.djangoproject.com/
+Author: Django Software Foundation
+Author-email: foundation@djangoproject.com
+License: BSD
+Location: /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+Requires: pytz, sqlparse
+Required-by: 
+(python3Environment) ChiomaUgagusMBP:Desktop Chi$ pip search Flask
+Flask-Pure (0.5)            - Flask-Pure - a Flask extension for Pure.css
+Flask-SimpleMDE (0.3.0)     - Flask-SimpleMDE - a Flask extension for
+                              SimpleMDE
+Flask-OrientDB (0.1)        - A Flask extension for using OrientDB with Flask
+Flask-ElasticUtils (0.1.7)  - ElasticUtils for Flask
+Flask-PubSub (0.1.0)        - Flask-PubSub
+flask-helloworld (1.0.0)    - Flask Helloworld
+flask-zs (0.0.24)           - A helpers for Flask.
+Flask-Quik (0.1.1)          - Quik for Flask
+Flask-Waitress (0.0.1)      - Flask Waitress
+sockjs-flask (0.3)          - SockJs for Flask
+Flask-Stripe (0.1.0)        - Flask-Stripe
+Flask-BDEA (0.1.0)          - Flask-BDEA
+Flask-Helper (0.19)         - Flask Helper
+Flask-GripControl (0.0.1)   - Flask GripControl
+Flask-TinyMce (0.1.6)       - flask tinymce
+Flask-SRI (0.1.0)           - Flask-SRI
+flask-ws (0.0.1.0)          - Websocket for flask.
+Flask-MDE (1.2.0)           - Pagedown for Flask
+Flask-Intercom (0.1.0)      - Flask-Intercom
+Flask-SPF (0.0.0)           - Flask-SPF
+flask-toolbox (0.0.2)       - A flask toolbox.
+Flask-Turbolinks (0.2.0)    - Turbolinks for Flask.
+Flask-Watson (0.1.0)        - Flask-Watson
+Flask-FileRev (0.1.0)       - Flask-FileRev
+Flask-Ext (0.1)             - Extensions of Flask
+Flask-Shopify (0.2)         - Shopify Flask
+Flask-TaskTiger (0.0.1)     - Flask TaskTiger
+Flask-Weixin (0.5.0)        - Weixin for Flask.
+Fifty-Flask (1.4.0)         - Flask enhancements.
+Flask-Chargebee (0.0.1)     - Flask-Chargebee
+Flask-Keen (0.1.0)          - Flask-Keen
+flask-abort (0.0.1)         - flask abort
+flask-ypaginate (0.1.3)     - Pagination for Flask
+Flask-OAuthlib (0.9.5)      - OAuthlib for Flask
+Flask-Mustache (0.4.1)      - Mustache for Flask
+Flask-NextCaller (0.1.0)    - Flask-NextCaller
+Flask-AutoIndex (0.6.6)     - The mod_autoindex for Flask
+Flask-Clearbit (0.1.0)      - Flask-Clearbit
+Flask-FontAwesome (0.1.4)   - FontAwesome for Flask
+Flask-Gears (0.2)           - Gears for Flask
+Flask-GeoIP (0.1.3)         - Flask-GeoIP -------------  Simple Flask
+                              extension for pygeoip.
+airbrake-flask (1.0.7)      - airbrake-flask - Airbrake client for Python
+                              Flask
+Flask-Diced (0.3)           - Flask-Diced - CRUD views generator for Flask
+flask-myapi (0.1)           - Flask-MyAPI - RESTful support library for Flask
+Flask-RESTive (0.0.3)       - Flask RESTive is a REST API Flask extension
+                              based on Flask-RESTful & Marshmallow.
+Flask-LoginManager (1.1.6)  - Flask-Loginmanager supports multiple roles and
+                              permissions for Flask, inspired by Flask-Login
+Flask-FlatPagesCut (0.5.1)  - Flask-FlatPagesCut is fork Flask-FlatPages
+                              (Provides flat static pages to a Flask
+                              application)
+flask-lesscss (0.9.1)       - A small Flask extension that adds LessCSS
+                              support to Flask.
+flask-shell (0.1.3)         - Flask extension to improve shell command for the
+                              Flask CLI.
+flask-stylus2css (0.1)      - A small Flask extension that adds Stylus support
+                              to Flask.
+flask-coffee2js (0.1.2)     - A small Flask extension that adds CoffeScript
+                              support to Flask.
+Flask-Collect (1.3.2)       - Flask-Collect -- Collect static files in Flask
+                              application
+flask-filters (0.3)         - The Flask Filter to use with flask-restful and
+                              Relational DB
+Flask-Shelve (0.1.1)        - Shelve support for Flask
+Flask-Edits (0.8)           - Editable Content in Flask
+Flask-OpenID (1.2.5)        - OpenID support for Flask
+Flask-Triangle (0.5.4)      - Integration of AngularJS and Flask.
+flask-logsocketio (0.1.4)   - Flask LogSocketIo module
+Flask-mongobit (0.3.0)      - MongoBit support in Flask
+flask-serial (1.1.0)        - Flask extension for the Serial
+flask-discoverer (0.1.4)    - Flask API autodiscovery
+flask-iMail (0.1)           - Mailgun integration for Flask.
+flask-snow (0.2.8)          - Pysnow extension for Flask
+Flask-Slack (0.1.5)         - Slack extension for Flask.
+Flask-wechatpy (0.1.3)      - wechatpy for flask extension
+Flask-PyFCM (0.1.1)         - Flask extension for PyFCM
+Flask-CAS (1.0.2)           - Flask extension for CAS
+Flask-SAML (0.4.3)          - Flask SAML integration
+Flask-Flarf (0.0.5)         - Flask request filtering
+flask-tat (0.0.10)          - Flask TAT client
+flask-authentic (0.0.11)    - Flask Authentic Extension
+flask-adh (0.1)             - flask admin antd
+Flask-Sixpack (0.0.1)       - Flask wrapper for Sixpack
+flask-now (0.2.2)           - Flask App Generator
+Flask-Latch (0.1.0)         - Latch extension for Flask
+Flask-Config (0.2.1)        - Flask configuration class
+Flask-MySQLdb (0.2.0)       - MySQLdb extension for Flask
+Flask-RBAC (0.3.0)          - RBAC support for Flask
+Flask-Airbrake (0.0.3)      - Flask extension for Airbrake
+castle-flask (0.0.1)        - A Flask client for Castle.io
+flask-handlers (0.0.1)      - Handlers for Flask applications
+flask-keycloak (1.1.0)      - flask integration with keycloak
+flask-bluelogin (0.2.7)     - Flask BlueLogin module
+Flask-Reggie (0.0.2)        - Flask Regex Routes.
+Flask-OpenERP (0.3.1)       - OpenERP Connector for Flask
+Flask-CKEditor (0.4.4.1)    - CKEditor integration for Flask.
+Flask-CuttlePool (0.2.0)    - A Flask extension for CuttlePool
+Flask-Zero (0.9.6)          - Qiniu Storage for Flask
+Flask-Funnel (0.1.10)       - Asset management for Flask.
+Flask-Breve (0.2)           - Breve templating with Flask
+Flask-SaeStorage (0.9.0)    - SAE Storage for Flask
+Flask-Navigation (0.2.0)    - The navigation of Flask application.
+Flask-Passlib (0.1)         - Flask extension for passlib
+Flask-Triangle3 (0.5.3)     - Integration of AngularJS and Flask.
+Flask-ZMQ (0.1.2)           - Flask extension for ZMQ
+Flask-Autodoc (0.1.2)       - Documentation generator for flask
+Flask-Vises (2.1.4)         - A Flask scaffold library
+Flask-sshtunnel (0.1b2)     - sshtunnel extension for flask
+Flask-Enterprise (1.0)      - Enterprise capabilities for Flask
+Flask-Failsafe (0.2)        - A failsafe for the Flask reloader
+(python3Environment) ChiomaUgagusMBP:Desktop Chi$ Pip List command returns the 
+list of packages in the current environment
+ERROR: unknown command "List" - maybe you meant "list"
+(python3Environment) ChiomaUgagusMBP:Desktop Chi$  Pip list is different after 
+deactivationg your virtual enivornment because the plugin you activated is no l
+onger activating, so it won't be included on the list anymore. The difference b
+etween pip freeze and list is that pip freeze does not list the packages that p
+ip itself depends on. It shows the packages the user installed. . Pip uninstall
+ removes a plugin. Pip show display the plug in that is called. Pip Search show
+s all the attributes of said plug in

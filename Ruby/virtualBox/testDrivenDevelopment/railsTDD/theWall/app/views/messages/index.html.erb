@@ -1,0 +1,66 @@
+<%# <% if flash[:success]%> 
+        <%# <p class = 'success'><%= flash[:success] %></p> 
+<%# <% end%> 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link pr-5" href="#">CodingDojo Wall <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <p class= "nav-link pl-5 pr-5">Welcome, <%= @loggedInUser.username%> </p> 
+            </li>
+            <li class="nav-item float-right">
+                <a class="nav-link float-right" href="/logout">Log Out</a>
+            </li>
+    </div>
+</nav>
+<div class= "container">
+    <div class= "row">
+        <div class= "col-sm-6">
+            <form class="" action= "/messages" method="post">
+                <div class="form-group">
+                    <label class="mt-4" for="MessageLabel">Post a Message</label>
+                    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+                    <textarea class="form-control" id="messageForm" name="message[message]" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mr-3">Post a Message</button>
+            </form>
+        </div>
+    </div>
+    <div class= "row">
+        <table class="table table-borderless mt-4">
+            <thead>
+            <% @allMessages.each do |message| %>
+                <tr>
+                    <th scope="col"><%= message.user.username %>, <%= message.user.created_at%></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class=><%= message.message %></td>
+
+                </tr>
+                    
+                <tr> 
+                    <td>
+                    <%# TRY TO DO THIS WITH SELF JOIN  %>
+                        <div class= "col-sm-6"> 
+                            <form class="" action= "/comments/create" method="post">
+                            <div class="form-group">
+                                <label class="mt-4" for="MessageLabel">Comments</label>
+                                <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+                                <textarea class="form-control" id="messageForm" name="message[message]" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mr-3">Post a Comment</button>
+                            </form>
+                        </div>  
+                    </td> 
+
+                </tr> 
+                
+            <% end %>
+            </tbody>
+        </table>
+    </div>
+</div>

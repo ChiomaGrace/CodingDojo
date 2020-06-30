@@ -1,0 +1,25 @@
+<%= render 'shared/navBar' %> 
+
+<div class= "container mt-4">
+    <h1><%= @specificUser.firstName %> <%= @specificUser.lastName %>'s Playlist</h1>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th scope="col">Artist</th>
+                <th scope="col">Title</th>
+                <th scope="col">No. of Times Song Has Been Added</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @allSongsAddedByCurrentUser.each do |song|%>
+            <tr>
+                <td><%=song.artist%></td>
+                <td><%=song.title%></td>
+                <td><%= song.playlists.where(user_id: currentUser).count %></td>
+            <% end %>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

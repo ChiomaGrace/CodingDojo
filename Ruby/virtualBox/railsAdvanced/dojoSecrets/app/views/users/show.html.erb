@@ -1,0 +1,69 @@
+<%= render "shared/navBar" %> 
+
+<div class = "container">
+    <% if @errors%>
+            <% @errors.each do |error| %>
+            <p class = 'danger'><%= error %></p>
+            <% end %>
+    <% end%>
+    <div class="row">
+        <div class="col-sm-5">
+            <h1 class= "mt-4 ml-3">New Secret</h1>
+            <form action="/secrets" method="post">
+                <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+            <div class="form-group col-sm-12 mt-3">
+                <textarea class="form-control" id="" name= "secret[secret]" placeholder="Shh..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary ml-3">Create Secret</button>
+            </form>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-sm-6">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Secret</th>
+                        <th scope="col">Action(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% @currentUsersSecrets.each do |secret| %>
+                    <tr>
+                        <td> <%= secret.secret %>
+                            <p><%= secret.likes.count %>  <%= (secret.likes.count) == 1 ? 'Like' : 'Likes'%></p> 
+                        </td>
+                        <td> 
+                            <form style="" action="/users/<%= currentUser.id%>/secrets/<%= secret.id %>" method="post">
+                                <input type="hidden" name="_method" value="delete">
+                                <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+                                <button type="submit" class="btn btn-link" value="Destroy">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% end %>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-6">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Secrets Liked</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% @currentUsersLikes.each do |like| %>
+                    <tr>
+                        <td><%= like.secret.secret %>
+                        <%# in the above loop the like comes from the iterator word(like), the first secret typed is the class Secret, and the second secret is the attribute in the class. %>
+                            <p> <%= currentUser.likes.count :conditions => {:secret_id => @currentUsersLikes} %> <%= (currentUser.likes.count) == 1 ? 'Like' : 'Likes'%> </p>
+                        <%# in the above line of code stackflow was very helpful. in order to query through the likes of the current user, the above condition is needed. the secret id is being linked to currentUserLikes which is a query in the Like class to find the current user id  %>
+                        </td> 
+                    </tr>
+                    <% end %>  
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

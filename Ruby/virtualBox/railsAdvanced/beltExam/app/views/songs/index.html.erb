@@ -1,0 +1,59 @@
+<%= render 'shared/navBar' %> 
+
+    <% if @errors%>
+            <% @errors.each do |error| %>
+            <p class = 'danger'><%= error %></p>
+            <% end %>
+    <% end%>
+
+<div class= "container mt-4">
+    <div class="row mt-5">
+        <div class="col-sm-10">
+            <p>Click your name in the navigation to see your personal playlist!</p>
+            <p>All the songs in our hub:</p>
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">No. of Times Song Has Been Added</th>
+                        <th scope="col">Add to Playlist</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <% @allSongs.each do |song| %>
+                    <tr>
+                        <td><%= song.artist%></td>
+                        <td>
+                            <a href="/songs/<%= song.id %>"><%= song.title %></a>
+                        </td>
+                        <td><%= song.playlists.count %></td>
+                        <td>
+                            <form style="" action="/songs/<%= song.id%>/add" method="post">
+                                <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+                                <input type="submit" class="btn btn-link" value="Add">
+                            </form>
+                        </td>
+                    </tr>
+                <% end %>
+                </tbody>
+            </table>
+        </div>    
+    </div>
+    <div class="row">
+        <div class="col-sm-10">
+            <h4 class= "mt-4 ml-3">Add A Song:</h4>
+            <form action="/songs" method="post">
+                <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+            <div class="form-group col-sm-6 mt-3">
+                <input type="text" class="form-control" id="" aria-describedby="titleHelp" name= "song[title]" placeholder="What's the name of the song?">
+            </div>
+            <div class="form-group col-sm-6  mt-3">
+                <input type="text" class="form-control" id="" aria-describedby="artistHelp" name= "song[artist]" placeholder="By Who?">
+            </div>
+            <button type="submit" class="btn btn-primary ml-3">Add Song</button>
+            </form>
+        </div>    
+    </div>
+
+</div>

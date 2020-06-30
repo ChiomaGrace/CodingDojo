@@ -1,0 +1,59 @@
+<%= render 'shared/navBar' %> 
+
+<div class= "container mt-4">
+    <div class="row mt-5">
+        <div class="col-sm-6">
+            <h1><%= @specificEvent.name %></h1>
+            <p><%= @specificEvent.user.firstName %> <%= @specificEvent.user.lastName %></p>
+            <p><%= @specificEvent.date%></p>
+            <p><%= @specificEvent.city%> <%= @specificEvent.state%></p>
+            <p> People who are joining the event: <%= @specificEvent.joins.count %>  <%= (@specificEvent.joins.count) == 1 ? 'Attendant' : 'Attendants'%></p> 
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-sm-6">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <% @allJoins.each do |join|%> 
+                    <tr>
+                        <td><%= join.firstName %></td>  
+                        <td><%= join.city %></td>  
+                        <td><%= join.state %></td>
+                    </tr>
+                <% end %> 
+                </tbody>
+            </table>
+        </div> 
+                <div class="col-sm-1">
+            <%# second column of three %>
+        </div>
+        <div class="col-sm-5">
+            <h4 class= "mt-4 ml-3">Discussion about this event:</h4>
+            <textarea class="form-control" id="" name="user[comment]" placeholder="Write a comment here" rows="4">
+            <% @commentsByUsersOnSpecificEvent.each do |comment|%> 
+                <%= comment.user.firstName %> says: <%= comment.comment %> <%# through this query we have access to get the user and to get the specific comment  %>
+            <% end %>
+            </textarea>
+            <h5 class= "mt-4 ml-3">Add Comment:</h5>
+            <form action="/comments" method="post">
+                <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+                <input type="hidden" name="comment[event_id]" value="<%=@specificEvent.id%>"> <%# this hidden input links the event id to the comment and helps keep the route restful/doesn't have to pass through params %>
+            <div class="form-group ml-3">
+                <textarea class="form-control" id="" name="comment[comment]" placeholder="Write a comment here" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary ml-3">Submit Comment</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+

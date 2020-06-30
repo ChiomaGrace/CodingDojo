@@ -1,0 +1,112 @@
+
+x = [ [5,2,3], [10,8,9] ] 
+students = [
+     {'first_name':  'Michael', 'last_name' : 'Jordan'},
+     {'first_name' : 'John', 'last_name' : 'Rosales'}
+]
+sports_directory = {
+    'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
+    'soccer' : ['Messi', 'Ronaldo', 'Rooney']
+}
+z = [ {'x': 10, 'y': 20} ]
+
+# Change the value 10 in x to 15. Once you're done, x should now be [ [5,2,3], [15,8,9] ].
+
+x[1][0] = 15
+print(x)
+
+# Change the last_name of the first student from 'Jordan' to 'Bryant'
+
+(students[0]['last_name']) = 'Bryant'
+print([students])
+
+
+# In the sports_directory, change 'Messi' to 'Andres'
+
+sports_directory['soccer'][0] = 'Andres'
+print(sports_directory)
+
+
+# Change the value 20 in z to 30
+
+(z[0]['y']) = 30
+print(z)
+
+students = [
+    {'first_name' :  'Michael', 'last_name' : 'Jordan'},
+    {'first_name' : 'John', 'last_name' : 'Rosales'},
+    {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+    {'first_name' : 'KB', 'last_name' : 'Tonel'}
+]
+def iterateDictionary(students):
+should output: (it's okay if each key-value pair ends up on 2 separate lines;
+bonus to get them to appear exactly as below!)
+first_name - Michael, last_name - Jordan
+first_name - John, last_name - Rosales
+first_name - Mark, last_name - Guillen
+first_name - KB, last_name - Tonel
+    return students
+(students[0]['first_name']) = "- Michael"
+(students[0]['last_name']) = "- Jordan"
+print(students[0])
+(students[1]['first_name']) = "- Rosales"
+(students[1]['last_name']) = "- Jordan"
+print(students[1])
+(students[2]['first_name']) = "- Marl"
+(students[2]['last_name']) = "- Guillen"
+print(students[2])
+(students[3]['first_name']) = "- KB"
+(students[3]['last_name']) = "- Tonel"
+print(students[3])
+
+
+Create a function iterateDictionary2(key_name, some_list) that, given a list of dictionaries and a key name, the function prints the value stored in that key for each dictionary. For example, iterateDictionary2('first_name', students) should output:
+
+ballers = [
+        {id: 23, 'firstName' : 'Michael', 'lastName': 'Jordan'},
+        {id: 8, 'firstName' : 'Kobe', 'lastName': "Bryant"},
+        {id: 5, 'firstName' : 'Lebron', 'lastName': 'James'},
+        {id: 0, 'firstName' : 'Russell', 'lastName': 'Westbrook'}
+]
+def iterateDictionary2(key, nameList):
+    for athletes in nameList:
+        print(athletes[key])
+
+iterateDictionary2('firstName', ballers)
+iterateDictionary2('lastName', ballers)
+
+Iterate Through a Dictionary with List Values
+Create a function printInfo(some_dict) that given a dictionary whose values are all lists, prints the name of each key along with the size of its list, and then prints the associated values within each key's list. For example:
+
+dojo = {
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+printInfo(dojo)
+output:
+7 LOCATIONS
+San Jose
+Seattle
+Dallas
+Chicago
+Tulsa
+DC
+Burbank
+    
+8 INSTRUCTORS
+Michael
+Amy
+Eduardo
+Josh
+Graham
+Patrick
+Minh
+Devon
+dojo = {
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+def printInfo(someDict):
+    for key, value in someDict.items():
+        print(f"{len(value)} {(key).upper()}")
+        for codingDojo in value:
+            print(codingDojo)
+printInfo(dojo)

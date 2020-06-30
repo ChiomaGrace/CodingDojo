@@ -1,0 +1,87 @@
+* {
+    vertical-align: top;
+}
+
+#wrapper {
+    width: 970px;
+    min-height: 570px;
+    background-color: rgb(34, 35, 134);
+    margin: 0px auto;
+    padding: 9px;
+}
+
+#header{
+    background-color: rgb(216, 69, 69);
+    min-block-size: 80px;
+    display: block;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+#navigation{
+    min-height: 200px;
+    width: 200px;
+    background-color: teal;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+#homeButton{
+    margin-bottom: 4px;
+    padding-left: 26px;
+    padding-top: 10px;
+}
+#mainContent{
+    width: 740px;
+    min-height: 400px;
+    background-color: rgb(4, 30, 39);
+    margin-top: 10px;
+    margin-left: 14px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+h1 { /*JavaScript Basics*/
+    color: silver;
+    text-emphasis: bold;
+    margin-left: 8px;
+    text-align: left;
+}
+h3 {/*Content JavaScript Basics */
+    color: white;
+    margin-left: 6px;
+    margin-top: 30px;
+}
+
+p{ /*introductory paragraph*/
+    color:silver;
+    margin-left: 6px;
+    font-size: 14px;
+}
+ul{
+    margin-block-start: 6px;
+}
+li {
+    color: silver;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.purple { /*special key words*/
+    color:purple;
+    font-size: 12px; 
+}
+
+#footer{
+    margin-top: 40px;
+    min-width: 10px;
+    background-color: silver;
+    border-radius: 8px;
+}
+.footer{ /* footer text*/
+    color: white;   
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 14px;
+}

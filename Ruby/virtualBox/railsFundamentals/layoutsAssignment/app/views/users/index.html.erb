@@ -1,0 +1,48 @@
+<% content_for :leftColumn do %>
+    <h1>All Users</h1>
+    <table class="table table-hover">
+        <thead>
+                <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Favorite Language</th>
+                </tr>
+        </thead>
+        <tbody>
+            <% @users.each do |user| %>
+            <tr>
+                <td> <%= user.firstName %> </td>
+                <td> <%= user.lastName %> </td>
+                <td> <%= user.favoriteLanguage %> </td>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+<% end %> <%# This is the end for all the content on the left side of the html %>
+
+<% content_for :rightColumn do %>
+    <h1>New User</h1>
+    <form action="/users" method="post">
+        <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+        <div class="form-group">
+            <label for="firstNameLabel">First Name</label>
+            <input type="firstName" name= "user[firstName]" class="form-control" id="" aria-describedby="firstNameHelp">
+        </div>
+        <div class="form-group">
+            <label for="lastNameLabel">Last Name</label>
+            <input type="lasttName" name= "user[lastName]" class="form-control" id="" aria-describedby="lastNameHelp">
+        </div>
+        <div class="form-group">
+        <label for="favoriteLanguage">Favorite Language</label>
+            <select class="form-control" id="" name = 'user[favoriteLanguage]' placeholder='Languages'>
+                    <option value="">Select A Language</option>
+                <% @users.each do |user| %>
+                    <option value="<%= user.favoriteLanguage %>"><%= user.favoriteLanguage %></option>
+                <% end %>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <a class="btn btn-primary mt-2" href="/posts" role="button">All Posts</a>
+
+<% end %>

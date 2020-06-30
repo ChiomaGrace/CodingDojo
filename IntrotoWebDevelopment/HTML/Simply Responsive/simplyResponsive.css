@@ -1,0 +1,54 @@
+*{
+    vertical-align: top;
+    outline: dotted red 2px;
+    margin: 0px;
+}
+
+#container{
+    width: 100%;
+}
+.mainHeading{
+    background-color: #B3B3B3;
+    display: block;
+    margin-bottom: 1%;
+
+}
+
+.mainParagraph{
+    background-color: #CCCCCC;
+    display: block;
+    margin-bottom: 1%;
+    padding: 1%;
+
+}
+
+.subParagraph{
+    background-color: rgb(255,255,152);
+    display: block;
+    margin-bottom: 1%;
+
+}
+
+/*For a phone. s depicting size of screen.
+Note: My browser's minimum is 520px
+so I didn't set it lower otherwise I couldn't see
+how it would look for a phone*/
+@media only screen and (max-width: 520px){
+    .sm-1{
+        width: 100%;
+    }
+}  
+/*For a tablet*. m depicting size of screen*/
+@media only screen and (min-width: 521px) and (max-width:1023px){
+    .m-1{
+        width: 50%;
+    }
+    
+}
+
+/*For a computer. lg depicting size of screen*/
+@media only screen and (min-width: 1024px){
+    .lg-1{
+        width: 25%;
+    }
+}

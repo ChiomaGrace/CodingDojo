@@ -1,0 +1,23 @@
+<% if currentUser %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/users/<%= currentUser.id %>">Welcome, <%= currentUser.firstName %></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/secrets">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <%# <a class="nav-link " href="/logout">Logout</a> %>
+                    <form action="/sessions/<%= currentUser.id %>"method="post">
+                        <input type="hidden" name="_method" value="delete">
+                        <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+                        <button type="submit" class="btn btn-link" value="Destroy">Logout</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<% end %>

@@ -1,0 +1,14 @@
+<div class="container">
+<h1>Editing <%=@specificDojo.branch%></h1>
+    <form action="/dojos/<%= @specificDojo.id %>"method="post">
+        <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+        <input type="hidden" name="_method" value="patch">
+        <p><input type="text" name='dojo[branch]' placeholder="branch" value="<%=@specificDojo.branch%>"></p>
+        <p><input type="text" name='dojo[street]' placeholder="street" value="<%=@specificDojo.street%>"></p>
+        <p><input type="text" name='dojo[city]' placeholder="city" value="<%=@specificDojo.city%>"></p>
+        <p><input type="text" name='dojo[state]' placeholder="state" value="<%=@specificDojo.state%>"></p>
+        <input type="submit" value="Update">
+    </form>
+    <a href="/dojos">Home</a>
+    <a href="/dojos/<%= @specificDojo.id %>">Show</a> 
+</div>

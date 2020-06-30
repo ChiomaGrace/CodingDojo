@@ -1,0 +1,23 @@
+<%= render 'shared/navBar' %> 
+
+<div class= "container mt-4">
+    <h1> Others who added <%= @specificSong.artist %> - <%= @specificSong.title %></h1>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">No. of Times Song Has Been Added</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @allUsersWhoAddedSong.each do |user|%>
+            <tr>
+                <td><a href="/users/<%= user.id%>"><%= user.firstName%> <%= user.lastName%></a></td>
+                <td><%= user.playlists.where(song_id: params[:id]).count %></td> 
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</div>
+
+

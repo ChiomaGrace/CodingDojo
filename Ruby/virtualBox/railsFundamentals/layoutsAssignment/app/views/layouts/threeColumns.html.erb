@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LayoutsAssignment</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+
+            <div class="row mt-5 ml-4">
+                <div class="col mr-2">
+                    <%= yield :leftColumn %>
+                    <%# One of two columns %>
+                </div>
+                <div class="col mr-2">
+                    <%= yield :middleColumn %>
+                    <%# two of two columns %>
+                </div>
+                <div class="col">
+                    <%= yield :rightColumn %>
+                    <%# two of two columns %>
+                </div>
+            </div>
+
+
+    <%= yield %>
+
+</body>
+</html>

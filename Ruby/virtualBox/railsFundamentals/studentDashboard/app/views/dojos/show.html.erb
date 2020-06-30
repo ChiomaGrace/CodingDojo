@@ -1,0 +1,37 @@
+<div class="container mt-5">
+    <h1><%=@specificDojo.branch%></h1>
+    <p><%= @specificDojo.street %></p>
+    <p><%= @specificDojo.city %></p>
+    <p><%= @specificDojo.state %></p>
+    <table class="table table-hover">
+    <thead>
+        <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <%@students.each do |student| %>
+        <td><%= student.firstName %></td>
+        <td><%= student.lastName %></td>
+        <td><%= student.email %></td>
+        <td>
+                <a href="/dojos/<%= @specificDojo.id %>/students/<%= student.id %>">Show</a>
+                <a href="/dojos/<%= @specificDojo.id %>/students/<%= student.id %>/edit">Edit</a>
+                <form action=  "/dojos/<%= @specificDojo.id %>/students/<%= student.id %>"method="post">
+                    <input type="hidden" name="_method" value="delete">
+                    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+                    <button type="submit" class="btn btn-link" value="Destroy">Destroy</button>
+                </form>
+        </td>
+        </tr>
+        <% end %>
+    </tbody>
+    </table>
+    <a href="/dojos">Home</a>
+    <a href="/dojos/<%= @specificDojo.id%>/students/new">Add A Student</a>
+</div>
