@@ -1,13 +1,15 @@
 # Predict the Output
 Predict 1:\
-for(var num = 0; num < 15; num++){\
+'''
+for(var num = 0; num < 15; num++){
     console.log(num);
-}\
+}
+'''
 
 Predict 2:\
-for(var i = 1; i < 10; i+=2){
-    if(i % 3 == 0){
-        console.log(i);
+for(var i = 1; i < 10; i+=2){\
+    if(i % 3 == 0){\
+        console.log(i);\
     }\
 }\
 
@@ -23,3 +25,11 @@ for(var j = 1; j <= 15; j++){\
 }\
 Created On: April 28,2020\
 Uploaded to Github: June 30, 2020
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
