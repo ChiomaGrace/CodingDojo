@@ -4,5 +4,5 @@ Languages: HTML, HTML(Responsive Web Design) CSS, JavaScript, Python, Ruby\
 Frameworks: jQuery, Django, Flask, Rails\
 Database(s): MySQL, SQLite\
 Testing: RSpec, Capybara\
-Start Date: April 20,2020\ 
+Start Date: April 20,2020\
 End Date: July 31, 2020
