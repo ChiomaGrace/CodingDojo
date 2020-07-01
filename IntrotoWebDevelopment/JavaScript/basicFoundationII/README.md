@@ -30,6 +30,6 @@ Complete the following challenges below:
 
 14. Scale the Array - Given an array arr and a number num, multiply all values in the array arr by the number num, and return the changed array arr.  For example, scaleArray([1,2,3], 3) should return [3,6,9].
 
-Created On: May 3,2020\
+Created On: May 3, 2020\
 Uploaded to Github: June 30, 2020
 

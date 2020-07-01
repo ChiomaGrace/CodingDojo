@@ -27,6 +27,6 @@ for(var j = 1; j <= 15; j++){
     console.log(j);
 }
 ```
-Created On: April 28,2020\
+Created On: April 28, 2020\
 Uploaded to Github: June 30, 2020
 

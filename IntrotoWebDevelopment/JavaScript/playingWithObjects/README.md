@@ -7,6 +7,6 @@ var users = [{name: "Michael", age:37}, {name: "John", age:30}, {name: "David", 
 Michael - 37\
 John - 30\
 David - 27\
-Created On: May 3,2020\
+Created On: May 3, 2020\
 Uploaded to Github: June 30, 2020
 

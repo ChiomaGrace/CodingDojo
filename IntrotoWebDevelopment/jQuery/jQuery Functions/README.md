@@ -17,6 +17,6 @@ Create a web page that uses the following jQuery functions:
 * attr
 * val
 * text\
-Created On: May 3,2020\
+Created On: May 3, 2020\
 Uploaded to Github: June 30, 2020
 

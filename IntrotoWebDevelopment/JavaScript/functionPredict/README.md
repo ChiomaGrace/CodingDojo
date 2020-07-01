@@ -37,6 +37,6 @@ function highFive(num){
     }
 }
 ```
-Created On: April 28,2020\
+Created On: April 28, 2020\
 Uploaded to Github: June 30, 2020
 

@@ -18,6 +18,6 @@ Multiply each value in the array by its array position\
 The expected output will be:\
 [0,3,10,3,8,20]\
 
-Created On: April 28,2020\
+Created On: April 28, 2020\
 Uploaded to Github: June 30, 2020
 
