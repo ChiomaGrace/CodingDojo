@@ -1,5 +1,5 @@
 # jQuery Functions
-Create a web page that uses the following jQuery functions:\
+Create a web page that uses the following jQuery functions:
 * click
 * hide
 * show
@@ -16,7 +16,7 @@ Create a web page that uses the following jQuery functions:\
 * html
 * attr
 * val
-* text
+* text\
 Created On: May 3,2020\
 Uploaded to Github: June 30, 2020
 
