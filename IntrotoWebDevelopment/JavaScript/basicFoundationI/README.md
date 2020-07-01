@@ -1,6 +1,6 @@
 # Basic Foundation I
 
-Complete the challenges below.
+Complete the following challenges below:
 
 1. Get 1 to 255 - Write a function that returns an array with all the numbers from 1 to 255.
 
