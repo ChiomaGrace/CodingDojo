@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jQueryFunctions.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    
+    <script>
+        $(document).ready(function() { 
+            $('.button').click(function(){
+            $( '.content' ).addClass( "selected" );     
+                })
+
+            
+            $('.button').click(function(){
+                $('button').click(function() {
+                $('.lionKing').hide( "slow" );
+                });
+            $( '.lionKing' ).slideToggle( "slow", function() {;     
+                        })
+            });
+        
+            $( ".button" ).click(function() {
+            $( ".patrick" ).show( "slow", function() {
+                        });
+            $( ".spongebob" ).appendTo( ".patrick" );
+            });
+            
+            $( ".button" ).click(function(){
+            $( ".johnCena" ).fadeIn( "slow", function() {
+                });
+            });
+            $( ".button" ).click(function() {
+            $( ".johnCena" ).fadeOut( "600" );
+            });
+    });
+
+
+
+
+    
+    </script>
+
+</head>
+
+<body>
+    <div id = wrapper>
+        <h1 class="header"> AddClass </h1>
+        <div id="box">
+            <p class="button">Click Here :)</p>
+            <p class="content"> Click the button to add class red to this paragraph red</p>
+        </div>
+        <h1 class="header"> SlideToggle </h1>
+        <div id="box">
+            <p class="button">Click Here :)</p>
+            <p class="content"> Click the button to slidetoggle a hidden image</p>
+            <img class="lionKing" src="Images/Lion_King.gif" alt="A gif of an iconic moment in Lion King.">
+        </div>
+        <h1 class="header"> Append </h1>
+        <div id="box">
+            <p class="button">Click Here :)</p>
+            <p class="content"> Click the button to show the appended photo </p>
+            <img class="spongebob" src="Images/Spongebob.jpg" alt=" A photo of Spongebob Squarepants">
+            <img class= "patrick" src="images/Patrick.jpg" alt= "A photo of Patrick Star">
+        </div>
+        <h1 class="header"> Fade In/Fade Out </h1>
+        <div id="box">
+            <p class="button">Click Here :)</p>
+            <p class="content"> Click the button to see John Cena. Then watch him disappear cause according to him... </p>
+            <img class="johnCena" src="Images/johnCena.gif" alt=" A photo of John Cena.">
+        </div>
+
+        
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>

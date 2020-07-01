@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+}
+
+#wrapper{
+    width: 900px;
+    height: 900px;
+}
+
+#box{
+    display: block;
+    width: 900px;
+    border-bottom: black solid 2px;
+}
+
+
+.header{
+    display: block;
+    text-align: center;
+    width: 900px;
+    height: 60px;
+}
+
+.button{
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    border: black solid;
+    border-width: 2px;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    cursor: pointer
+}
+    .selected{
+    background-color: red;
+}
+.content{
+    display: inline-block;
+    width: 792px;
+    height: 60px;
+    padding-top: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.lionKing{
+    display: block;
+    margin-left: 280px;
+    display: none;
+}
+
+.spongebob{
+    display: inline-block;
+    margin-left: 300px;
+    width: 300px;
+}
+
+.patrick{
+    display: none;
+    width: 300px;
+    margin-left: 360px;
+}
+
+.johnCena{
+    display: none;
+    width: 300px;
+    margin-left: 360px;
+}
+
+
+
+
+

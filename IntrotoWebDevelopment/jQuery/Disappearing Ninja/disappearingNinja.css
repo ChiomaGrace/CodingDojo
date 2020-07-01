@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+}
+
+#wrapper{
+    width: 900px;
+    display: block;
+    margin-top: 80px;
+    margin-left: 240px;
+    cursor: pointer;
+}
+
+#rowOne{
+    display: block;
+    margin-bottom: 16px;
+}
+
+.ninjaPhoto{
+    display: inline-block;
+    width: 180px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.ninjaPhotoTwo{
+    display: inline-block;
+    width: 180px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.ninjaPhotoThree{
+    display: inline-block;
+    width: 180px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.ninjaPhotoFour{
+    display: inline-block;
+    width: 180px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+#rowTwo{
+    display: block;
+}
+
+.ninjaPhotoFive{
+    display: inline-block;
+    width: 180px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.ninjaPhotoSix{
+    display: inline-block;
+    width: 180px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.ninjaPhotoSeven{
+    display: inline-block;
+    width: 180px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.ninjaPhotoEight{
+    display: inline-block;
+    width: 180px;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+.restoreButton{
+    display: block;
+    width: 90px;
+    background-color: green;
+    font-weight: bold;
+    outline: 2px solid black;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}

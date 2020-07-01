@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="disappearingNinja.css">
+    <title>Disappearing Ninjat</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    
+    <script>
+        $(document).ready(function() { 
+            $( ".ninjaPhoto" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide();
+            });
+
+            $( ".ninjaPhotoTwo" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide();
+            });
+
+            $( ".ninjaPhotoThree" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide();
+            });
+
+            $( ".ninjaPhotoFour" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide();
+            });
+
+            $( ".ninjaPhotoFive" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide();
+            });
+
+            $( ".ninjaPhotoSix" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide();
+            });
+
+            $( ".ninjaPhotoSeven" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide();
+            });
+
+            $( ".ninjaPhotoEight" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide();
+            });
+
+            $( ".restoreButton" ).click(function() {
+            $( ".ninjaPhoto" ).show();
+            $( ".ninjaPhotoTwo" ).show();
+            $( ".ninjaPhotoThree" ).show();
+            $( ".ninjaPhotoFour" ).show();
+            $( ".ninjaPhotoFive" ).show();
+            $( ".ninjaPhotoSix" ).show();
+            $( ".ninjaPhotoSeven" ).show();
+            $( ".ninjaPhotoEight" ).show();
+            });
+        });
+
+
+
+
+    
+    </script>   
+
+</head>
+
+
+<body>
+    <div id="wrapper">
+        <div id="rowOne">
+            <img class="ninjaPhoto" src="Images/ninja.jpg" alt="An animated photo of a ninja.">
+            <img class="ninjaPhotoTwo" src="Images/ninja.jpg" alt="An animated photo of a ninja.">
+            <img class="ninjaPhotoThree" src="Images/ninja.jpg" alt="An animated photo of a ninja.">
+            <img class="ninjaPhotoFour" src="Images/ninja.jpg" alt="An animated photo of a ninja.">
+        </div>
+        <div id="rowTwo">
+            <img class="ninjaPhotoFive" src="Images/ninja.jpg" alt="An animated photo of a ninja.">
+            <img class="ninjaPhotoSix" src="Images/ninja.jpg" alt="An animated photo of a ninja.">
+            <img class="ninjaPhotoSeven" src="Images/ninja.jpg" alt="An animated photo of a ninja.">
+            <img class="ninjaPhotoEight" src="Images/ninja.jpg" alt="An animated photo of a ninja.">
+        </div>
+        <p class="restoreButton">Restore</p>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
