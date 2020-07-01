@@ -1,6 +1,6 @@
 # Sakila
 
-Using the world database and the pictured ERD, complete all 8 of the below queries.\
+Using the world database and the pictured ERD, complete all 8 of the below queries.
 
 Queries
 1. What query would you run to get all the customers inside city_id = 312? Your query should return customer first name, last name, email, and address.
@@ -20,6 +20,6 @@ Queries
 8. What query would you run to get all the action films which are joined by SANDRA KILMER? Your query should return film title, description, release year, rating, special features, genre (category), and actor's first name and last name.
 
 
-Created On: May 3,2020\
+Created On: May 3, 2020
 Uploaded to Github: July 1, 2020
 

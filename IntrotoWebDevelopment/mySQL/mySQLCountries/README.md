@@ -1,6 +1,6 @@
 # MySQL Countries
 
-Using the world database and the pictured ERD, complete all 8 of the below queries.\
+Using the world database and the pictured ERD, complete all 8 of the below queries.
 
 1. What query would you run to get all the countries that speak Slovene? Your query should return the name of the country, language and language percentage. Your query should arrange the result by language percentage in descending order.
 
@@ -18,6 +18,6 @@ Using the world database and the pictured ERD, complete all 8 of the below queri
 
 8. What query would you run to summarize the number of countries in each region? The query should display the name of the region and the number of countries. Also, the query should arrange the result by the number of countries in descending order.
 
-Created On: May 1,2020\
+Created On: May 1, 2020
 Uploaded to Github: July 1, 2020
 
