@@ -1,35 +1,32 @@
 # Predict the Output
 Predict 1:\
-'''
+```javascript
 for(var num = 0; num < 15; num++){
     console.log(num);
 }
-'''
+```
 
 Predict 2:\
-for(var i = 1; i < 10; i+=2){\
-    if(i % 3 == 0){\
-        console.log(i);\
-    }\
-}\
+```javascript
+for(var i = 1; i < 10; i+=2){
+    if(i % 3 == 0){
+        console.log(i);
+    }
+}
+```
 
 Predict 3:\
-for(var j = 1; j <= 15; j++){\
-    if(j % 2 == 0){\
-        j+=2;\
-    }\
-    else if(j % 3 == 0){\
+```javascript
+for(var j = 1; j <= 15; j++){
+    if(j % 2 == 0){
+        j+=2;
+    }
+    else if(j % 3 == 0){
         j++;/
     }\
-    console.log(j);\
-}\
+    console.log(j);
+}
+```
 Created On: April 28,2020\
 Uploaded to Github: June 30, 2020
 
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
