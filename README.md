@@ -1,5 +1,5 @@
 # CodingDojo
-This repository contains all the projects I completed during my time at a Coding Dojo Bootcamp in 2020.
+This repository contains all projects completed during my time at a Coding Dojo Bootcamp in 2020.
 Languages: HTML, HTML(Responsive Web Design) CSS, JavaScript, Python, Ruby
 Frameworks: jQuery, Django, Flask, Rails 
 Database(s): MySQL, SQLite
