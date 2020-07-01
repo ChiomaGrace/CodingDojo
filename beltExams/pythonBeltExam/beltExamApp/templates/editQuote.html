@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Edit Quote</title>
+</head>
+<body>
+    <div class="container">        
+        <div class="row">
+        <div class="col-sm">
+            <h1>Edit Quote</h1>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{message.tags}}" {% endif %}> {{message}}</li>
+                {% endfor %}
+        {% endif %}
+            <form action="/processEdit/{{quoteId}}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="quotedBy">Quoted By:</label>
+                    <input type="text" name="submittedQuoter" class="form-control" id="" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="quote">Message:</label>
+                    <textarea class="form-control" name="submittedQuote" id="" rows="6"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+*{
+    vertical-align: top;
+    margin: 0px;
+}
+
+#wrapper{
+    width: 916px;
+    margin-left: 190px;
+    background-color: #1A1A1A;
+    ;
+}
+
+#header{
+    display: block;
+    height: 90px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.logo{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.phoneNum{
+    display: inline-block;
+    margin-left: 480px;
+    margin-top: 26px;
+    color: #CFCFCF;
+}
+
+#navigation{
+    background-color:#4D4D4D;
+    display: block;
+    width: 900px;
+    height: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.white{
+    color: white;
+}
+.navButton{
+    display: inline-block;
+    color: #8F8988;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    padding-right: 6px;
+    border-right: 2px solid #8F8988;
+}
+
+.mainPhoto{
+    display: block;
+    width: 900px;  
+    margin-left: 8px;
+    margin-right: 8px;
+    border-bottom: 2px solid #8F8988;
+
+}
+
+#content{
+    display: block;
+    background-color: #1A1A1A;
+    height: 100px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 30px;
+}
+
+.contentLogo{
+    display: inline-block;
+    margin-left: 8px;
+    padding-right: 20px;
+}
+
+.contentWords{
+    display: inline-block;
+    font-size: 12px;
+    text-align: justify;
+
+}
+
+.contentTitle{
+    display: block;
+    color: #E86E25;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contentParagraph{
+    display: block;
+    color: white;
+}
+
+#buyRow{
+    display: block;
+    background-color: #050505;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#buyContent{
+    display: inline-block;
+    margin-left: 20px;
+    height: 90px;
+}
+
+.buyTitle{
+    display: block;
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.buyParagraph{
+    display: block;
+    color: #9F9FA0;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.buyButton{
+    display: inline-block;
+    background-color: #EF8332;
+    font-size: 24px;
+    padding: 4px;
+    color: white;
+    width: 110px;
+    border-radius: 6px;
+    margin-left: 140px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#portfolio{
+    display: block;
+    background-color: #050505;
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.portfolioTitle{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-left: 14px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.projectTitle{
+    display: inline-block;
+    color: #F1944F;
+    margin-left: 640px;
+    margin-top: 19px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#portfolioPhotos{
+    display: block;
+    margin-left: 14px;
+    margin-top: 26px;
+}
+
+.photo{
+    display: inline-block;
+    border: 2px solid #8F8988;
+
+}
+
+#portfolioName{
+    display: block;
+}
+
+.name{
+    display: inline-block;
+    color: #C0702A;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 12px;
+    padding-right: 90px;
+
+}
+
+#portfolioDescription{
+    display: inline-block;
+    font-size: 10px;
+}
+
+.description{
+    display: inline-block;
+    color: #B8B19F;
+    margin-left: 14px;
+    padding-right: 30px;
+}
+
+.footer{
+    display: block;
+    color: #B8B19F;
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 850px;
+}

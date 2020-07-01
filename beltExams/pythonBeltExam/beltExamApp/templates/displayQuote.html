@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Display Quote</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm ml-5">
+                <a class ="pr-3" href="/quotes">Home</a>
+                <a href="/logout">Log Out</a>
+            </div>
+        </div>
+        <h3>Post By: {{userWhoPosted.firstName}} </h3>
+        <h6>Number of Posts: {{postCount}} </h6>
+        <table class="table table-borderless mr-5">
+            <thead>
+                {% for quote in userEntries %}
+                <tr>
+                    <th scope="col mr-5">{{quote.quoter}}</th>
+                </tr>
+                <tr>
+                    <td scope="col mr-5">{{quote.quote}}</td>
+                </tr>
+                {% endfor %}
+
+
+            </thead>
+        </table>
+    </div>
+
+</body>
+</html>
+<!-- <h1>{{displayItem.name}} </h1>
+        <h5>Users who added this product item under their wish list:</h5>
+        <table class="table table-borderless mr-5">
+            <thead>
+                {% for item in displayItem.userFavorites.all %}
+                <tr>
+                    <th scope="col mr-5">{{item.firstName}}</th>
+                </tr>
+                {% endfor %} -->

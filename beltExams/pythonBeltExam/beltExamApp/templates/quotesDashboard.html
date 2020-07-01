@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Quotable Quotes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm ml-5">
+                <a class ="pr-3" href="/quotes">Home</a>
+                <a href="/logout">Log Out</a>
+            </div>
+        </div>
+        <h3>Welcome, {{currentUser.firstName}}!</h3>
+        <div class="row ">
+            <div class="col-sm border border-secondary">
+                {% for quote in allQuotesMinusFavorites %}
+                <div class="col-sm border border-secondary mb-2 mt-2">
+                    {% if currentUser == quote.userWhoPosted %}
+                    <a class=" d-inline-block"href="/users/{{quote.id}}/edit">Edit</a> 
+                    <a class=" d-inline-block"href="/users/{{quote.id}}/remove">Remove</a>
+                    {% endif %}
+                        <h6>{{quote.quoter}}</h6>
+                        <h6>{{quote.quote}}</h6>
+                        <div class="row">
+                        <div class="col-sm">
+                            <a class=" d-inline-block"href="/users/{{quote.userWhoPosted.id}}">{{quote.userWhoPosted.firstName}}</a>
+                        </div>
+                        <a class="btn btn-primary btn-sm btn btn-info" href="/addToFavorites/{{quote.id}}" role="button">Add to Favorites</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        
+
+        <div class="col-sm"></div>
+
+            <div class="col-sm border border-secondary">
+                {% for quote in userFavs %}
+                <div class="col-sm border border-secondary mb-2 mt-2">
+                        <h6>{{quote.quoter}}</h6>
+                        <h6>{{quote.quote}}</h6>
+                        <div class="row">
+                        <div class="col-sm">
+                            <a class=" d-inline-block"href="/users/{{quote.userWhoPosted.id}}">{{quote.userWhoPosted.firstName}}</a>
+                        </div>
+                        <a class="btn btn-primary btn-sm btn btn-info" href="/removeFromFavorites/{{quote.id}}" role="button">Remove From Favorites</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm"></div>
+        <div class="col-sm">
+            <h3>Contribute A Quote</h3>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{message.tags}}" {% endif %}> {{message}}</li>
+                {% endfor %}
+        {% endif %}
+            <form action="/processQuote" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="quotedBy">Quoted By:</label>
+                    <input type="text" name="submittedQuoter" class="form-control" id="" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="quote">Message:</label>
+                    <textarea class="form-control" name="submittedQuote" id="" rows="6"></textarea>
+                </div>
+                <button type="submit" class=" btn btn-outline-dark">Submit</button>
+                </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
