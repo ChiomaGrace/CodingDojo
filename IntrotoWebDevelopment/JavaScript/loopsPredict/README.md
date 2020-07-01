@@ -1,12 +1,12 @@
 # Predict the Output
-Predict 1:\
+Predict 1:
 ```javascript
 for(var num = 0; num < 15; num++){
     console.log(num);
 }
 ```
 
-Predict 2:\
+Predict 2:
 ```javascript
 for(var i = 1; i < 10; i+=2){
     if(i % 3 == 0){
@@ -15,7 +15,7 @@ for(var i = 1; i < 10; i+=2){
 }
 ```
 
-Predict 3:\
+Predict 3:
 ```javascript
 for(var j = 1; j <= 15; j++){
     if(j % 2 == 0){
