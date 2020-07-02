@@ -1,6 +1,6 @@
 # Understanding Routing
 
-This project practices building a server with Flask from scratch and increases comfort with routes and passing information to the routes.\
+This project practices building a server with Flask from scratch and increases comfort with routes and passing information to the routes.
 
 This project creates a server file that generates the specified responses for the following url requests:
 
