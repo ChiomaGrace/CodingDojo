@@ -1,5 +1,5 @@
 # jQuery Functions
-Create a web page that uses the following jQuery functions:
+This project creates a web page that uses the following jQuery functions:
 * click
 * hide
 * show
