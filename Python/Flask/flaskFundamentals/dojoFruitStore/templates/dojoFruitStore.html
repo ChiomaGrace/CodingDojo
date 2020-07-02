@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dojoFruitStore</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+img {
+    border-radius: 50%;
+    width: 130px;
+    height: 117px;
+}
+</style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Dojo Fruit Store</h1>
+        <p class="lead">Feeding All Our Ninjas One Seed At A Time. Namaste.</p>
+        <hr class="my-4">
+        <p>Are You Ready To Shop? <svg class="bi bi-bag" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 001 1h10a1 1 0 001-1V5zM1 4v10a2 2 0 002 2h10a2 2 0 002-2V4H1z" clip-rule="evenodd"/>
+            <path d="M8 1.5A2.5 2.5 0 005.5 4h-1a3.5 3.5 0 117 0h-1A2.5 2.5 0 008 1.5z"/>
+            </svg>
+        </p>
+    </div>
+    <form action="/checkout" method="post">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                <th scope="col">Fruit</th>
+                <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='images/apple.png') }}">
+                            <div class="fruitName">Apple</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group col-md-3">
+                        <select name="appQuantity">
+                            <option selected></option>
+                            <option value= "1">1</option>
+                            <option value= "2">2</option>
+                            <option value= "3">3</option>
+                            <option value= "4">4</option>
+                        </select>
+                        </div>
+                    </td>
+                    <!-- <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                            </select>
+                    </div> -->
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='images/blackberry.png') }}">
+                            <div class="fruitName">Blackberry</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group col-md-3">
+                        <select name="blackBQuantity">
+                            <option selected></option>
+                            <option value= "1">1</option>
+                            <option value= "2">2</option>
+                            <option value= "3">3</option>
+                            <option value= "4">4</option>
+                        </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='images/raspberry.png') }}">
+                            <div class="fruitName">Raspberry</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group col-md-3">
+                        <select name="raspBQuantity">
+                            <option selected></option>
+                            <option value= "1">1</option>
+                            <option value= "2">2</option>
+                            <option value= "3">3</option>
+                            <option value= "4">4</option>
+                        </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='images/strawberry.png') }}">
+                            <div class="fruitName">Strawberry</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group col-md-3">
+                        <select name="strawBQuantity">
+                            <option selected></option>
+                            <option value= "1">1</option>
+                            <option value= "2">2</option>
+                            <option value= "3">3</option>
+                            <option value= "4">4</option>
+                        </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <p class="lead">Student Information:</p>
+    <p>Name:<input type="text" name="student"></p>
+    <p>Student ID:<input type="text" name="id"></p>
+    <button type="submit" class="btn btn-primary">Purchase</button>
+    </form>  
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='css/checkerboard.css')}}">
+</head>
+<body>
+{%for i in range(numColumn)%}
+<div id="row">
+{%for i in range(numRow//2)%}
+<div class="red" style="background-color:{{colorOne}}"></div>
+<div class="black" style="background-color:{{colorTwo}}"></div>
+{%endfor%}
+{%endfor%}
+</div>
+</body>
+</html>
+
