@@ -22,3 +22,5 @@ This project performs the following tasks:
 
 Start Date: June 6, 2020\
 Pushed to Github: July 4, 2020
+
+![blogsPostsAndMessagesI](https://user-images.githubusercontent.com/62450912/86511424-acdfb780-bdbe-11ea-9aff-759fc3a2ad1e.png)
