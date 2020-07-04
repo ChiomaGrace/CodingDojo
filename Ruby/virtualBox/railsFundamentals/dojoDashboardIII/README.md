@@ -14,3 +14,15 @@ This project performs the following tasks:
 
 Start Date: June 9, 2020\
 Pushed to Github: July 4, 2020
+
+Index\
+![Dojo Dashboard III Index Preview](https://user-images.githubusercontent.com/62450912/86520848-aaa54980-be0e-11ea-9d3b-d805cdf0945c.png)
+
+New\
+![Dojo Dashboard III New Preview](https://user-images.githubusercontent.com/62450912/86520852-b4c74800-be0e-11ea-986e-8e1175738b0d.png)
+
+Show\
+![Dojo Dashboard III Show Preview](https://user-images.githubusercontent.com/62450912/86520854-be50b000-be0e-11ea-9dc4-adb21dcfabdf.png)
+
+Edit\
+![Dojo Dashboard III Edit Preview](https://user-images.githubusercontent.com/62450912/86520860-c7da1800-be0e-11ea-85d5-7fdccda6e302.png)
