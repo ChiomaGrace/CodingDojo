@@ -2,7 +2,7 @@
 
 This project practices the understanding of conditional tests.
 
-The method will be called guess_number, and the input will be the guess. There will be three possible outcomes to this method:
+The method will be called guess_number, and the input will be the guess. This project writes three possible outcomes to the guess_number method:
 
 * The user guessed correctly, return "You got it!"
 * The guess was too high, return "Guess was too high!"
