@@ -7,3 +7,4 @@ Each book should have a title and an author, and each user should be able to sav
 Created On: April 30, 2020\
 Uploaded to Github: June 30, 2020
 
+![Books ERD Diagram](https://user-images.githubusercontent.com/62450912/86509103-338a9980-bdab-11ea-9a88-4d9a446d7e16.png)
