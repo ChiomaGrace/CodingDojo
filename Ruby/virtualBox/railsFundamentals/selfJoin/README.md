@@ -12,3 +12,5 @@ This project performs the following tasks:
 
 Start Date: June 8, 2020\
 Pushed to Github: July 4, 2020
+
+![selfJoinERD](https://user-images.githubusercontent.com/62450912/86520429-ce19c580-be09-11ea-8e36-748c2cd4c8a2.png)
