@@ -2,8 +2,6 @@
 
 This project completes the following tasks:
 
-This project completes the following routes:
-
 1. Run makemigrations and migrate to create the necessary database tables
 
 2. Seed the database with a few products (i.e. go into the shell and create 3-4 products)
