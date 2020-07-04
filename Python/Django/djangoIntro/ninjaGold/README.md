@@ -13,3 +13,4 @@ This project completes the following tasks:
 Created On: May 13, 2020\
 Pushed to Github: July 3, 2020
 
+![Ninja Gold Preview](https://user-images.githubusercontent.com/62450912/86509484-e9ef7e00-bdad-11ea-927a-3bd22d5f30eb.png)
