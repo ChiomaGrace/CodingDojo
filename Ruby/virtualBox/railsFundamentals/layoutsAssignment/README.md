@@ -21,3 +21,9 @@ This project performs the following tasks:
 
 Start Date: June 11, 2020\
 Pushed to Github: July 4, 2020
+
+Two Column Layout\
+![Two Column Layout Preview](https://user-images.githubusercontent.com/62450912/86521140-7a5faa00-be12-11ea-831f-5e54dc06a0f9.png)
+
+Three Column Layout\
+![Three Column Layout Preview](https://user-images.githubusercontent.com/62450912/86521142-851a3f00-be12-11ea-861a-8d849aba533b.png)
