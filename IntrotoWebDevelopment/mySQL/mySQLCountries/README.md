@@ -21,3 +21,4 @@ Using the world database and the pictured ERD, complete all 8 of the below queri
 Created On: May 1, 2020\
 Uploaded to Github: July 1, 2020
 
+![MySQL Countries ERD Diagram](https://user-images.githubusercontent.com/62450912/86509159-8c5a3200-bdab-11ea-8a4d-5fbd1ae50b7c.png)
