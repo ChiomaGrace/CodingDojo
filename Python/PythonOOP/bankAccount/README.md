@@ -1,6 +1,6 @@
 # Banking Account
 
-This project performs the following tasks:\
+This project performs the following tasks:
 
 1. Create a BankAccount class with the attributes interest rate and balance
 

@@ -1,6 +1,6 @@
 # Users with Bank Accounts
 
-This project updates the existing User project to have an association with the BankAccount class.\
+This project updates the existing User project to have an association with the BankAccount class.
 
 This project performs the following tasks:\
 

@@ -1,6 +1,6 @@
 # User
 
-This project performs the following tasks:\
+This project performs the following tasks:
 
 1. Create a file with the User class, including the __init__ and make_deposit methods
 
