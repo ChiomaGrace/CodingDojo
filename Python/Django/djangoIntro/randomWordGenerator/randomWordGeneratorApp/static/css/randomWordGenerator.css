@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    background-color: rgba(136, 69, 136, 0.822);
+}
+
+h4{
+    text-align: center;
+    display: block;
+    margin-top: 80px;
+    margin-right: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+    display: block;
+    width: 500px;
+    margin-left: 380px;
+    border: solid black;
+    border-radius: 3px;
+}
+
+#buttons{
+    display: inline-block;
+    width: 800px;
+    height: 400px;
+    margin-left: 520px;
+}
+
+form{
+    width: 90px;
+    height: 30px;
+    display: inline-block
+}
+.generateButton{
+    width: 90px;
+    height: 30px;
+    display: inline-block;
+    padding-top: 2px;
+    text-align: center;
+    padding-bottom: 2px;
+    color: white;
+    font-style: oblique;
+    border: white solid 1px;
+    border-radius: 2px;
+    background-color: teal;
+}
+.resetButton{
+    display:  inline-block;
+    width: 90px;
+    height: 30px;
+    padding-top: 2px;
+    text-align: center;
+    padding-bottom: 2px;
+    color: white;
+    font-style: oblique;
+    border: white solid 1px;
+    border-radius: 2px;
+    background-color: red;
+}

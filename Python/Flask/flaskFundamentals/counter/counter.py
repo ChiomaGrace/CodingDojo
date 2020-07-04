@@ -24,13 +24,13 @@ def countPage():
 @app.route("/counterResults")
 def showResultsPage():
     print("This is where the counting is displayed.")
-    return render_template("counterResponse.html")
+    return render_template("counter.html")
 
-@app.route('/destroySession')
-def destroyPage():
-    print("This should reset the counter.")
-    # session.clear()
-    return render_template('counter.html')
+# @app.route('/destroySession')
+# def destroyPage():
+#     print("This should reset the counter.")
+#     # session.clear()
+#     return render_template('counter.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

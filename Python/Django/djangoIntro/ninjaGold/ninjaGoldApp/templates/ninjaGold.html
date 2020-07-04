@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ninjaGold</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/ninjaGold.css'%}">
+</head>
+<body>
+    <div id="goldScore">
+    <h1>Your Gold: {{request.session.gold}}</h1>
+    </div>
+    <div id="containerForLocations">
+        <div class="locations">
+            <h3>The Farm</h3>
+            <p class="earnAmount">(earn 10-20 golds)</p>
+            <form action="/processMoney" method="post">
+                {%csrf_token%}
+            <input type = "hidden" name= "location" value= "farm">
+            <button type="submit" class="goldButton">Find Gold!</button>
+            </form>
+            <!-- The one below is done through url instead of post method -->
+            <!-- <form action="/farm" method="post">
+                {%csrf_token%}
+            <input type = "hidden" name= "location" value= "farm">
+            <button type="submit" class="goldButton">Find Gold!</button>
+            </form> -->
+            <!-- The one above is done through url instead of post method -->
+
+        </div>
+        <div class="locations">
+            <h3>Cave</h3>
+            <p class="earnAmount">(earn 5-10 golds)</p>
+            <form action="/processMoney" method="post">
+                {%csrf_token%}
+                <input type = "hidden" name= "location" value= "cave">
+                <button type="submit" class="goldButton">Find Gold!</button>            
+            </form>
+        </div>
+        <div class="locations">
+            <h3>House</h3>
+            <p class="earnAmount">(earn 2-5 golds)</p>
+            <form action="/processMoney" method="post">
+                {%csrf_token%}
+                <input type = "hidden" name= "location" value= "house">
+                <button type="submit" class="goldButton">Find Gold!</button>            
+            </form>
+        </div>
+        <div class="locations">
+            <h3>Casino</h3>
+            <p class="earnAmount">(earn/takes 0-50 golds)</p>
+            <form action="/processMoney" method="post">
+                {%csrf_token%}
+                <input type = "hidden" name= "location" value= "casino">
+                <button type="submit" class="goldButton">Find Gold!</button>            
+            </form>
+        </div>
+    </div>
+    <h4>Activities:</h4>
+    <div class="scrollabletextbox" name="activitiesBox">
+        {% for activityStrings in request.session.activities%}  
+            {% if 'lost' in activityStrings %}
+                <p class="loseCasino !important">{{activityStrings}}</p>
+            {% else %}
+                <p>{{activityStrings}}</p>
+            {%endif%}
+        {%endfor%}
+        
+    </div>
+    <form action="/reset" method="post">
+        {% csrf_token %}
+        <button class="resetButton">Reset</button>
+    </form>
+</body>
+</html>
