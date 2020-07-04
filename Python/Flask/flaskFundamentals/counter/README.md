@@ -17,3 +17,4 @@ This project completes the following tasks:
 Created On: May 22, 2020\
 Pushed to Github: July 2, 2020
 
+![Counter Preview](https://user-images.githubusercontent.com/62450912/86511148-d519e700-bdbb-11ea-86b8-152ce52ea537.png)
