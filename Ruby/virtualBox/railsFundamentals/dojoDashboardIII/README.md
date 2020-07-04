@@ -19,7 +19,7 @@ Index\
 ![Dojo Dashboard III Index Preview](https://user-images.githubusercontent.com/62450912/86520848-aaa54980-be0e-11ea-9d3b-d805cdf0945c.png)
 
 New\
-![Dojo Dashboard III New Preview](https://user-images.githubusercontent.com/62450912/86520852-b4c74800-be0e-11ea-986e-8e1175738b0d.png)
+![Dojo Dashboard III New Preview](https://user-images.githubusercontent.com/62450912/86520968-25bb2f80-be10-11ea-8fdc-9bb3d0433a63.png)
 
 Show\
 ![Dojo Dashboard III Show Preview](https://user-images.githubusercontent.com/62450912/86520854-be50b000-be0e-11ea-9dc4-adb21dcfabdf.png)
