@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/specificAuthorAndBook.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{displayBook.title}}</h1>
+    <h3>ID: {{displayBook.id}}</h3>
+    <p>Description: {{displayBook.description}}</p>
+    <dl>
+        <dt>Authors:</dt>
+        {% for authors in displayBook.authors.all %}
+        <dd> {{authors.firstName}} {{authors.lastName}}</dd>
+        {% endfor %}
+    </dl>
+
+    <form class="form" action="/submittedAuthorOnSpecificBook/{{displayBook.id}}" method="post">
+        {% csrf_token %}
+        <label for="allTheAuthors"></label>
+        <select name="authorOptions" id = "button">
+            <option value="authorChoices">Select An Author</option>
+            {% for author in allAuthors %}
+            <option name = "selectedAuthor" value="{{author.id}}">{{author.firstName}} {{author.lastName}}</option>
+            {% endfor %}
+        </select>
+        <input class = "addButton" type="submit" value="Add">
+    </form>
+</body>
+</html>

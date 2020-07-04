@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books and Authors</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/addAnAuthor.css'%}">
+</head>
+<body>
+    <div class="topRow">
+        <h1>Add An Author</h1>
+        <p class="NavButton"> <a href="/">Add A Book</a></p>
+    </div>
+    <div class="bothColumns">
+        <div class="firstColumn">
+        <form class="form" action="/submittedAuthor" method="post">
+            {% csrf_token %}
+            <div class="inputRow">
+                <p>First Name: <input class="nameInput" type="text" id="" name="authorFirstName"></p>
+            </div>
+            <div class="inputRow">
+                <p>Last Name: <input class="nameInput" type="text" id="" name="authorLastName"></p>
+            </div>
+            <div class="inputRow">
+                <p>Notes: <input class="notesInput" type="text" id="" name="authorNotes"></p>
+            </div>
+            <input class = "addButton" type="submit" value="Add">
+            <!-- <label for="title">Title:</label> Is this needed w the above?--> 
+            <!-- <label for="description">Description </label> Is this needed w the below? -->
+        </form>
+        </div>
+            <table class="authorTable">
+                    <tr>
+                        <th>ID #</th>
+                        <th>Name</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                    {% for authorObject in allAuthors %}
+                    </tr>
+                    <tr>
+                        <td>{{authorObject.id}}</td>
+                        <td>{{authorObject.firstName}} {{authorObject.lastName}}</td>
+                        <td><a href = "/specificAuthor/{{authorObject.id}}">View</a></td>
+                    </tr>
+                    {% endfor %}
+            </table>
+    </div>
+</body>
+</html>

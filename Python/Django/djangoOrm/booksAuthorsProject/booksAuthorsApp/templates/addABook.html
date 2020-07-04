@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books and Authors</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/addABook.css'%}">
+</head>
+<body>
+    <div class="topRow">
+        <h1>Add A Book</h1>
+        <p class="navButton"> <a class="navButton" href="/author">Add An Author</a></p>
+    </div>
+    <div class="bothColumns">
+        <div class="firstColumn">
+        <form class="form" action="/submittedBook" method="post">
+            {% csrf_token %}
+            <div class="inputRow">
+                <p>Title: <input class="titleInput" type="text" id="" name="bookTitle"></p>
+            </div>
+            <div class="inputRow">
+                <p>Description: <input class="descriptionInput" type="text" id="" name="bookDescription"></p>
+            </div>
+            <input class = "addButton" type="submit" value="Add">
+            <!-- <label for="title">Title:</label> Is this needed w the above?--> 
+            <!-- <label for="description">Description </label> Is this needed w the below? -->
+        </form>
+        </div>
+            <table class="bookTable">
+                    <tr>
+                        <th>ID #</th>
+                        <th>Title</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                    {% for bookObject in allBooks %}
+                    </tr>
+                    <tr>
+                        <td>{{bookObject.id}}</td>
+                        <td>{{bookObject.title}}</td>
+                        <td><a href = "/book/{{bookObject.id}}">View</a></td>
+                    </tr>
+                    {% endfor %}
+            </table>
+    </div>
+</body>
+</html>

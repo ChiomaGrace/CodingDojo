@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books and Authors</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Add A Book</h1>
+        <p class="lead">This is a web application where you can find books and their corresponding authors.</p>
+        <hr class="my-4">
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Title</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Description</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        </div>
+        <p>Title:</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Add</a>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">ID #</th>
+            <th scope="col">Title</th>
+            <th scope="col">Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>C #</td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Java</td>
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Python</td>
+            </tr>
+            <tr>
+            <th scope="row">4</th>
+            <td>PHP</td>
+            </tr>
+            <tr>
+            <th scope="row">5</th>
+            <td>Ruby</td>
+            </tr>
+        </tbody>
+        </table>
+    </div></body>
+
+</html>

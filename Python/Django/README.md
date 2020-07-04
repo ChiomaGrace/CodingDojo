@@ -1,6 +1,6 @@
-# Introduction to Django
+# Django
 
-This project folder contains all introductory projects to Django.\
+This project folder contains all Python projects involving the framework Django.
 
-Start Date: May 12, 2020\
-End Date: May 13, 2020
+Start Date: May 10, 2020\
+End Date: May 24, 2020

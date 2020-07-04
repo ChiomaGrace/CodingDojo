@@ -1,0 +1,302 @@
+Last login: Sat May 16 16:52:53 on ttys000
+ChiomaUgagusMBP:~ Chi$ cd Documents/Coding/CodingDojo/Python/myEnvironments
+ChiomaUgagusMBP:myEnvironments Chi$ ls
+djangoPy3Env		python3Environment
+ChiomaUgagusMBP:myEnvironments Chi$ source djangoPy3Env/bin/activate
+(djangoPy3Env) ChiomaUgagusMBP:myEnvironments Chi$ cd ..
+(djangoPy3Env) ChiomaUgagusMBP:Python Chi$ ls
+django		myEnvironments	pythonDirectory
+flask		python		texts
+(djangoPy3Env) ChiomaUgagusMBP:Python Chi$ cd django
+(djangoPy3Env) ChiomaUgagusMBP:django Chi$ ls
+djangoFullStack	djangoIntro	djangoOrm
+(djangoPy3Env) ChiomaUgagusMBP:django Chi$ cd djangoOrm
+(djangoPy3Env) ChiomaUgagusMBP:djangoOrm Chi$ ls
+booksAuthorsProject	singleModelOrm		sqlQueriesToOrm.zip
+dojoNinjasProject	sqlQueriesToOrm
+(djangoPy3Env) ChiomaUgagusMBP:djangoOrm Chi$ cd booksAuthorsProject
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ ls
+booksAuthorsApp		db.sqlite3
+booksAuthorsProject	manage.py
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py makemi
+grations
+Did you rename the booksAuthorsApp.Books model to Author? [y/N] y
+Migrations for 'booksAuthorsApp':
+  booksAuthorsApp/migrations/0002_auto_20200516_2156.py
+    - Create model Book
+    - Rename model Books to Author
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py migrat
+e
+Operations to perform:
+  Apply all migrations: admin, auth, booksAuthorsApp, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying booksAuthorsApp.0001_initial... OK
+  Applying booksAuthorsApp.0002_auto_20200516_2156... OK
+  Applying sessions.0001_initial... OK
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py shell
+Python 3.7.7 (v3.7.7:d7c567b08f, Mar 10 2020, 02:56:16) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from booksAuthorsApp.models import Book, Author
+>>> Book.objects.create(title = "C Sharp")
+<Books object: C Sharp  (1)>
+>>> Book.objects.create(title = "Java")
+<Books object: Java  (2)>
+>>> Book.objects.create(title = "Python")
+<Books object: Python  (3)>
+>>> Book.objects.create(title = "PHP")
+<Books object: PHP  (4)>
+>>> Book.objects.create(title = "Ruby")
+<Books object: Ruby  (5)>
+>>> Author.objects.create(firstName = "Jane", lastName = "Austen")
+<Books object: Jane Austen (1)>
+>>> Author.objects.create(firstName = "Emily", lastName = "Dickinson")
+<Books object: Emily Dickinson (2)>
+>>> Author.objects.create(firstName = "Fyodor", lastName = "Dostoevsky")
+<Books object: Fyodor Dostoevsky (3)>
+>>> Author.objects.create(firstName = "William", lastName = "Shakespeare")
+<Books object: William Shakespeare (4)>
+>>> Author.objects.create(firstName = "Lau", lastName = "Tzu")
+<Books object: Lau Tzu (5)>
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> exit()
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py makemi
+grations
+You are trying to add a non-nullable field 'notes' to author without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> default = "Notes Go Here"
+Invalid input: invalid syntax (<string>, line 1)
+>>> exit()
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py makemi
+grations
+Migrations for 'booksAuthorsApp':
+  booksAuthorsApp/migrations/0003_author_notes.py
+    - Add field notes to author
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py migrat
+e
+Operations to perform:
+  Apply all migrations: admin, auth, booksAuthorsApp, contenttypes, sessions
+Running migrations:
+  Applying booksAuthorsApp.0003_author_notes... OK
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py shell
+Python 3.7.7 (v3.7.7:d7c567b08f, Mar 10 2020, 02:56:16) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from booksAuthorsApp.models import Book, Author
+>>> book.objects.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'book' is not defined
+>>> Book.objects.all()
+<QuerySet [<Books object: C Sharp  (1)>, <Books object: Java  (2)>, <Books object: Python  (3)>, <Books object: PHP  (4)>, <Books object: Ruby  (5)>]>
+>>> Author.objects.all()
+<QuerySet [<Books object: Jane Austen Notes Go Here (1)>, <Books object: Emily Dickinson Notes Go Here (2)>, <Books object: Fyodor Dostoevsky Notes Go Here (3)>, <Books object: William Shakespeare Notes Go Here (4)>, <Books object: Lau Tzu Notes Go Here (5)>]>
+>>> changeBook = Book.objects.get(id=1)
+>>> changeBook.title = "C#"
+>>> changeBook.save()
+>>> changeFirstName = Author.objects.get(id=4)
+>>> changeFirstName.firstName = "Bill"
+>>> changeFirstName.save()
+>>> exit()
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py makemi
+grations
+Migrations for 'booksAuthorsApp':
+  booksAuthorsApp/migrations/0004_author_books.py
+    - Add field books to author
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py migrat
+e
+Operations to perform:
+  Apply all migrations: admin, auth, booksAuthorsApp, contenttypes, sessions
+Running migrations:
+  Applying booksAuthorsApp.0004_author_books... OK
+(djangoPy3Env) ChiomaUgagusMBP:booksAuthorsProject Chi$ python manage.py shell
+Python 3.7.7 (v3.7.7:d7c567b08f, Mar 10 2020, 02:56:16) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from booksAuthorsApp.models import Book, Author
+>>> AssignAuthor = Author.objects.get(id=1)
+>>> BookOne = Book.objects.get(id=1)
+>>> BookTwo = Book.objects.get(id=2)
+>>> BookOne.Author.add(AssignAuthor)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Book' object has no attribute 'Author'
+>>> AssignAuthor.books.add(BookOne)
+>>> AssignAuthor.books.add(BookTwo))
+  File "<console>", line 1
+    AssignAuthor.books.add(BookTwo))
+                                   ^
+SyntaxError: invalid syntax
+>>> AssignAuthor.books.add(BookTwo)
+>>> AssignAuthor.books.all()
+<QuerySet [<Books object: C#  (1)>, <Books object: Java  (2)>]>
+>>> SecondAuthor = Author.objects.get(id=2)
+>>> BookThree = Book.objects.get(id=3)
+>>> SecondAuthor.books.add(BookOne)
+>>> SecondAuthor.books.add(BookTwo))
+  File "<console>", line 1
+    SecondAuthor.books.add(BookTwo))
+                                   ^
+SyntaxError: invalid syntax
+>>> SecondAuthor.books.add(BookTwo)
+>>> SecondAuthor.books.add(BookThree)
+>>> BookOne.authors.all()
+<QuerySet [<Books object: Jane Austen Notes Go Here (1)>, <Books object: Emily Dickinson Notes Go Here (2)>]>
+>>> AuthorThree.Author.objects.get(id=3)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'AuthorThree' is not defined
+>>> AuthorThree=Author.objects.get(id=3)
+>>> BookFour = Book.objects.get(id=4)
+>>> AuthorThree.books.add(BookOne)
+>>> AuthorThree.books.add(BookTwo)
+>>> AuthorThree.books.add(BookThree)
+>>> AuthorThree.books.add(BookFour)
+>>> BookOne.authors.all()
+<QuerySet [<Books object: Jane Austen Notes Go Here (1)>, <Books object: Emily Dickinson Notes Go Here (2)>, <Books object: Fyodor Dostoevsky Notes Go Here (3)>]>
+>>> AuthorFour = Author.objects.get(id=4)
+>>> AuthorFour.books.add(all)
+Traceback (most recent call last):
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1772, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'builtin_function_or_method'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 946, in add
+    through_defaults=through_defaults,
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 1129, in _add_items
+    ], ignore_conflicts=True)
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/query.py", line 493, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/query.py", line 1230, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1390, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1335, in as_sql
+    for obj in self.query.objs
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1335, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1334, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1275, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/fields/related.py", line 939, in get_db_prep_save
+    return self.target_field.get_db_prep_save(value, connection=connection)
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 821, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 2365, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got <built-in function all>.
+>>> AllBooks = Books.objects.all())
+  File "<console>", line 1
+    AllBooks = Books.objects.all())
+                                  ^
+SyntaxError: invalid syntax
+>>> AllBooks = Books.objects.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Books' is not defined
+>>> AllBooks = Book.objects.all()
+>>> AllBooks.authors.add(AuthorFour)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'authors'
+>>> AllBooks.authors.set(AuthorFour)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'authors'
+>>> BookFive.authors.add(AuthorFour)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'BookFive' is not defined
+>>> BookFive = Book.objects.get(id=5)
+>>> BookFive.authors.add(AuthorFour)
+>>> BookThree.objects.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/Chi/Documents/Coding/CodingDojo/Python/myEnvironments/djangoPy3Env/lib/python3.7/site-packages/django/db/models/manager.py", line 176, in __get__
+    raise AttributeError("Manager isn't accessible via %s instances" % cls.__name__)
+AttributeError: Manager isn't accessible via Book instances
+>>> BookThree.authors.all()
+<QuerySet [<Books object: Emily Dickinson Notes Go Here (2)>, <Books object: Fyodor Dostoevsky Notes Go Here (3)>]>
+>>> BookThree.authors.first()
+<Books object: Emily Dickinson Notes Go Here (2)>
+>>> BookThree.authors.remove(AuthorOne)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'AuthorOne' is not defined
+>>> BookThree.authors.remove(AssignAuthor)
+>>> BookThree.authors.all()
+<QuerySet [<Books object: Emily Dickinson Notes Go Here (2)>, <Books object: Fyodor Dostoevsky Notes Go Here (3)>]>
+>>> AuthorFive = Author.objects.get(id=5)
+>>> BookTwo.authors.add(AuthorFive)
+>>> BookTwo.authors.all()
+<QuerySet [<Books object: Jane Austen Notes Go Here (1)>, <Books object: Emily Dickinson Notes Go Here (2)>, <Books object: Fyodor Dostoevsky Notes Go Here (3)>, <Books object: Lau Tzu Notes Go Here (5)>]>
+>>> >>> AuthorFour.books.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Author' object has no attribute 'bookbooks'
+>>> BookOne.Authors.Add(AuthorFour)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Book' object has no attribute 'Authors'
+>>> BookOne.authors.add(AuthorFour)
+>>> BookTwo.authors.add(AuthorFour)
+>>> BookThree.authors.add(AuthorFour)
+>>> BookFour.authors.add(AuthorFour)
+>>> AuthorFour.books.all()
+<QuerySet [<Books object: C#  (1)>, <Books object: Java  (2)>, <Books object: Python  (3)>, <Books object: PHP  (4)>, <Books object: Ruby  (5)>]>
+>>> ThirdBook.authors.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'ThirdBook' is not defined
+>>> BookThree.authors.all()
+<QuerySet [<Books object: Emily Dickinson Notes Go Here (2)>, <Books object: Fyodor Dostoevsky Notes Go Here (3)>, <Books object: Bill Shakespeare Notes Go Here (4)>]>
+>>> BookTwo.authors.all()
+<QuerySet [<Books object: Jane Austen Notes Go Here (1)>, <Books object: Emily Dickinson Notes Go Here (2)>, <Books object: Fyodor Dostoevsky Notes Go Here (3)>, <Books object: Lau Tzu Notes Go Here (5)>, <Books object: Bill Shakespeare Notes Go Here (4)>]>
+>>> AuthorThree.books.all()
+<QuerySet [<Books object: C#  (1)>, <Books object: Java  (2)>, <Books object: Python  (3)>, <Books object: PHP  (4)>]>
+>>> BookFive.authors.all()
+<QuerySet [<Books object: Bill Shakespeare Notes Go Here (4)>]>
+>>> 

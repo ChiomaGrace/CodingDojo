@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    background-color:#E9ECEF;
+
+}
+
+h1{
+    margin-left: 90px;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    font-family: cursive;
+} 
+
+.navButton{
+    width: 120px;
+    display: inline-block;
+}
+
+p{
+    display: inline-block;
+    width: 400px;
+    margin-left: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #4D4D4D;
+
+}
+
+.inputRows{
+    display: block;
+}
+
+.titleInput{
+    width: 300px;
+    height: 20px;
+    margin-left: 44px;
+}
+
+.descriptionInput{
+    width: 300px;
+    height: 90px;
+    display: inline-block;
+}
+
+.addButton{
+    width: 40px;
+    height: 20px;
+    display: block;
+    margin-left: 90px;
+    background-color: #167BFF;
+    color: white;
+    font-style: oblique;
+    border: 2px black thin;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.firstColumn{
+    height: 300px;
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+} 
+
+form.form{
+    width: 100px;
+}
+
+.bookTable{
+    height: 460px;
+    width: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+} 
+
+td, th{
+    width: 48px;
+    height: 20px;
+    border: 1px solid black;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+} 
+
+.bothColumns{
+    display: block;
+    width: 2000px;
+    height: 2000px;
+}
+
+.firstColumn{
+    display: inline-block;
+}

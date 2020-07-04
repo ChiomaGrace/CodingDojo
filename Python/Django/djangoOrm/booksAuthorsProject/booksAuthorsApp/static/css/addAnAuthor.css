@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    background-color:#E9ECEF;
+}
+
+h1{
+    margin-left: 90px;
+    width: 240px;
+    height: 30px;
+    display: inline-block;
+    font-family: cursive;
+} 
+
+.navButton{
+    width: 120px;
+    display: inline-block;
+}
+
+p{
+    display: inline-block;
+    width: 500px;
+    margin-left: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #4D4D4D;
+
+}
+
+.inputRows{
+    display: block;
+}
+
+.nameInput{
+    width: 300px;
+    height: 20px;
+    margin-left: 44px;
+}
+
+.notesInput{
+    width: 300px;
+    height: 120px;
+    margin-left: 74px;
+}
+
+.addButton{
+    display: block;
+    margin-left: 130px;
+    background-color: #167BFF;
+    color: white;
+    font-style: oblique;
+    border: 2px black thin;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.firstColumn{
+    height: 400px;
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+} 
+
+form.form{
+    width: 100px;
+}
+
+.authorTable{
+    height: 500px;
+    width: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    border: 2px solid black;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+} 
+
+td, th{
+    width: 48px;
+    height: 20px;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.bothColumns{
+    display: block;
+    width: 2000px;
+    height: 2000px;
+}
