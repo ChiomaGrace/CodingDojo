@@ -19,3 +19,5 @@ This project performs the following tasks:
 
 Start Date: June 9, 2020\
 Pushed to Github: July 4, 2020
+
+![Dojo Dashboard Preview](https://user-images.githubusercontent.com/62450912/86520721-4766e780-be0d-11ea-93f8-0fcd36309bf1.png)
