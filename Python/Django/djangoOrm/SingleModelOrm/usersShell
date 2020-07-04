@@ -1,0 +1,74 @@
+Last login: Thu May 14 20:39:52 on ttys001
+ChiomaUgagusMBP:~ Chi$ cd Documents
+ChiomaUgagusMBP:Documents Chi$ cd Coding
+ChiomaUgagusMBP:Coding Chi$ cd CodingDojo
+ChiomaUgagusMBP:CodingDojo Chi$ cd Python
+ChiomaUgagusMBP:Python Chi$ cd myEnvironments
+ChiomaUgagusMBP:myEnvironments Chi$ ls
+djangoPy3Env		python3Environment
+ChiomaUgagusMBP:myEnvironments Chi$ source djangoPy3Env/bin/activate
+(djangoPy3Env) ChiomaUgagusMBP:myEnvironments Chi$ cd ..
+(djangoPy3Env) ChiomaUgagusMBP:Python Chi$ ls
+django		myEnvironments	pythonDirectory
+flask		python		texts
+(djangoPy3Env) ChiomaUgagusMBP:Python Chi$ cd django
+(djangoPy3Env) ChiomaUgagusMBP:django Chi$ ls
+djangoFullStack	djangoIntro	djangoOrm
+(djangoPy3Env) ChiomaUgagusMBP:django Chi$ cd djangoOrm
+(djangoPy3Env) ChiomaUgagusMBP:djangoFullOrm Chi$ django-admin startproject s
+ingleModelOrm
+ls
+(djangoPy3Env) ChiomaUgagusMBP:djangoFullStack Chi$ cd singleModelOrm
+(djangoPy3Env) ChiomaUgagusMBP:singleModelOrm Chi$ python manage.py startapp us
+ersApp
+code ..(djangoPy3Env) ChiomaUgagusMBP:singleModelOrm Chi$ code .
+(djangoPy3Env) ChiomaUgagusMBP:singleModelOrm Chi$ python manage.py makemigrati
+ons
+
+>>> from usersApp.models import Users
+>>> Users.objects.all()
+<QuerySet []>
+>>> Users.objects.create(firstName = "Chioma", lastName = "Ubogagu", emailAddress = "chioma@coding.com", age = 27)
+<Users: Users object (1)>
+>>> Users.objects.create(firstName = "Oggy", lastName = "Ubogagu", emailAddress = "brotherOne@siblings.com", age = 35)
+<Users: Users object (2)>
+>>> Users.objects.create(firstName = "Okwus", lastName = "Ubogagu", emailAddress = "brotherTwo@siblings.com", age = 33)
+<Users: Users object (3)>
+>>> Users.objects.first()
+<Users: Users object (1)>
+>>> Users.objects.all()
+<QuerySet [<Users: Users object (1)>, <Users: Users object (2)>, <Users: Users object (3)>]>
+>>> exit()
+
+>>> Users.objects.first()
+firstName: Chioma
+>>> Users.objects.all()
+<QuerySet [firstName: Chioma, firstName: Oggy, firstName: Okwus]>
+>>> Users.objects.get(id=2)
+firstName: Oggy
+>>> Users.objects.get(id=3)
+firstName: Okwus
+>>> Users.objects.all()
+<QuerySet [<Users object: Chioma Ubogagu chioma@coding.com 27 (1)>, <Users object: Oggy Ubogagu brotherOne@siblings.com 35 (2)>, <Users object: Okwus Ubogagu brotherTwo@siblings.com 33 (3)>]>
+
+>>> userToUpdate = Users.objects.get(id=3)
+>>> userToUpdate
+<Users object: Okwus Ubogagu brotherTwo@siblings.com 33 (3)>
+>>> userToUpdate.lastName = "Pancakes"
+>>> userToUpdate.save()
+
+
+>>> userToDelete = Users.objects.get(id=2)
+>>> userToDelete
+<Users object: Oggy Ubogagu brotherOne@siblings.com 35 (2)>
+>>> userToDelete.delete()
+(1, {'usersApp.Users': 1})
+
+>>> OrderByFirstName = Users.objects.order_by('firstName')
+>>> OrderByFirstName = Users.objects.all().order_by('firstName')
+>>> Users.objects.all().order_by("-firstName")
+<QuerySet [<Users object: Okwus Pancakes brotherTwo@siblings.com 33 (3)>, <Users object: Chioma Ubogagu chioma@coding.com 27 (1)>]>
+>>> .save()
+>>> Users.objects.all().order_by("-firstName")
+<QuerySet [<Users object: Okwus Pancakes brotherTwo@siblings.com 33 (3)>, <Users object: Chioma Ubogagu chioma@coding.com 27 (1)>]>
+>>> 

@@ -1,6 +1,6 @@
 # Sakila
 
-Using the world database and the pictured ERD, complete all 8 of the below queries.
+Using the world database and the pictured ERD, complete all 8 of the below queries:
 
 Queries
 1. What query would you run to get all the customers inside city_id = 312? Your query should return customer first name, last name, email, and address.
