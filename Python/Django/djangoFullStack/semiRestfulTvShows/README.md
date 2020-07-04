@@ -1,6 +1,6 @@
 # Semi-Restful TV Shows
 
-This project practices setting up a Django project, passing data to a template, using forms, and using Django session.
+This project practices implementing all 4 CRUD (Create, Read, Update, Delete) commands.
 
 This project completes the following routes:
 

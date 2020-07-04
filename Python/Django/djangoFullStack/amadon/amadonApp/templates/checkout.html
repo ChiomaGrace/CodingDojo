@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Amadon Store Success Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="ml-4 pt-4">Thank you for your business!</h1>
+        <h6 class="ml-4 pt-2">We charged your credit card for ${{orderPurchase|floatformat:2 }}.</h6>
+        <h6 class="ml-4">You have ordered {{quantityUserSelected}} item(s) so far and spent ${{totalCost|floatformat:2 }} with Amadon.com!</h6>
+        <a class="btn btn-primary btn-lg ml-4 mt-4" href="/amadon" role="button">Go Back</a>
+    </div>
+</body>
+</html>

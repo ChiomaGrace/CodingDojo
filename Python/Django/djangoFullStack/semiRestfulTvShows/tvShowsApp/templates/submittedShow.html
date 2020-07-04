@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>A Submitted Show</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="d-inline-block display-4">TV Show # {{newShow.id}} </h1>
+        <a class="d-inline-block btn btn-primary btn-lg" href="/shows" role="button">Go Back</a>
+        <p class="lead">Title: {{newShow.title}}</p>
+        <p class="lead">Network: {{newShow.network}}</p>
+        <p class="lead">Release Date: {{newShow.releaseDate}}</p>
+        <p class="lead">Description: {{newShow.description}}</p>
+        <hr class="my-5">
+        <p class="lead">Last Updated: {{newShow.updatedAt}}</p>
+        <a class="btn btn-primary btn-lg" href="/shows/{{newShow.id}}/edit" role="button">Edit</a>
+        <a class="btn btn-primary btn-lg" href="/shows/{{newShow.id}}/delete" role="button">Delete</a>
+    </div>
+</body>
+</html>

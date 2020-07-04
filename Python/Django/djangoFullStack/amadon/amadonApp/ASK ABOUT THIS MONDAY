@@ -1,0 +1,49 @@
+from django.shortcuts import render, redirect
+from .models import Product, Order
+
+def amadon(request):
+    context = {
+        'allProducts': Product.objects.all()
+    }
+    return render(request, "amadonStore.html", context)
+
+def processOrder(request):
+    print('This is the process order form.')
+
+    itemProduct = Product.objects.get(id=request.POST['itemPrice'])
+    print(itemProduct)
+
+    newOrder = Order.objects.create(quantityOrdered=request.POST['quantityOptions'], product= itemProduct)
+    
+    request.session['order'] = newOrder
+    print('!' *50)
+    print(request.session['order'].product.price)
+
+    return redirect('/amadon')
+
+def success(request):
+    print("This is the success route that renders the checkout template.")
+    # quantityUserSelected = (request.session['order'])
+    # print(quantityUserSelected)
+    # print(quantityUserSelected)
+    # priceOfItemSelected = (request.session['order'].product.price) 
+    # print(priceOfItemSelected)
+    # totalCost = request.session['order'].quantityOrdered * request.session['order'].product.price
+    # print("This should display the number of items selected.")
+    # print(quantityUserSelected)
+    # print("This should display the price of the selected item.")
+    # print(priceOfItemSelected)
+    # print('*' *50)
+    # print(totalCost)
+    # print('*' *50)
+    context = {
+        # 'totalCost': totalCost,
+        # 'quantityUserSelected': quantityUserSelected,
+        # 'priceOfItemSelected': priceOfItemSelected
+    }
+    return render(request, "success.html", context)
+    # print("The amount being charged is:")
+    # usersDuePayment = Order.objects.create(quantityOrdered = quantityUserSelected, totalPrice = priceOfItemSelected)
+    # print('*' *50)
+    # print(usersDuePayment)
+    # print('*' *50)
