@@ -1,4 +1,4 @@
-# First Project
+First Project
 
 This project practices starting a Ruby project from scratch.
 
