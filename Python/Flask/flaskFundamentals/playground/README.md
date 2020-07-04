@@ -11,5 +11,5 @@ This project completes the following tasks:
 5. NINJA BONUS: Use only one template for the whole project
 
 Created On: May 7, 2020\
-Uploaded to Github: July 2, 2020
+Pushed to Github: July 2, 2020
 

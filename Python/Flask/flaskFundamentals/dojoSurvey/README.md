@@ -16,5 +16,5 @@ This project completes the following tasks:
 6. SENSEI BONUS: Include a set of checkboxes on your form
 
 Created On: May 9, 2020\
-Uploaded to Github: July 2, 2020
+Pushed to Github: July 2, 2020
 

@@ -16,5 +16,5 @@ This project completes the following tasks:
 6. SENSEI BONUS: Have another route accept 4 parameters (i.e. "/<x>/<y>/<color1>/<color2>") and render a checkerboard with x rows and y columns, with alternating colors, color1 and color2
 
 Created On: May 8, 2020\
-Uploaded to Github: July 2, 2020
+Pushed to Github: July 2, 2020
 

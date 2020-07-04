@@ -22,7 +22,6 @@ This project creates a server file that generates the specified responses for th
 
 6. SENSEI BONUS: Ensure that if the user types in any route other than the ones specified, they receive an error message saying "Sorry! No response. Try again."
 
-
 Created On: May 7, 2020\
-Uploaded to Github: July 2, 2020
+Pushed to Github: July 2, 2020
 

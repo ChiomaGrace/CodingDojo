@@ -2,7 +2,7 @@
 
 This project updates the existing User project to have an association with the BankAccount class.
 
-This project performs the following tasks:\
+This project performs the following tasks:
 
 1. Update the User class __init__ method
 2. Update the User class make_deposit method

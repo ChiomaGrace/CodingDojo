@@ -15,5 +15,5 @@ This project completes the following tasks:
 5. NINJA BONUS: Add a Reset button to reset the counter
 
 Created On: May 22, 2020\
-Uploaded to Github: July 2, 2020
+Pushed to Github: July 2, 2020
 

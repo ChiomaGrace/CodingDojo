@@ -13,5 +13,5 @@ This project completes the following tasks:
 4. Add a reset route that resets the counter
 
 Created On: May 12, 2020\
-Uploaded to Github: July 2, 2020
+Pushed to Github: July 2, 2020
 

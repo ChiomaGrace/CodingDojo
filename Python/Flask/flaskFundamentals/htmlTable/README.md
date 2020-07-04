@@ -13,5 +13,5 @@ This project completes the following tasks:
 4. NINJA BONUS: Use a framework to format the table
 
 Created On: May 8, 2020\
-Uploaded to Github: July 2, 2020
+Pushed to Github: July 2, 2020
 

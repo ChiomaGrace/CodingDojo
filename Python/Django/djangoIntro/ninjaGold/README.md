@@ -11,5 +11,5 @@ This project completes the following tasks:
 3. Have the "/process_money" POST route increase/decrease the user's gold by an appropriate amount and redirect to the root route
 
 Created On: May 13, 2020\
-Uploaded to Github: July 3, 2020
+Pushed to Github: July 3, 2020
 

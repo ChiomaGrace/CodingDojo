@@ -12,5 +12,5 @@ This project completes the following tasks:
 3. In the checkout method, add a print statement that says "Charging {{Customer name}} for {{count}} fruits"
 
 Created On: May 10, 2020\
-Uploaded to Github: July 2, 2020
+Pushed to Github: July 2, 2020
 

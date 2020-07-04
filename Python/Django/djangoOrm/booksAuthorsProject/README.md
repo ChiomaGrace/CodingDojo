@@ -21,5 +21,5 @@ This project completes the following tasks:
 8. Create a form on the specific author template that has a dropdown of all the books in the database. The "Add" button should add the selected book to the given author.
 
 Created On: May 18, 2020\
-Uploaded to Github: July 3, 2020
+Pushed to Github: July 3, 2020
 
