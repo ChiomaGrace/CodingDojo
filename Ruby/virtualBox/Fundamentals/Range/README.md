@@ -1,6 +1,6 @@
 # Range
 
-This project practices Ruby fundamentals.\
+This project practices Ruby fundamentals.
 
 This project performs the following tasks:
 

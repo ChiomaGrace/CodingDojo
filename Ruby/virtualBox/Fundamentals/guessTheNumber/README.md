@@ -1,6 +1,6 @@
 # Guess the Number
 
-This project practices the understanding of conditional tests.\
+This project practices the understanding of conditional tests.
 
 The method will be called guess_number, and the input will be the guess. There will be three possible outcomes to this method:
 
