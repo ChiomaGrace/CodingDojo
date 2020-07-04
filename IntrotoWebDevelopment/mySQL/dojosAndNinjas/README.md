@@ -7,3 +7,4 @@ Each dojo should have a name and location; each ninja should have a name, a skil
 Created On: April 30, 2020\
 Uploaded to Github: June 30, 2020
 
+![Dojo and Ninjas ERD Diagram](https://user-images.githubusercontent.com/62450912/86509120-4ef5a480-bdab-11ea-9d30-cd67139ef7fd.png)
