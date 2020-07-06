@@ -15,3 +15,4 @@ This project completes the following tasks:
 Created On: May 12, 2020\
 Pushed to Github: July 2, 2020
 
+![Random Word Generator Preview](https://user-images.githubusercontent.com/62450912/86509510-0be90080-bdae-11ea-8170-2d20d2376d14.png)

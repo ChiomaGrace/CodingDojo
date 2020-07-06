@@ -23,3 +23,4 @@ This project completes the following routes:
 Created On: May 20, 2020\
 Pushed to Github: July 3, 2020
 
+![Semi-Restful TV Shows Preview](https://user-images.githubusercontent.com/62450912/86511041-eb737300-bdba-11ea-9756-7a0ee0190741.png)

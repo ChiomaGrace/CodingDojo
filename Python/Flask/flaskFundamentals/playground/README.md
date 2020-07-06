@@ -13,3 +13,4 @@ This project completes the following tasks:
 Created On: May 7, 2020\
 Pushed to Github: July 2, 2020
 
+![Playground Preview](https://user-images.githubusercontent.com/62450912/86511184-2f1aac80-bdbc-11ea-8971-bcd2d98a5e52.png)

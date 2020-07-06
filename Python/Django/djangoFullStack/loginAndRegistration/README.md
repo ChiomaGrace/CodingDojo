@@ -26,3 +26,5 @@ Don't allow a user who is not logged in to reach the /success route (i.e. by mak
 Created On: May 22, 2020\
 Pushed to Github: July 3, 2020
 
+![Login and Registration Preview](https://user-images.githubusercontent.com/62450912/86510999-8cadf980-bdba-11ea-848a-0f42b9457c2f.png)
+

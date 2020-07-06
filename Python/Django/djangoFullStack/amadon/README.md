@@ -19,3 +19,5 @@ This project completes the following tasks:
 Created On: May 23, 2020\
 Pushed to Github: July 3, 2020
 
+![Amadon Preview](https://user-images.githubusercontent.com/62450912/86510950-0f828480-bdba-11ea-8054-7ce58e22ee31.png)
+

@@ -23,3 +23,4 @@ Queries
 Created On: May 3, 2020\
 Uploaded to Github: July 1, 2020
 
+![Sakila ERD Diagram](https://user-images.githubusercontent.com/62450912/86509209-dcd18f80-bdab-11ea-9b70-00953167af26.png)

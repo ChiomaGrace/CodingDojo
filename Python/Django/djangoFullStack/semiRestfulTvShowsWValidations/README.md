@@ -20,3 +20,4 @@ Display errors on the Edit Show form if the information is invalid.
 Created On: May 20, 2020\
 Pushed to Github: July 3, 2020
 
+![Semi-Restful TV Shows with Validations Preview](https://user-images.githubusercontent.com/62450912/86511080-41481b00-bdbb-11ea-832c-a6a8a9abf029.png)

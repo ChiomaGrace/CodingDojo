@@ -23,3 +23,4 @@ This project completes the following tasks:
 Created On: May 18, 2020\
 Pushed to Github: July 3, 2020
 
+![Books and Authors Preview](https://user-images.githubusercontent.com/62450912/86509636-00e2a000-bdaf-11ea-8446-03e728f414d6.png)
