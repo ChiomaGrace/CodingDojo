@@ -1,5 +1,5 @@
 # Functions Basic I
-A project that predicts the following outputs:\
+A project that predicts the following outputs:
 
 Predict 1:
 ```python

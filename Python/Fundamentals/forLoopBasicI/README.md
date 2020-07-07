@@ -1,5 +1,5 @@
 # For Loops: Basic I
-This project performs the following tasks:\
+This project performs the following tasks:
 
 1. Basic - Print all integers from 0 to 150.
 
