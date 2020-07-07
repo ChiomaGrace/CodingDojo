@@ -44,3 +44,10 @@ bees.north = rabbit;
 bees.west = pooh;
 
 tigger.north = pooh; 
+
+var player = {
+    location: tigger
+    move: function(){
+        console.log()
+    }
+}
