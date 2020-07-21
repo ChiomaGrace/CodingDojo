@@ -14,3 +14,6 @@ Pushed to Github: July 7, 2020
 
 ![Hundred Acre Wood Preview](https://user-images.githubusercontent.com/62450912/86829873-8fc71500-c05a-11ea-9766-a87ffdb4bacc.png)
 
+![Interaction Preview](https://user-images.githubusercontent.com/62450912/88097230-78f5e780-cb5d-11ea-98b1-11789ba18333.png)
+
+
