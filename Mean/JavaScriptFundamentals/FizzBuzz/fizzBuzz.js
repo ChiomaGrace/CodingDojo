@@ -16,12 +16,6 @@
 
 function FizzBuzz(number){
     for (var i = 1; i <= number; i++){
-        if (FizzBuzz("Any String")) {
-            console.log("Parameter must be a positive number.")
-        //     // throw new IllegalArgumentException("Parameter must be positive.")
-        }
-        // if (number = "string" throw new IllegalArgumentException("Parameter must be positive.")
-
         if (i % 3 == 0 && i % 5 == 0) {
             console.log("FizzBuzz")
         }
@@ -37,18 +31,16 @@ function FizzBuzz(number){
     }
 }
 
-number = 15
-// "fifteen"
-// FizzBuzz("fifteen")
+// FizzBuzz(15)
 
-function FizzBuzzBonusTwo(number){
+
+function FizzBuzzBonusOne(number){
+    if(typeof number != "number") {
+    // if(typeof input == "string") {
+        throw new TypeError("Parameter must be positive.")
+    }
     for (var i = 1; i <= number; i++){
-        if(typeof input != number) {
-        // if(typeof input == "string") {
-                // throw new TypeError("Parameter must be positive.")
-        //     console.log("Parameter must be a positive number.")
-        // }
-        else if (i % 3 == 0 && i % 5 == 0) {
+        if (i % 3 == 0 && i % 5 == 0) {
             console.log("FizzBuzz")
         }
         else if (i % 3 == 0 && i % 5 != 0) {
@@ -63,4 +55,32 @@ function FizzBuzzBonusTwo(number){
     }
 }
 
-FizzBuzzBonusTwo("fifteen")
+// FizzBuzzBonusOne("fifteen")
+
+
+
+// BONUS 2: Rather than have the function log each element, return a nicely formatted string with all the elements. Include commas where appropriate to make it easier to read.
+// Example - fizzbuzz(15) would return the following string:
+// 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, and FizzBuzz.
+
+function FizzBuzzBonusTwo(number){
+    newString = ""
+    for (var i = 1; i <= number; i++){
+        if (i % 3 == 0 && i % 5 == 0) {
+            newString += `FizzBuzz, `
+        }
+        else if (i % 3 == 0 && i % 5 != 0) {
+            newString +=`Fizz, `
+        }
+        else if (i % 5 == 0 && i % 3 != 0) {
+            newString +=`Buzz, `
+        }
+        else {
+            newString +=`${i}, `
+        }
+    }
+    newString= newString.slice(0,newString.length-2)
+    console.log(newString)
+}
+
+FizzBuzzBonusTwo(15)

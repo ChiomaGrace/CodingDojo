@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <title>Hunting GitHub</title>
+    
+
+    
+    </head>
+<body>
+    <h1>Hunting GitHub Assignment</h1>
+    <p>Clicking the button below will send an API request to the GitHub API and will display your name in a tag below the button via DOM manipulation. </p>
+    <ul id="github"> Your GitHub
+        <li>Person information below:</li>
+    </ul>
+    <button id="button">Get GitHub</button>
+    <script>
+
+
+        function addGitHub(){
+            $.get("https://api.github.com/users/ChiomaGrace", function(displayName){
+                console.log(displayName.name)
+                $("#github").append(displayName.name)
+
+            })
+        }
+
+
+
+        $('#button').click(addGitHub)
+    </script>
+</body>
+
+</html>
