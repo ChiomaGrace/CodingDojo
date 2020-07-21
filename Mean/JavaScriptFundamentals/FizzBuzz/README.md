@@ -20,12 +20,12 @@ This project performs the following tasks:
 5. BONUS 1: Validate the user input. If the function is not passed a positive number, either throw an error or return null.
 
         Example - fizzbuzz("fifteen") would throw the following error:
-*               Parameter must be a positive number
+               Parameter must be a positive number
 
 6. BONUS 2: Rather than have the function log each element, return a nicely formatted string with all the elements. Include commas where appropriate to make it easier to read.
 
-Example - fizzbuzz(15) would return the following string:
-* 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, and FizzBuzz.
+        Example - fizzbuzz(15) would return the following string:
+                1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, and FizzBuzz.
 
 Created On: July 14, 2020\
 Pushed to Github: July 21, 2020
