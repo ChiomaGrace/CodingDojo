@@ -44,13 +44,6 @@ bees.north = rabbit;
 bees.west = pooh;
 
 tigger.north = pooh; 
-tigger = { 
-    character: "Tigger", 
-    north: pooh,
-    greet: function(){
-        console.log("The wonderful thing about Tiggers is Tiggers are wonderful things!");
-        }
-};
 
 
 var player = {
@@ -58,29 +51,14 @@ var player = {
 }
 
 function move(direction){
-    if(player.location[dir] -- undefined) {
-        console.log(direction)("You cannot travel this way!")
+    if(! player.location[direction]) {
+        console.log("You cannot travel this way!")
     }
     else{
-        console.log("You are now at " + player.location[direction][character] +"s house")
-        player - { //how come the - is needed?
-            location: player.location[dir]
-        }
+        console.log("You are now at " + player.location[direction]["character"] +"s house")
+        player.location = player.location[direction] 
     }
 }
 
 move("north"), move("north"), move("east"), move("east"), move("east"), move("west")
 console.log(player.location["character"])
-
-function move(direction){
-    if(player.location[dir] -- undefined) { //why isn't this working?
-        console.log(direction)("You cannot travel this way!")
-    }
-    else{
-        console.log("You are now at " + player.location[direction][character] +"s house")
-        player - {
-            location: player.location[dir]
-        }
-        console.log(player.location.great())
-    }
-}

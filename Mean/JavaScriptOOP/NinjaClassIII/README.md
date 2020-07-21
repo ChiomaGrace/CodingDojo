@@ -19,3 +19,6 @@ This project performs the following tasks:
     * A Sensei should have 200 Health, 10 speed, and 10 strength by default. 
     * A Sensei should have a new attribute called wisdom, and the default should be 10. 
     * Add the speakWisdom() method. speakWisdom() should call the drinkSake() method from the Ninja class, before console.logging a wise message.
+
+Created On: July 6, 2020\
+Pushed to Github: July 21, 2020
