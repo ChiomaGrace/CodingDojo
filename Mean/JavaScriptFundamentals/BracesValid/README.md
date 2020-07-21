@@ -1,4 +1,5 @@
 # Braces Valid
+
 This project performs the following tasks:
 
 1. Use of data structures (arrays, objects) effectively
