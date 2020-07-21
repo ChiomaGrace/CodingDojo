@@ -35,35 +35,21 @@ let users = {
     ]
 };
 
-// for (let key in dict) {
-//   console.log(key, ':', dict[key].temp);
-// }
-
-// var str = "Hello World!";
-// var res = str.toUpperCase();
-// var n = str.length;
 
 function Staff(object) {
-    var typeOfUser = "Employees"
-    var allCapsOfTypeOfUser = typeOfUser.toUpperCase()
+    var typeOfUserOne = "Employees"
+    var allCapsOfTypeOfUserOne = typeOfUserOne.toUpperCase()
     var idOfEmployee = 0
-    console.log(allCapsOfTypeOfUser)
-    for(let x in object) {
-        console.log(x)
-        for(let user of object[x]){
-            // console.log(user)
-            console.log(idOfEmployee+=1, "-", user.last_name, ",", user.first_name, "-", user.first_name.length + user.last_name.length )
+    console.log(allCapsOfTypeOfUserOne)
+    for(let typeOfUser in object) { //This loops through all the arrays( so the two: employees and managers)
+        // console.log(typeOfUser) //This logs the key (title) of each array of objects
+        for(let specificUser of object[typeOfUser]){ //This loop within the loop gives us access to the specific objects/users within the arrays
+            // console.log(specificUser) This logs all the users both employees and managers in the array of objects
+            console.log(idOfEmployee+=1, "-", specificUser.last_name, ",", specificUser.first_name, "-", specificUser.first_name.length + specificUser.last_name.length )
         }
         // console.log(x)
         // console.log(object[x])
     }
-    // var typeOfUserTwo = "Managers"
-    // var allCapsOfTypeOfUserTwo = typeOfUserTwo.toUpperCase()
-    // var idOfManager = 0
-    // console.log(allCapsOfTypeOfUserTwo)
-    // for(let managers in users) {
-    //     console.log(idOfManager+=1, "-", users[managers].last_name, ",", users[mangers].first_name)
-    // }
 }
 
 Staff(users)
