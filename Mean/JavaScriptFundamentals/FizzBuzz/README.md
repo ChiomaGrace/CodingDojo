@@ -15,12 +15,12 @@ This project performs the following tasks:
     Write your code and run it with several examples to ensure it is working as expected. Use the modulus operator!
 
         Example - fizzbuzz(15) would log the following (each element on its own line):
-* 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz
+                1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz
 
 5. BONUS 1: Validate the user input. If the function is not passed a positive number, either throw an error or return null.
 
-Example - fizzbuzz("fifteen") would throw the following error:
-* Parameter must be a positive number
+        Example - fizzbuzz("fifteen") would throw the following error:
+*               Parameter must be a positive number
 
 6. BONUS 2: Rather than have the function log each element, return a nicely formatted string with all the elements. Include commas where appropriate to make it easier to read.
 
