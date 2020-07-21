@@ -28,8 +28,8 @@ function CoinChange(amount){
             changeType["Pennies"] = pennies
         }
     }
-    // console.log(changeType)
-    return changeType //how come returning doesn't work?
+    console.log(changeType)
+    // return changeType also an option. Then should console.log the function call
 }
 
-console.log(CoinChange(262))
+CoinChange(262)
