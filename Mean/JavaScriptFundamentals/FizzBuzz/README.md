@@ -14,7 +14,7 @@ This project performs the following tasks:
     * If the number is divisible by 5 but not by 3, log "Buzz" instead of the number
     Write your code and run it with several examples to ensure it is working as expected. Use the modulus operator!
 
-Example - fizzbuzz(15) would log the following (each element on its own line):
+        Example - fizzbuzz(15) would log the following (each element on its own line):
 * 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz
 
 5. BONUS 1: Validate the user input. If the function is not passed a positive number, either throw an error or return null.
