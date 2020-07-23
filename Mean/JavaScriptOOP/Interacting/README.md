@@ -1,5 +1,6 @@
 # Interacting
-A project that expands on objects and pointers.\
+
+A project that expands on objects and pointers.
 
 This project completes the following tasks:
 
