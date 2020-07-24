@@ -52,7 +52,7 @@ var pooh=   {   character: "You are currently located at Winnie the Pooh's house
                 }
             }
 
-var bees=   {   character: "You are currently located at Bee's hive.",
+var bees=   {   character: "You are currently located at Bees' hive.",
                 greet: function() {
                     console.log("Bzz");
                 }
@@ -63,7 +63,7 @@ var tigger = { character: "You are currently located at Tigger's House.",
                     console.log("The wonderful thing about Tiggers is Tiggers are wonderful things!");
                 }
             }
-
+            
 //These are objects for each location on the map, and these objects point to each other.
 
 eeyore.east = heffalumps;
@@ -102,8 +102,10 @@ bees.west = pooh;
 tigger.north = pooh; 
 
 var player = {
-    location: tigger 
+    location: tigger, 
     //This is where the player is located initially. The player starts at the very bottom of the map at Tigger's house
+    honeyStatus: false 
+    //This is set to false because the player will always begin the game without honey.
 }
 
 function move(direction){
@@ -118,6 +120,45 @@ function move(direction){
     }
 }
 
+function pickUp(){
+    // console.log(player.location["character"]) 
+    if(player.location["character"] != "You are currently located at Bees' hive.") {
+        console.log("There is no honey at this location!")
+    }
+    else{
+        player.honeyStatus = true
+        console.log("You've gathered some honey!")
+    }
+}
+
+//The mission function is a method that selects a random character. The player must delivery the honey to the randomly selected character's home. 
+// The deliveryLocation variable is outside of the function, so it can be used in other functions (such as the drop function)
+var deliveryLocation = ["Eeyore", "Heffalump", "Kanga", "Owl", "ChristopherRobin", "Rabbit", "Gopher", "Piglet", "Pooh", "Bees", "Tigger"]
+function mission(){
+    const randomDeliveryLocation = deliveryLocation[Math.floor(Math.random() * deliveryLocation.length)];
+    console.log(randomDeliveryLocation, "is looking for honey! Can you help?")
+}
+
+function drop(){
+    // console.log(deliveryLocation)
+    if(player.honeyStatus = false){
+        console.log("You don't have any honey to delivery, yet!")
+    }
+    if(player.location["character"] != deliveryLocation) {
+        console.log("This isn't the place that needs the honey.")
+    }
+    else{
+        console.log("Congratulations! You delivered the honey to " + deliveryLocation)
+    }
+
+}
+
 console.log(player.location["character"])
-move("north"), move("north"), move("north"), move("north"), move("east")
-console.log(player.location["character"])
+mission()
+move("north")
+// drop()
+// move("east")
+// pickUp()
+// move("west")
+// move("west")
+// drop()
