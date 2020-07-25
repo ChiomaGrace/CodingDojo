@@ -26,26 +26,16 @@
     // logs undefined
 
 // PROBLEM NUMBER TWO
-    // var needle = 'haystack';
-    // test();
-    // function test(){
-    //     var needle = 'magnet';
-    //     console.log(needle);
-    // }
-
-    ///
-
-
-    //var needle;
-    //function test(){
-        //
-        //
-    //}
-    //var needle = 'haystack';
-    //test(); => CL 'magnet'
+var needle = 'haystack';
+test();
+function test(){
+	var needle = 'magnet';
+	console.log(needle);
+}
 
 // PREDICTED OUTPUT FOR PROBLEM NUMBER TWO  
-    // logs undefined when test() is called on line 30 //ASK WHY THIS DOES NOT HAPPEN. is it cause var needle line 32 is hoisted?
+    // var needle = 'haystack' - is hoisted by the interpreter 
+    // function test - is hoisted by the interpreter 
     // logs magnet for the console log on line 33
 
 // PROBLEM NUMBER THREE
@@ -57,8 +47,9 @@
     // console.log(brendan);
 
 // PREDICTED OUTPUT FOR PROBLEM NUMBER THREE  
+    // var brendan = 'super cool' - is hoisted by the interpreter 
+    // function print - is hoisted by the interpreter 
     // logs super cool
-    //HOW COME NOT OKAY? HOW IS IT DIFFERENT FROM PROBLEM NUMBER FOUR
 
 // PROBLEM NUMBER FOUR
     // var food = 'chicken';
@@ -72,6 +63,7 @@
 
 // PREDICTED OUTPUT FOR PROBLEM NUMBER FOUR  
     // var food on line 58 is hoisted by interpreter
+    // function eat - is hoisted by the interpreter 
     // logs chicken from line 53
     // logs half-chicken from line 58
 

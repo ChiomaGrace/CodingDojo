@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <title>Trivia</title>
+    <script>
+
+        $(document).ready(function(){ //This is needed if the script is in the head because it is called before the html code it is using. So this allows the html to be reference regardless of precedence.
+            function addQuizAPI(){
+                $.get("https://opentdb.com/api.php?amount=10&category=21&difficulty=medium&type=multiple", function(quiz){
+                    console.log(quiz.results[0])
+                    $("#quizQuestion").append(quiz.results[0].question + "<br>" + quiz.results[0].correct_answer + "<br>")
+                })
+            }
+    
+            $('#button').click(addQuizAPI)
+
+        })
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Trivia</h1>
+    <p>Clicking the button below will send an API request to the GitHub API and will display your name in a tag below the button via DOM manipulation. </p>
+    <ul id="quizQuestion"> Quiz Questions
+        <li>Question #1:</li>
+    </ul>
+    <button id="button">Get Question</button>
+
+</body>
+
+</html>
