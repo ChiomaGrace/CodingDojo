@@ -10,7 +10,8 @@ module.exports = {
             res.json(newAuthorData)
         })
         .catch(err=>res.json(err))
-    }
+    },
+    getAll
 
     // create: (req,res) =>{ //could also write it like this. doesn't matter
     //     console.log('author controller')

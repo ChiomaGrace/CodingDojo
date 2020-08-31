@@ -6,8 +6,9 @@ import { Injectable } from '@angular/core';
 export class AuthorFormService {
 
   authors = [
-    {name: 'submited author from the form'}
+    {name: 'submitted author from the form'}
   ];
 
   constructor() { }
+
 }
