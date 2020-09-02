@@ -31,7 +31,7 @@ function FizzBuzz(number){
     }
 }
 
-// FizzBuzz(15)
+FizzBuzz(15)
 
 
 function FizzBuzzBonusOne(number){
@@ -55,7 +55,7 @@ function FizzBuzzBonusOne(number){
     }
 }
 
-// FizzBuzzBonusOne("fifteen")
+// FizzBuzzBonusOne("fifteen") //This will throw an error, which is what we want.
 
 
 

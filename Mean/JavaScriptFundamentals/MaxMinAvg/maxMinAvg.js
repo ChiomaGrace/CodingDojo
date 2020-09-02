@@ -21,7 +21,7 @@ function MaxMinAvg(arr) {
         sum += arr[i]
     }
     var avg = sum/totalOfNumbersInArray
-    var threeValues = "The minimum is" + min + "The maximum is" + max + "and the average is" + avg
+    var threeValues = "The minimum is " + min + ", the maximum is " + max + ", and the average is " + avg + "."
     return threeValues
 }
 

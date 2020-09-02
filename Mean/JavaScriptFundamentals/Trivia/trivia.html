@@ -8,31 +8,118 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <title>Trivia</title>
+
     <script>
 
         $(document).ready(function(){ //This is needed if the script is in the head because it is called before the html code it is using. So this allows the html to be reference regardless of precedence.
-            function addQuizAPI(){
+            $( '#geoEasyQuestion' ).hide();
+            function addQuizAPIQuestion(){
+                
                 $.get("https://opentdb.com/api.php?amount=10&category=21&difficulty=medium&type=multiple", function(quiz){
                     console.log(quiz.results[0])
-                    $("#quizQuestion").append(quiz.results[0].question + "<br>" + quiz.results[0].correct_answer + "<br>")
+                    $("#geoEasy").slideUp("slow", function(){
+                        $("#geoEasyQuestion").append(quiz.results[0].question)
+                        $("#geoEasyQuestion").show()
+
+                    })
+                    // $("#button").slideUp("slow", function(){
+                    //     $("#question").append(quiz.results[0].question + "<br>" + quiz.results[0].correct_answer + "<br>")
+                    // })
+                })
+            }
+
+            function addQuizAPIQuestionAnswer(){
+                $( '#answer' ).hide();
+                $.get("https://opentdb.com/api.php?amount=10&category=21&difficulty=medium&type=multiple", function(quiz){
+                    console.log(quiz.results[0])
+                    $("#geoEasy").slideUp("slow", function(){
+                        $("#geoEasyQuestion").append(quiz.results[0].correct_answer)
+                        $("#answer").show()
+
+                    })
                 })
             }
     
-            $('#button').click(addQuizAPI)
+            $('#geoEasy').click(addQuizAPIQuestion)
+            $('#answer').click(addQuizAPIQuestionAnswer)
 
-        })
+            
+        });
 
     </script>
+
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Empty column for spacing -->
+            </div>
+            <div class="col-8 ml-5">
+                <div class="mx-auto" style="width: 200px;">
+                    <h1 class="ml-2">Trivia Night</h1>
+                </div>
+            </div>
+            <div class="col">
+                <h1>0 Points</h1>
+            </div>
+        </div>
 
-    <h1>Trivia</h1>
-    <p>Clicking the button below will send an API request to the GitHub API and will display your name in a tag below the button via DOM manipulation. </p>
-    <ul id="quizQuestion"> Quiz Questions
-        <li>Question #1:</li>
-    </ul>
-    <button id="button">Get Question</button>
+        <div class="row mt-4">
+            <div class="col">
+                <h3 class="text-secondary bg-warning text-center">Geography</h3>
+            </div>
+            <div class="col">
+                <h3 class="text-secondary bg-warning text-center">Entertainment</h3>
+            </div>
+            <div class="col">
+                <h3 class="text-secondary bg-warning text-center">Science</h3>
+            </div>
+        </div>
+
+
+        <div class="row mt-2">
+            <div class="container px-lg-5 mb-2">
+                <div class="row mx-lg-n5">
+                    <div class="col py-3 px-lg-2 border bg-primary text-secondary text-center ml-2 mr-2 border border-dark font-weight-bold" id="geoEasy">100</div>
+                    <div class="col py-3 px-lg-2 border bg-primary text-white text-center ml-2 mr-2 border border-dark font-weight-bold" id="geoEasyQuestion">
+                        <div class="row align-items-end">
+                            <div class="col mt-5">
+                                <button type="button" class="btn btn-success text-white text-center" id="answer">Answer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col py-3 px-lg-2 border bg-primary text-secondary text-center ml-2 mr-2 border border-dark font-weight-bold" id="button">100</div>
+                    <div id="geoEasyQuestion"></div>
+
+                    <div class="col py-3 px-lg-2 border bg-primary text-secondary text-center ml-2 mr-2 border border-dark font-weight-bold">100</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="container px-lg-5 mb-2">
+                <div class="row mx-lg-n5">
+                    <div class="col py-3 px-lg-2 border bg-primary text-secondary text-center ml-2 mr-2 border border-dark font-weight-bold">200</div>
+                    <div class="col py-3 px-lg-2 border bg-primary text-secondary text-center ml-2 mr-2 border border-dark font-weight-bold">200</div>
+                    <div class="col py-3 px-lg-2 border bg-primary text-secondary text-center ml-2 mr-2 border border-dark font-weight-bold">200</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="container px-lg-5 mb-2">
+                <div class="row mx-lg-n5">
+                    <div class="col py-3 px-lg-2 border bg-primary text-secondary text-center ml-2 mr-2 border border-dark font-weight-bold">300</div>
+                    <div class="col py-3 px-lg-2 border bg-primary text-secondary text-center ml-2 mr-2 border border-dark font-weight-bold">300</div>
+                    <div class="col py-3 px-lg-2 border bg-primary text-secondary text-center ml-2 mr-2 border border-dark font-weight-bold">300</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 

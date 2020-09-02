@@ -14,11 +14,13 @@ let students = [
 // }
 
 function studentInfo(arr){
+    arrayOfStudents = []
     for(let i=0; i<arr.length; i++)
-        console.log(arr[i])
+        // console.log(arr[i])
+        console.log("Name: " + arr[i].name + "," + " Cohort: " + arr[i].cohort)
 }
 
-// studentInfo(students)
+studentInfo(students)
 
 // Write a function that accepts an object of users divided into employees and managers, and display the number of characters per employee/manager's name, as shown below, and logs the information to the console.
 

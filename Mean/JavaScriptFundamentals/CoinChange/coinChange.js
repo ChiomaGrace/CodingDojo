@@ -16,15 +16,15 @@ function CoinChange(amount){
         if(cents % 25 != 0) { //if this code is run it means the change left is less than a quarter, so next is the total of amount of dimes until it's not possible, then nickels, and then lastly pennies.
 
             lessThanAQuarterLeft =  cents % 25 // this is storing the remaining change in a variable.
-            dimes = Math.floor(lessThanAQuarterLeft/10) //seeing how many total dimes can be given of remaining change/
+            dimes = Math.floor(lessThanAQuarterLeft/10) //seeing how many total dimes can be given of remaining change
             changeType["Dimes"] = dimes // This stores the variable dimes as the dimes object within the change type dictionary.
 
-            lessThanADimeLeft =  cents % 10 
+            lessThanADimeLeft =  lessThanAQuarterLeft % 10 
             nickels = Math.floor(lessThanADimeLeft/5)
             changeType["Nickels"] = nickels
 
-            lessThanANickelLeft =  cents % 5 
-            pennies = Math.floor(lessThanANickelLeft/1)
+            lessThanANickelLeft =  lessThanADimeLeft % 5 
+            pennies = Math.floor(lessThanANickelLeft)
             changeType["Pennies"] = pennies
         }
     }
@@ -32,4 +32,6 @@ function CoinChange(amount){
     // return changeType also an option. Then should console.log the function call
 }
 
+CoinChange(20)
 CoinChange(262)
+CoinChange(242) //This is wrong not sure how to fix it
