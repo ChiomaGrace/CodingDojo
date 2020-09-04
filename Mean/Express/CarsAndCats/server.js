@@ -9,3 +9,4 @@ app.get("/", (request, response) => {
 app.listen(8000,() => console.log("listening on port 800"))
 
 app.use(express.static(__dirname + "/static"));
+
