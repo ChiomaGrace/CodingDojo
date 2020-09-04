@@ -1,5 +1,5 @@
-const express = require('express');
-const app = express();
+const express = require('express'); //must require('express') before attempting to invoke it,otherwise an error 'express is not defined' will occur
+const app = express(); //this is a function that then invokes express
 
 app.use(express.static(__dirname + '/static')) //directs to the static file folder and handles requests for static content
 app.set('view engine', 'ejs') //gives the ability to use the html (ejs)
