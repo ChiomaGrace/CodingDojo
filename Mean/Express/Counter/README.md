@@ -10,5 +10,5 @@ This project performs the following tasks:
 
 4. Adds a reset button that resets the counter back to 1 (By adding another route to handle this functionality).
 
-Start Date: September 5, 2020\
-Pushed to Github: September 5, 2020
+Start Date: September 4, 2020\
+Pushed to Github: September 4, 2020
