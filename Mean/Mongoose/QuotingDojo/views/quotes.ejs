@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Welcome to Quoting Dojo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- 1 of 2 -->
+            </div>
+            <div class="col">
+                <!-- 2 of 2 -->
+            </div>
+        </div>
+        <div class="row border border-primary rounded-pill mt-4">
+            <div class="col">
+            </div>
+            <div class="col-8 mt-3">
+                <h1 class="text-center">Here are the awesome quotes!</h1>
+            <% for (var entry of submittedQuoteData) { %>
+                <h5 class="font-weight-bolder text-secondary">"<%= entry.quote %>"</h5>
+                <h6 class="ml-4 text-primary font-weight-bold"> -  <%= entry.name %></h6> 
+            <% } %>
+                <a href="/" class="mb-2">
+                    <button type="button" class="btn btn-info ml-4 mb-2">Add A Quote</button>
+                </a>
+
+
+
+            </div>
+            <div class="col">
+                <!-- 3 of 3 -->
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
