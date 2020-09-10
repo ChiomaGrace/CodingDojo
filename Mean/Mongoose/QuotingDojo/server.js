@@ -25,7 +25,7 @@ app.post('/quote/new', (request,response) => {
     submittedQuote.name = request.body.name //this is getting the submitted data from the ejs file
     submittedQuote.quote = request.body.quote //this is getting the submitted data from the ejs file
     submittedQuote.save() // important to save because this is what actually gets the data into the database
-        .then(submittedQuoteData => {
+        .then(submittedQuoteData => { //variable of what is being saved in the promise
             console.log('entry submitted', submittedQuoteData)
             response.redirect('/quotes')
         })
