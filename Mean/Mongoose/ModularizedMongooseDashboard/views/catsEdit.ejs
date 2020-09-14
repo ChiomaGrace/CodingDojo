@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Mongoose Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- 1 of 2 -->
+            </div>
+            <div class="col">
+                <!-- 2 of 2 -->
+            </div>
+        </div>
+        <div class="row border border-primary mt-4">
+            <div class="col">
+            </div>
+            <div class="col-6 mt-5">
+                <h1>Edit <%= updateSpecificCatData.name%></h1>
+                <form action="/cats/<%= updateSpecificCatData.id %>" method="POST" class="mb-4">
+                    <div class="form-group">
+                        <label for="name">Cat Name:</label>
+                        <input type="text" class="form-control" name="name" value="<%= updateSpecificCatData.name%>" aria-describedby="nameHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="kind">Cat Kind:</label>
+                        <input type="text" class="form-control" name="kind" value="<%= updateSpecificCatData.kind%>" aria-describedby="nameHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year:</label>
+                        <input type="text" class="form-control" name="year" value="<%= updateSpecificCatData.year%>" aria-describedby="nameHelp">
+                    </div>
+                    <button type="submit" class="btn btn-success ml-5">Submit Cat Edit</button>
+                    <a href="/" class="ml-5">
+                        <button type="button" class="btn btn-info ml-5">Back to Index</button>
+                    </a>
+                </form>
+            </div>
+            <div class="col">
+                <!-- 3 of 3 -->
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
