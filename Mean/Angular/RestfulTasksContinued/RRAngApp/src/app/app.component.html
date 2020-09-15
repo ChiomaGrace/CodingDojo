@@ -1,0 +1,15 @@
+
+<div class="container">
+  <h1 class=" mt-5 text-center">{{title}}</h1>
+  <h2 class="text-center mb-4">{{subTitle}}</h2>
+  <ul class="list-group">
+    <li *ngFor="let task of tasks" class="list-group-item list-group-item-primary">{{task.title}} - {{task.description}}</li>
+  </ul>
+  <h2 class="mt-4 text-center">{{footer}}</h2>
+  <ul class="list-group">
+    <!-- Need NgIf statement here so the page’s content isn't loaded faster/before the task.title/task.description variable is rendered to the page -->
+    <li *ngIf="tasks" class="list-group-item list-group-item-info">{{tasks[2].title}} - {{tasks[2].description}}</li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>

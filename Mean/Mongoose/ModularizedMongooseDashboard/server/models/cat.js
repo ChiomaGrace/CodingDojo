@@ -11,7 +11,7 @@ const CatSchema = new mongoose.Schema({ //this is more of a theoretical structur
 const Cat = mongoose.model('Cat', CatSchema) //creates the collection out of this model const variable and model name can be anything but good practice to have both match. now can make the post route to retrieve the data
 
 module.exports = {
-    Cat: Cat, //exporting the cat model on line 7. The key (word before the:) is how it is referenced/named in other files in the app
+    Cat: Cat, //exporting the cat model on line 11. The key (word before the:) is how it is referenced/named in other files in the app
     CatSchema: CatSchema //always important to export the schema
 
 }
