@@ -1,0 +1,27 @@
+
+<div class="container border border-warning rounded-bottom mt-2 pb-4">
+  <h1 class=" mt-5 text-center">{{title}}</h1>
+  <div class="border border-primary rounded-bottom">
+    <div class="row">
+      <div class="col-sm ml-5">
+        <!-- One of three columns -->
+      </div>
+      <div class="col-sm ml-5">
+        <button (click)="onButtonClickForAllTasks()" type="button" class="btn btn-success mt-2 mb-2 ml-5 ">{{toggleButton}}</button>
+      </div>
+      <div class="col-sm">
+        <!-- One of three columns -->
+      </div>
+    </div>
+  
+    <ul *ngIf = "!this.hideTaskList" class="list-group"> <!-- this is saying when the hide task list is false aka when it's showing  -->
+      <li *ngFor= "let task of tasks" class="list-group-item text-center">{{task.title}} <button (click)="onButtonClickToShowSpecificTask(task._id)" type="button" class="btn btn-info rounded-circle ml-5">{{subToggleButton}}</button> </li>
+    </ul>
+  </div>
+  <div *ngIf = "!this.hideSpecificTaskList" class=" border border-success rounded-bottom mt-4">
+    <h4 class="text-center">{{specificTask.title}}</h4>
+    <h6 class="text-center"> {{specificTask.description}}</h6>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

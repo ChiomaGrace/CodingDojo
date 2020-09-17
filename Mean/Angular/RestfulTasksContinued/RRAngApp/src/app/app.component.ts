@@ -27,6 +27,8 @@ export class AppComponent {
       this.tasks = taskData
       console.log(this.tasks)
     })
+
+  
   }
 
 }
