@@ -41,6 +41,7 @@ module.exports = {
     },
 
     update: (request, response) => {
+        console.log(request.body)
         Task.findOne({_id: request.params.id})   
         .then(updateSpecificTaskData => {
             updateSpecificTaskData.title = request.body.title 

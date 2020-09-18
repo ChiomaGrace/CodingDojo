@@ -1,0 +1,63 @@
+
+<div class="container mt-2 pb-4">
+    <div class="row">
+      <div class="col-sm ml-5">
+        <h4 class="mt-4">New Task</h4>
+        <form (submit)="submitTaskForm()"> 
+          <div class="form-group">
+            <!-- The below code on line 8 is to see the data change in real time -->
+            <p> {{submittedTask | json }}</p>
+            <label for="title">Title:</label>
+            <input type="text" class="form-control" name="taskTitle" [(ngModel)]="submittedTask.title" aria-describedby="titleHelp"> 
+            <!-- implementing ng model in order to create the two way bind. One bind is pulling the data from the .ts file (controller), and the other bind is an event bind. Both get updated in real time -->
+          </div>
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" class="form-control" name="taskDescription" [(ngModel)]="submittedTask.description">
+          </div>
+          <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+      </div>
+      <div class="col-sm">
+        <!-- 2nd of two columns -->
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm ml-5">
+        <h2>Task List:</h2>
+        <ul class="list-group">
+          <div class=""> 
+            <li *ngFor= "let task of tasks" class="list-group-item text-center"> 
+              <h4 class="ml-4">{{task.title}} <button (click)="clickButtonToDisplayEditForm(task._id)" type="button" class="btn btn-secondary ml-3">Edit</button>
+              </h4> 
+              <p>{{task.description}} <button (click)="deleteButton(task._id)" type="button" class="btn btn-secondary ml-3">Delete</button></p>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div *ngIf="specificTask" class="col-sm"> 
+        <!-- //Remember *ngIf to hide and then show the attribute/data wishing to be displayed. 'specific task' comes is the attribute within the function called by the button -->
+        <!-- (submit)="editTaskForm()" -->
+        <form (submit)="updateTaskForm(specificTask._id)" > 
+          <h4 class="text-center">Edit A Task</h4>
+          <div class="form-group">
+            <!-- The below code on line 8 is to see the data change in real time -->
+            <p> {{specificTask | json }}</p>
+            <label for="title">Title:</label>
+            <input type="text" class="form-control" name="taskTitle" value="{{specificTask.title}}" [(ngModel)]="specificTask.title" aria-describedby="titleHelp"> 
+            <!-- implementing ng model in order to create the two way bind. One bind is pulling the data from the .ts file (controller), and the other bind is an event bind. Both get updated in real time -->
+          </div>
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" class="form-control" name="taskDescription" value="{{specificTask.description}}" [(ngModel)]="specificTask.description">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Edits</button>
+        </form>
+      </div>
+    </div>
+
+</div>
+
+
+<router-outlet></router-outlet>
