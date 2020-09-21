@@ -5,7 +5,7 @@ const {Task} = require('../models/task') //this links the models which is called
 
 module.exports = {
     allTasks: (request, response) => {
-        console.log("Index Function")
+        console.log("Server Index Function")
         Task.find() // since I am calling on the model here, I need to tell this controller about the models
         .then(submittedTaskData => {
             response.json(submittedTaskData )
@@ -35,12 +35,13 @@ module.exports = {
     show: (request, response) => {
         Task.findOne({_id:request.params.id})
         .then(submittedTaskData => {
-            console.log("Show Function")
+            console.log("Server Show Function")
             response.json(submittedTaskData)
         })
     },
 
     update: (request, response) => {
+        console.log("The beginning of the Server Update function")
         Task.findOne({_id: request.params.id})   
         .then(updateSpecificTaskData => {
             updateSpecificTaskData.title = request.body.title 
@@ -62,10 +63,18 @@ module.exports = {
     },
 
     delete: (request, response) => {
+        console.log("The beginning of the Server Delete function")
         Task.findOne({_id: request.params.id})
         .then(deleteSpecificTaskData => {
             deleteSpecificTaskData.remove()
-            response.json
+            .then(data => {
+                console.log("Sever Delete Function Data:", data)
+                response.json(data)
+            })
+            .catch(errors => { 
+                console.log("errors", errors)
+                response.json(errors)
+            })
         })
         .catch(errors => {
             console.log("errors", errors)

@@ -12,12 +12,14 @@ export class AppComponent {
   specificTask: Object
   submittedTask = {} //the object that will bind in the form
   updateTask = {}
+  hideEditForm: Boolean = true //true meaning the edit form IS hidden because the button has not been clicked on yet
+
 
   constructor(private _httpService: HttpService) { } // added this constructor line of code. this is created automatically when generating a new component, but not here. then also added the httpservice so this app component has access to it. to give it actual functionality need to call it in ngoninit
   
   ngOnInit(){ // added this code. this is created automatically when generating a new component, but not here
     // console.log("This console log is from the app component.")
-    this.submittedTask = {title: "", description: ""}
+    // this.submittedTask = {title: "", description: ""}
     this.allTaskData()
   }
 
@@ -42,12 +44,15 @@ export class AppComponent {
   }
 
   clickButtonToDisplayEditForm(taskId: Number): void{ //pass the id through the parameter to have access to it
+      this.hideEditForm = !this.hideEditForm //this sets it to false because this function has been called on meaning the list IS NOT hidden anymore. It is showing.
       console.log(`This console log is the click event for the specific task using params ${taskId}.`)
-      let specificTaskObservable = this._httpService.specificTaskService(taskId)
-      specificTaskObservable.subscribe(specificTaskData => {
-        this.specificTask = specificTaskData
-        console.log("Specific task data:", specificTaskData)
-      })
+      if(!this.hideEditForm){
+        let specificTaskObservable = this._httpService.specificTaskService(taskId)
+        specificTaskObservable.subscribe(specificTaskData => {
+          this.specificTask = specificTaskData
+          console.log("Specific task data:", specificTaskData)
+        })
+      }
   }
 
   updateTaskForm(taskId: Number): void{
@@ -61,15 +66,13 @@ export class AppComponent {
   }
 
   deleteButton(taskId: Number): void{
-    console.log("This is the delete function.", this.specificTask)
-    let deleteTaskObservable = this._httpService.deleteTaskService(this.specificTask, taskId) //need 'this' syntax to pass through params
+    console.log("This is the delete function.")
+    let deleteTaskObservable = this._httpService.deleteTaskService(taskId) //need 'this' syntax to pass through params
     deleteTaskObservable.subscribe(deleteTaskData => { //creating and subscribing to an observable to get the angular edit data into the backend database
       this.specificTask = deleteTaskData
       console.log("Deleting the following data:", deleteTaskData)
       this.allTaskData() //will call it once more so it updates in real time the deletion of the task that was just submitted
     })
   }
-
-
 
 }

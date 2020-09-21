@@ -28,9 +28,9 @@ export class HttpService {
     return this._http.put(`/tasks/${taskId}`, updateTask) 
   }
 
-  deleteTaskService(deleteTask, taskId){
-    console.log(deleteTask, taskId,)
-    return this._http.delete(`/tasks/${taskId}`, deleteTask) 
+  deleteTaskService(taskId){
+    console.log(taskId)
+    return this._http.delete(`/tasks/${taskId}`) 
   }
 
 

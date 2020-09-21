@@ -36,10 +36,10 @@
           </div>
         </ul>
       </div>
-      <div *ngIf="specificTask" class="col-sm"> 
+      <div *ngIf = "!this.hideEditForm" class="col-sm"> 
         <!-- //Remember *ngIf to hide and then show the attribute/data wishing to be displayed. 'specific task' comes is the attribute within the function called by the button -->
         <!-- (submit)="editTaskForm()" -->
-        <form (submit)="updateTaskForm(specificTask._id)" > 
+        <form *ngIf="specificTask" (submit)="updateTaskForm(specificTask._id)" > 
           <h4 class="text-center">Edit A Task</h4>
           <div class="form-group">
             <!-- The below code on line 8 is to see the data change in real time -->
