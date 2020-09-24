@@ -1,7 +1,5 @@
 import { HttpClient } from '@angular/common/http'; //automated from the code in line 9
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs'; //added the observable line for the refresh data property
-
 
 @Injectable({
   providedIn: 'root'

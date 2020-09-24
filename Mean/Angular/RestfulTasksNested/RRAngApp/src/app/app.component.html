@@ -18,7 +18,7 @@
       <li *ngFor= "let task of tasks" class="list-group-item text-center">{{task.title}} <button (click)="onButtonClickToShowSpecificTask(task._id)" type="button" class="btn btn-info rounded-circle ml-5">{{subToggleButton}}</button> </li>
     </ul>
   </div>
-  <app-show-task *ngIf = "!this.hideSpecificTaskList" [specificTask] = 'specificTask' ></app-show-task> <!-- the child attribute name is in the brackets & is then set equal to the parent attribute -->
+  <app-show-task *ngIf = "!this.hideSpecificTaskList" [specificTask] = 'specificTask' ></app-show-task> <!-- the child input name on  its .ts file is in the brackets & is then set equal to the parent attribute -->
 </div>
 
 <router-outlet></router-outlet>

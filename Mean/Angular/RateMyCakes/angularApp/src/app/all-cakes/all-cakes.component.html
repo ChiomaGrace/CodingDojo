@@ -1,0 +1,13 @@
+<table class="table">
+    <tbody>
+        <tr *ngFor="let cake of displayAllCakes">
+            <td class="ml-2">  
+                    <img src= "{{cake.cakeImage}}" (click)="showSpecificCake(cake._id)" alt="A photo of a cake" width="300" height="200">
+            </td>
+            <td class="mr-5">
+                <app-rate-cake-form [specificCakeId]="cake._id"></app-rate-cake-form>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>

@@ -1,0 +1,13 @@
+<table class="table">
+    <tbody>
+        <h4>Baked By: {{showSpecificCake.bakerName}}</h4>
+        <tr>
+            <td class="ml-2">  
+                    <img src= "{{showSpecificCake.cakeImage}}" (click)="showRatings()"  alt="A photo of a cake" width="300" height="200">
+            </td>
+            <td *ngFor="let cakeInfo of showSpecificCake.ratings" class="mr-5">
+                <p>Rating: {{cakeInfo.rating}}</p>
+                <p>Comment: {{cakeInfo.comment}}</p>
+            </td>
+        </tr>
+    </tbody>

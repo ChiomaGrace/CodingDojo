@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>{{title}}</h1>
+  <div class="row">
+    <div class="col-sm-4 border border-secondary">
+      <form (submit) = "submittedCakeForm()">
+        <div class="form-group">
+          {{submittedCake | json}}
+          <label for="bakerName">Baker Name:</label>
+          <input type="text" name="bakerName" [(ngModel)]="submittedCake.bakerName" class="form-control" aria-describedby="bakerNameHelp">
+        </div>
+        <div class="form-group">
+          <label for="image">Image URL:</label>
+          <input type="url" name="cakeImage" [(ngModel)]="submittedCake.cakeImage"  class="form-control" aria-describedby="bakerNameHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="col-sm-8">
+      <app-all-cakes [displayAllCakes] = 'allCakes' (allCakesEventEmitter) = "onButtonShowSpecificCake($event)" ></app-all-cakes> <!-- the name of the child(its selector) is in the brackets & is then set equal to name of the attribute defined in the app component(aka the name of the data its displaying) -->
+      <!-- the second relationship is an output -->
+    </div>
+  </div>
+  <div *ngIf="specificCakeImage.cakeImage" class="row mt-4">
+    <app-show-cake [showSpecificCake] = 'specificCakeImage' ></app-show-cake>
+  </div>
+</div>
+<router-outlet></router-outlet>
