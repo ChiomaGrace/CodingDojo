@@ -7,7 +7,7 @@ import {Input, Output, EventEmitter} from '@angular/core'
   styleUrls: ['./all-cakes.component.css']
 })
 export class AllCakesComponent implements OnInit {
-  @Input() displayAllCakes: {bakerName: string, cakeImage: string} //how come i didn't need to do the cakeImage: string?
+  @Input() displayAllCakes: any 
   @Output() allCakesEventEmitter = new EventEmitter() //gives the ability send data back to the parent or have the parent do something
 
   constructor() { }

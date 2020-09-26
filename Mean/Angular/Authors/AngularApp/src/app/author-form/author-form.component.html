@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+    <div class="col-sm ml-3">
+        <a [routerLink]="['']">Home</a>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm ml-3">
+        <p>Add a new author:</p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <!-- One of the columns -->
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <form (submit) = "submittedAuthorForm()">
+                <div class="form-group">
+                    <div *ngIf="errors.name">
+                        <p>{{errors.name.message}}</p>
+                    </div>
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" [(ngModel)]="submittedAuthor.name">
+                    <small id="nameHelp" class="form-text text-muted">Please put the first and last name of the author</small>
+                </div>
+                <button type="button" [routerLink]="['']" class="btn btn-danger ml-2">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

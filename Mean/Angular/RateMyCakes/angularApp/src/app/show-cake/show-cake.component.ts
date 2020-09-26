@@ -8,7 +8,7 @@ import {Input} from '@angular/core';
   styleUrls: ['./show-cake.component.css']
 })
 export class ShowCakeComponent implements OnInit {
-  @Input() showSpecificCake: {bakerName: string, cakeImage: string} //how come i didn't need to do the cakeImage: string?
+  @Input() showSpecificCake: any 
 
   constructor() { }
 

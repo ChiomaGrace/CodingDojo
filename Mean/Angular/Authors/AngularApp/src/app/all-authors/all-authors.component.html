@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+    <div class="col-sm ml-3">
+        <a [routerLink]="['/new']">Add An Author</a>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm ml-3">
+        <p>We have quotes by:</p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <!-- One of the columns -->
+    </div>
+    <div class="row">
+        <div class="col-sm">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Author</th>
+                <th scope="col">Actions Available</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor = "let author of allAuthors">
+                <td> <p>{{author.name}}</p> 
+                    <p>Created At: {{author.createdAt | date: 'longDate' }}</p>
+                </td>
+                <td>
+                    <button type="button" [routerLink]="['/edit', author._id]" class="btn btn-secondary ml-2">Edit</button>
+                    <button type="button" (click)="deleteAuthor(author._id)" class="btn btn-secondary ml-2">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
