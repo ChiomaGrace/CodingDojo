@@ -8,7 +8,7 @@ import {Input, Output, EventEmitter} from '@angular/core'
 })
 export class AllCakesComponent implements OnInit {
   @Input() displayAllCakes: any 
-  @Output() allCakesEventEmitter = new EventEmitter() //gives the ability send data back to the parent or have the parent do something
+  @Output() editRestaurantEventEmitter = new EventEmitter() //gives the ability send data back to the parent or have the parent do something
 
   constructor() { }
 

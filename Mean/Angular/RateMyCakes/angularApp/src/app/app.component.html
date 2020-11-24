@@ -16,7 +16,7 @@
       </form>
     </div>
     <div class="col-sm-8 overflow-auto">
-      <app-all-cakes [displayAllCakes] = 'allCakes' (allCakesEventEmitter) = "onButtonShowSpecificCake($event)" ></app-all-cakes> <!-- the name of the child(its selector) is in the brackets & is then set equal to name of the attribute defined in the app component(aka the name of the data its displaying) -->
+      <app-all-cakes [displayAllCakes] = 'allCakes' (allCakesEventEmitter) = "onButtonShowSpecificCake($event)" ></app-all-cakes> <!-- the name of the input on the child ts(its input name) is in the brackets & is then set equal to name of the attribute defined in the app component(aka the name of the data its displaying) -->
       <!-- the second relationship is an output -->
     </div>
   </div>
